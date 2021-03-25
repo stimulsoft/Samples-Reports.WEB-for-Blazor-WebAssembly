@@ -13,6 +13,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Set variable value from code
 * Show report in viewer
 * Show viewer without toolbars
+* Using business objects in the report
 
 They are all combined in a Visual Studio solution (.sln-file).
 

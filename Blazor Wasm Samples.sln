@@ -9,17 +9,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Change viewer options", "Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Change designer options", "Change designer options\Change designer options.csproj", "{395D779E-78A8-408F-A8B3-D842D7B2F4A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edit report template in designer", "Edit report template in designer\Edit report template in designer.csproj", "{9565F9EC-99AB-4586-973F-8ACD68C0CA7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edit report template in designer", "Edit report template in designer\Edit report template in designer.csproj", "{9565F9EC-99AB-4586-973F-8ACD68C0CA7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Load and save report", "Load and save report\Load and save report.csproj", "{56696729-CA55-402E-B67A-B4CBD641FB03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Load and save report", "Load and save report\Load and save report.csproj", "{56696729-CA55-402E-B67A-B4CBD641FB03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localizing the viewer", "Localizing the viewer\Localizing the viewer.csproj", "{FA65051F-7ABC-4B76-B80B-38E54C8470AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Localizing the viewer", "Localizing the viewer\Localizing the viewer.csproj", "{FA65051F-7ABC-4B76-B80B-38E54C8470AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Set variable value from code", "Set variable value from code\Set variable value from code.csproj", "{454AAA72-0FBF-4F74-B156-43348C68C031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Set variable value from code", "Set variable value from code\Set variable value from code.csproj", "{454AAA72-0FBF-4F74-B156-43348C68C031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Show report in viewer", "Show report in viewer\Show report in viewer.csproj", "{C138B28A-E243-4CE5-8F5A-2713DF4002E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Show report in viewer", "Show report in viewer\Show report in viewer.csproj", "{C138B28A-E243-4CE5-8F5A-2713DF4002E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Show viewer without toolbars", "Show viewer without toolbars\Show viewer without toolbars.csproj", "{FD7DB750-D389-4C6F-B8C4-BD92EF7089AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Show viewer without toolbars", "Show viewer without toolbars\Show viewer without toolbars.csproj", "{FD7DB750-D389-4C6F-B8C4-BD92EF7089AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using business objects in the report", "Using business objects in the report\Using business objects in the report.csproj", "{B9A382B6-A036-4958-B187-16570F96820D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{FD7DB750-D389-4C6F-B8C4-BD92EF7089AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD7DB750-D389-4C6F-B8C4-BD92EF7089AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD7DB750-D389-4C6F-B8C4-BD92EF7089AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A382B6-A036-4958-B187-16570F96820D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A382B6-A036-4958-B187-16570F96820D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A382B6-A036-4958-B187-16570F96820D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A382B6-A036-4958-B187-16570F96820D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

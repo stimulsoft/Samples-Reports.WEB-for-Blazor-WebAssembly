@@ -29,9 +29,12 @@
         //Create empty report object
         report = new StiReport();
 
-        //Load report template
-        var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
-        report.Load(reportBytes);
+        //Create business object
+        var list = GetBusinessObject();
+
+        //Register business object in the report template
+        report.RegBusinessObject("MyList", list);
+        report.Dictionary.Synchronize();
     }
 
     private async void SaveReport(StiSaveReportEventArgs args)
@@ -39,5 +42,31 @@
         var reportJson = args.Report.SaveToJsonString();
 
         await Task.CompletedTask;
+    }
+
+
+    //Business objects
+
+    public class BusinessEntity
+    {
+        public string Name { get; set; }
+
+        public string Alias { get; set; }
+
+        public BusinessEntity(string name, string alias)
+        {
+            Name = name;
+            Alias = alias;
+        }
+    }
+
+    private System.Collections.ArrayList GetBusinessObject()
+    {
+        var list = new System.Collections.ArrayList();
+        list.Add(new BusinessEntity("name1", "alias1"));
+        list.Add(new BusinessEntity("name2", "alias2"));
+        list.Add(new BusinessEntity("name3", "alias3"));
+
+        return list;
     }
 }
