@@ -21,7 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Show report in viewer", "Sh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Show viewer without toolbars", "Show viewer without toolbars\Show viewer without toolbars.csproj", "{FD7DB750-D389-4C6F-B8C4-BD92EF7089AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using business objects in the report", "Using business objects in the report\Using business objects in the report.csproj", "{B9A382B6-A036-4958-B187-16570F96820D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using business objects in the report", "Using business objects in the report\Using business objects in the report.csproj", "{B9A382B6-A036-4958-B187-16570F96820D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Add a custom button to the viewer toolbar", "Add a custom button to the viewer toolbar\Add a custom button to the viewer toolbar.csproj", "{FAEC7DA3-4E27-4EBE-B545-F562F11EBDF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Custom data adapter", "Custom data adapter\Custom data adapter.csproj", "{03452E29-E364-450C-A17F-7ABDB041322D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Export report from code", "Export report from code\Export report from code.csproj", "{2A523E94-3D94-453B-858E-B2BCCA2AEA69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +75,18 @@ Global
 		{B9A382B6-A036-4958-B187-16570F96820D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9A382B6-A036-4958-B187-16570F96820D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9A382B6-A036-4958-B187-16570F96820D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAEC7DA3-4E27-4EBE-B545-F562F11EBDF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAEC7DA3-4E27-4EBE-B545-F562F11EBDF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAEC7DA3-4E27-4EBE-B545-F562F11EBDF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAEC7DA3-4E27-4EBE-B545-F562F11EBDF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03452E29-E364-450C-A17F-7ABDB041322D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03452E29-E364-450C-A17F-7ABDB041322D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03452E29-E364-450C-A17F-7ABDB041322D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03452E29-E364-450C-A17F-7ABDB041322D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A523E94-3D94-453B-858E-B2BCCA2AEA69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A523E94-3D94-453B-858E-B2BCCA2AEA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A523E94-3D94-453B-858E-B2BCCA2AEA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A523E94-3D94-453B-858E-B2BCCA2AEA69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -29,6 +29,10 @@
         //Create empty report object
         report = new StiReport();
 
+        //Load report template
+        var reportBytes = await Http.GetByteArrayAsync("Reports/BusinessObjects.mrt");
+        report.Load(reportBytes);
+
         //Create business object
         var list = GetBusinessObject();
 

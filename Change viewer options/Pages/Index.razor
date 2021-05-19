@@ -6,7 +6,7 @@
 @inject HttpClient Http
 
 <!--Report viewer-->
-<StiBlazorViewer Report="@report" Options="@options" />
+<StiBlazorViewer Report="@report" Options="@options" Theme="StiViewerTheme.Office2013WhiteCarmine" />
 
 @code
 {
@@ -37,7 +37,6 @@
         options.Appearance.ScrollbarsMode = true;
         options.Toolbar.ShowOpenButton = false;
         options.Toolbar.DisplayMode = StiToolbarDisplayMode.Separated;
-        options.Theme = StiViewerTheme.Office2013WhiteCarmine;
 
         //Create empty report object
         report = new StiReport();
