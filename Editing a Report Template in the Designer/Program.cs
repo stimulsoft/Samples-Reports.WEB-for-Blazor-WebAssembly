@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Using_Business_Objects_in_the_Report
+namespace Editing_a_Report_Template_in_the_Designer
 {
     public class Program
     {

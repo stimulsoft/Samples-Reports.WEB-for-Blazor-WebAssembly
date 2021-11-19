@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Using_Business_Objects_in_the_Report
+namespace Using_Report_Variables_in_Code
 {
     public class Program
     {
