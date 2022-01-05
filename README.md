@@ -8,15 +8,15 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Changing the Designer Options
 * Changing the Viewer Options
 * Connecting to Data from Code
-* Using a Custom Data Adapter
 * Editing a Report Template in the Designer
 * Exporting a Report from Code
 * Loading and Saving a Report Template
 * Localizing the Viewer
-* Using Report Variables in Code
 * Showing a Report in the Viewer
 * Showing a Viewer without Toolbar
 * Using Business Objects in the Report
+* Using Report Variables in Code
+* Using User Data in Reports
 
 They are all combined in a Visual Studio solution (.sln-file).
 

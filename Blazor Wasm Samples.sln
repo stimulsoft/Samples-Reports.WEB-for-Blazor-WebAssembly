@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using Business Objects in t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creating a Custom Button on the Viewer Toolbar", "Creating a Custom Button on the Viewer Toolbar\Creating a Custom Button on the Viewer Toolbar.csproj", "{FAEC7DA3-4E27-4EBE-B545-F562F11EBDF3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using a Custom Data Adapter", "Using a Custom Data Adapter\Using a Custom Data Adapter.csproj", "{03452E29-E364-450C-A17F-7ABDB041322D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UUsing User Data in Reports", "Using User Data in Reports\Using User Data in Reports.csproj", "{03452E29-E364-450C-A17F-7ABDB041322D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exporting a Report from Code", "Exporting a Report from Code\Exporting a Report from Code.csproj", "{2A523E94-3D94-453B-858E-B2BCCA2AEA69}"
 EndProject
