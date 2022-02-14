@@ -22,7 +22,7 @@
     <Resources isList="true" count="0" />
     <Variables isList="true" count="0" />
   </Dictionary>
-  <EngineVersion>EngineV1</EngineVersion>
+  <EngineVersion>EngineV2</EngineVersion>
   <GlobalizationStrings isList="true" count="0" />
   <Key>1ee3b5fec5004af1943d2f336347ddfd</Key>
   <MetaTags isList="true" count="0" />
@@ -43,7 +43,6 @@
               <ComponentStyle>Footer2</ComponentStyle>
               <Conditions isList="true" count="0" />
               <DockStyle>Left</DockStyle>
-              <Expressions isList="true" count="0" />
               <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
               <HorAlignment>Center</HorAlignment>
               <Hyperlink>http://www.stimulsoft.com</Hyperlink>
@@ -63,7 +62,6 @@
               <ComponentStyle>Footer2</ComponentStyle>
               <Conditions isList="true" count="0" />
               <DockStyle>Right</DockStyle>
-              <Expressions isList="true" count="0" />
               <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
               <HorAlignment>Right</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -77,7 +75,6 @@
           </Components>
           <ComponentStyle>Footer2</ComponentStyle>
           <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
           <Name>PageFooterBand1</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
@@ -92,7 +89,6 @@
               <ClientRectangle>0,0,19,1.6</ClientRectangle>
               <ComponentStyle>Header2</ComponentStyle>
               <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
               <Font>Segoe UI,21.75,Bold,Point,False,204</Font>
               <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
@@ -106,7 +102,6 @@
           </Components>
           <ComponentStyle>Header1</ComponentStyle>
           <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
           <Name>ReportTitleBand1</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
@@ -122,7 +117,6 @@
               <ClientRectangle>0,0,8.8,0.6</ClientRectangle>
               <ComponentStyle>Header3</ComponentStyle>
               <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
               <Font>Segoe UI,12,Bold,Point,False,204</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text10</Name>
@@ -138,7 +132,6 @@
               <ClientRectangle>8.8,0,10.2,0.6</ClientRectangle>
               <ComponentStyle>Header3</ComponentStyle>
               <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
               <Font>Segoe UI,12,Bold,Point,False,204</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text13</Name>
@@ -151,7 +144,6 @@
           </Components>
           <ComponentStyle>Header3</ComponentStyle>
           <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
           <Name>HeaderBand1</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
@@ -168,7 +160,6 @@
               <ClientRectangle>0,0,8.8,0.6</ClientRectangle>
               <ComponentStyle>Data1</ComponentStyle>
               <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
               <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text3</Name>
@@ -185,7 +176,6 @@
               <ClientRectangle>8.8,0,10.2,0.6</ClientRectangle>
               <ComponentStyle>Data1</ComponentStyle>
               <Conditions isList="true" count="0" />
-              <Expressions isList="true" count="0" />
               <Font>Segoe UI,9.75,Regular,Point,False,0</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text4</Name>
@@ -199,7 +189,6 @@
           </Components>
           <Conditions isList="true" count="0" />
           <DataSourceName>UserData</DataSourceName>
-          <Expressions isList="true" count="0" />
           <Filters isList="true" count="0" />
           <Name>DataBand1</Name>
           <Page isRef="3" />
@@ -208,7 +197,6 @@
         </DataBand1>
       </Components>
       <Conditions isList="true" count="0" />
-      <Expressions isList="true" count="0" />
       <Guid>cd0d7c48850442e1809d1724fce2c6bb</Guid>
       <Margins>1,1,1,1</Margins>
       <Name>Page1</Name>
@@ -228,14 +216,14 @@
   </ReferencedAssemblies>
   <ReportAlias>User Data</ReportAlias>
   <ReportAuthor isNull="true" />
-  <ReportChanged>5/6/2021 2:21:05 PM</ReportChanged>
+  <ReportChanged>2/14/2022 4:48:43 PM</ReportChanged>
   <ReportCreated>5/29/2004 10:59:00 AM</ReportCreated>
   <ReportDescription isNull="true" />
-  <ReportFile>D:\Samples\000\Samples-Blazor-Server\Custom data adapter\Reports\UserData.mrt</ReportFile>
-  <ReportGuid>2ad7f47e2be04cdcbc2bda327a9ce9cb</ReportGuid>
+  <ReportFile>D:\Stimulsoft\Samples\Samples-Blazor-WebAssembly\Using User Data in Reports\wwwroot\Reports\UserData.mrt</ReportFile>
+  <ReportGuid>256fa626d094476cb5d57ccb3da478f2</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
-  <ReportVersion>2021.3.1.0</ReportVersion>
+  <ReportVersion>2020.2.1.0</ReportVersion>
   <Script>using System;
 using System.Drawing;
 using System.Windows.Forms;
