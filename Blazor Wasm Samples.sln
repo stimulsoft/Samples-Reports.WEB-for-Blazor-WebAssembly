@@ -25,9 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using Business Objects in t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creating a Custom Button on the Viewer Toolbar", "Creating a Custom Button on the Viewer Toolbar\Creating a Custom Button on the Viewer Toolbar.csproj", "{FAEC7DA3-4E27-4EBE-B545-F562F11EBDF3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UUsing User Data in Reports", "Using User Data in Reports\Using User Data in Reports.csproj", "{03452E29-E364-450C-A17F-7ABDB041322D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using User Data in Reports", "Using User Data in Reports\Using User Data in Reports.csproj", "{03452E29-E364-450C-A17F-7ABDB041322D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exporting a Report from Code", "Exporting a Report from Code\Exporting a Report from Code.csproj", "{2A523E94-3D94-453B-858E-B2BCCA2AEA69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adding Custom Function from Referenced Assembly", "Adding Custom Function from Referenced Assembly\Adding Custom Function from Referenced Assembly.csproj", "{6EA7360D-F19D-4294-9040-8B8488F25C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomFunctionsLibrary", "Adding Custom Function from Referenced Assembly\CustomFunctionsLibrary\CustomFunctionsLibrary.csproj", "{F48C5183-0E79-4124-80EC-1E0865B52E91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{2A523E94-3D94-453B-858E-B2BCCA2AEA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A523E94-3D94-453B-858E-B2BCCA2AEA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A523E94-3D94-453B-858E-B2BCCA2AEA69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48C5183-0E79-4124-80EC-1E0865B52E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48C5183-0E79-4124-80EC-1E0865B52E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48C5183-0E79-4124-80EC-1E0865B52E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48C5183-0E79-4124-80EC-1E0865B52E91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
