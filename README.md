@@ -4,6 +4,7 @@
 
 # Overview
 This repository has some examples (Visual Studio Projects) each in different folders:
+* Adding Custom Function from Referenced Assembly
 * Creating a Custom Button on the Viewer Toolbar
 * Changing the Designer Options
 * Changing the Viewer Options
