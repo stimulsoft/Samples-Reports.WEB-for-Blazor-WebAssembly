@@ -5,20 +5,20 @@
 @inject HttpClient Http
 
 <div align="center">
-    <input type="text" @bind="newValueInput" />
+    <input type="text" @bind="NewValueInput" />
     <button class="alert" @onclick="SetVariable">Set variable</button>
 </div>
 
 <br />
 
 <div align="center">
-    <StiBlazorViewer Report="@report" />
+    <StiBlazorViewer Report="@Report" />
 </div>
 
 @code
 {
-    private StiReport report;
-    private string newValueInput;
+    private StiReport Report;
+    private string NewValueInput;
 
     protected override async Task OnInitializedAsync()
     {
@@ -30,19 +30,27 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
         //Create empty report object
-        report = new StiReport();
+        var report = new StiReport();
 
         //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/ReportWithVariable.mrt");
         report.Load(reportBytes);
+
+        //Assing a report to the Viewer
+        this.Report = report;
     }
 
     private void SetVariable()
     {
+        var report = this.Report.Clone() as StiReport;
+
         //Set new value
-        report["MySuperUselessVariable"] = newValueInput;
+        report["MySuperUselessVariable"] = NewValueInput;
 
         //Update view
         report.Render();
+
+        //Assign new report to the Viewer
+        this.Report = report;
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30517.126
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connecting to Data from Code", "Connecting to Data from Code\Connecting to Data from Code.csproj", "{BFE66E49-EEE0-4B9F-AE29-E07FAB4F2078}"
 EndProject
@@ -30,8 +30,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exporting a Report from Code", "Exporting a Report from Code\Exporting a Report from Code.csproj", "{2A523E94-3D94-453B-858E-B2BCCA2AEA69}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adding a Custom Function to the Designer", "Adding a Custom Function to the Designer\Adding a Custom Function to the Designer.csproj", "{6EA7360D-F19D-4294-9040-8B8488F25C60}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomFunctionsLibrary", "Adding a Custom Function to the Designer\CustomFunctionsLibrary\CustomFunctionsLibrary.csproj", "{F48C5183-0E79-4124-80EC-1E0865B52E91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,10 +93,6 @@ Global
 		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F48C5183-0E79-4124-80EC-1E0865B52E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F48C5183-0E79-4124-80EC-1E0865B52E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F48C5183-0E79-4124-80EC-1E0865B52E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F48C5183-0E79-4124-80EC-1E0865B52E91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

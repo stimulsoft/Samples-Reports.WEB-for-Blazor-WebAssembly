@@ -2,7 +2,7 @@
 using System.Linq;
 using Stimulsoft.Data.Extensions;
 
-namespace CustomFunctionsLibrary
+namespace Functions
 {
     public class CustomFunction
     {

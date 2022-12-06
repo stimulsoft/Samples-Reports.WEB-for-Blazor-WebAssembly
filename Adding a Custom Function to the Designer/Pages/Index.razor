@@ -4,16 +4,16 @@
 @using Stimulsoft.Report.Blazor
 @using Stimulsoft.Report.Web
 @using Stimulsoft.Report.Dictionary
-@using CustomFunctionsLibrary
+@using Functions
 @inject HttpClient Http
 
 <!--Report designer-->
-<StiBlazorDesigner Report="@report" Theme="StiDesignerTheme.Office2013LightGrayCarmine"></StiBlazorDesigner>
+<StiBlazorDesigner Report="@Report"></StiBlazorDesigner>
 
 @code
 {
     //Report object to use in designer
-    private StiReport report;
+    private StiReport Report;
 
     protected override async Task OnInitializedAsync()
     {
@@ -25,7 +25,7 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
         // Create empty report object
-        report = new StiReport();
+        var report = new StiReport();
 
         // Register function
         StiFunctions.AddFunction("MyCategory", "MySum",
@@ -38,5 +38,8 @@
         //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/CustomFunction.mrt");
         report.Load(reportBytes);
+
+        //Assign a report to the Designer
+        this.Report = report;
     }
 }
