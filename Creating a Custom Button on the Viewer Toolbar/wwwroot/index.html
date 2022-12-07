@@ -8,12 +8,12 @@
 
     <script>
         var createButton = function () {
-            var customButton = this.WebViewer1.SmallButton("customButton", "Custom Button", "emptyImage");
+            var customButton = this.jsWebViewer1.SmallButton("customButton", "Custom Button", "emptyImage");
             customButton.image.src = "icon.png";
             customButton.action = function () {
                 alert("Custom Button Event");
             }
-            var toolbarTable = this.WebViewer1.controls.toolbar.firstChild.firstChild;
+            var toolbarTable = this.jsWebViewer1.controls.toolbar.firstChild.firstChild;
             var buttonsTable = toolbarTable.rows[0].firstChild.firstChild;
             var customButtonCell = buttonsTable.rows[0].insertCell(0);
             customButtonCell.appendChild(customButton);
