@@ -10,11 +10,11 @@
 </div>
 <br />
 
-<StiBlazorViewer Report="@report" />
+<StiBlazorViewer Report="@Report" />
 
 @code
 {
-    private StiReport report;
+    private StiReport Report;
 
     protected override async Task OnInitializedAsync()
     {
@@ -26,15 +26,21 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
         //Create empty report object
-        report = new StiReport();
+        var report = new StiReport();
 
         //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/Report.mrt");
         report.Load(reportBytes);
+
+        //Assing a report to the Viewer
+        this.Report = report;
     }
 
     private async void SetFirstDataSet()
     {
+        //Get a copy of the report into a new report object
+        var report = this.Report.Clone() as StiReport;
+
         //Delete connections in the report template
         report.Dictionary.Databases.Clear();
 
@@ -53,12 +59,18 @@
         //Re-render report
         report.Render();
 
-        //Refresh view
+        //Assign new report to the Viewer
+        this.Report = report;
+
+        //Refresh razor page view
         StateHasChanged();
     }
 
     private async void SetSecondDataSet()
     {
+        //Get a copy of the report into a new report object
+        var report = this.Report.Clone() as StiReport;
+
         //Delete connections in the report template
         report.Dictionary.Databases.Clear();
 
@@ -77,7 +89,10 @@
         //Re-render report
         report.Render();
 
-        //Refresh view
+        //Assign new report to the Viewer
+        this.Report = report;
+
+        //Refresh razor page view
         StateHasChanged();
     }
 }
