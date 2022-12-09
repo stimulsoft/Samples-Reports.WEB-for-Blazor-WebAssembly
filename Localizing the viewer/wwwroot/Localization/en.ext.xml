@@ -38,6 +38,8 @@
     <StiGenerateNewNamePageActionLong>Generate a new name for the page.</StiGenerateNewNamePageActionLong>
     <StiGenerateNewNameRelationActionLong>Generate a new name for the relation.</StiGenerateNewNameRelationActionLong>
     <StiGrowToHeightOverlappingLong>Set the value of the GrowToHeight property of the component to false.</StiGrowToHeightOverlappingLong>
+    <StiInsufficientTextHeightForOneLineLong>The height of the component will increase at least to the height of one line of text or to the next cell of the report grid.</StiInsufficientTextHeightForOneLineLong>
+    <StiInsufficientTextHeightForOneLineShort>Fix height</StiInsufficientTextHeightForOneLineShort>
     <StiLargeHeightAtPageActionLong>For handy viewing and editing components, the LargeHeight property of the page will be set to true.</StiLargeHeightAtPageActionLong>
     <StiMinRowsInColumnsActionLong>Set the MinRowsInColumns property to zero.</StiMinRowsInColumnsActionLong>
     <StiMoveComponentToPageAreaActionLong>The component will be placed so that it is entirely placed on the page. In this case the page fields are not taken into consideration.</StiMoveComponentToPageAreaActionLong>
@@ -54,6 +56,7 @@
     <StiPropertiesOnlyEngineV1ActionLong>Disable properties of the '{0}' component which are not supported in the EngineV2.</StiPropertiesOnlyEngineV1ActionLong>
     <StiPropertiesOnlyEngineV2ActionLong>Disable properties of the component which are not supported in the EngineV1.</StiPropertiesOnlyEngineV2ActionLong>
     <StiResetPageNumberActionLong>Set the ResetPageNumber property of a page to false.</StiResetPageNumberActionLong>
+    <StiSwitchToParametersVerticalOrientationAction>Switch the value of the 'Parameters Orientation' report property to 'Vertical'.</StiSwitchToParametersVerticalOrientationAction>
     <StiSwitchWidthAndHeightOfPageActionLong>Rearrange the height and width of the page.</StiSwitchWidthAndHeightOfPageActionLong>
     <StiVerySmallSizesOfComponentsLong>The size of a component will be increased to the GridSize value of a report. This operation does not guarantee the 100% correct fix!</StiVerySmallSizesOfComponentsLong>
     <StiVerySmallSizesOfComponentsShort>Increase size</StiVerySmallSizesOfComponentsShort>
@@ -112,8 +115,12 @@
     <StiGroupHeaderNotEqualToGroupFooterOnContainerLong>The number of GroupFooter does not correspond to the number of GroupHeader in the '{0}' container. Odd components will not be rendered.</StiGroupHeaderNotEqualToGroupFooterOnContainerLong>
     <StiGroupHeaderNotEqualToGroupFooterOnPageLong>The number of GroupFooter does not correspond to the number of GroupHeader on the '{0}' page. Odd components will not be rendered.</StiGroupHeaderNotEqualToGroupFooterOnPageLong>
     <StiGroupHeaderNotEqualToGroupFooterShort>Some components will not be rendered</StiGroupHeaderNotEqualToGroupFooterShort>
+    <StiGroupHeaderSummaryExpressionCheckLong>The Summary Expression for the group header {0} contains an aggregate function, but this function is set in a separate property. Report generation is not possible.</StiGroupHeaderSummaryExpressionCheckLong>
+    <StiGroupHeaderSummaryExpressionCheckShort>Invalid function in expression</StiGroupHeaderSummaryExpressionCheckShort>
     <StiGrowToHeightOverlappingLong>The GrowToHeight property of the '{0}' component is set to true. When rendering a report, this component can overlap one or more underlying components.</StiGrowToHeightOverlappingLong>
     <StiGrowToHeightOverlappingShort>It is possible to overlap components.</StiGrowToHeightOverlappingShort>
+    <StiInsufficientTextHeightForOneLineCheckLong>The height of the text component {0} is too small, even for one line of text. This can cause issues with exporting to some formats, as well as with printing on the Web. It is recommended to increase the height or set the CanGrow property to true.</StiInsufficientTextHeightForOneLineCheckLong>
+    <StiInsufficientTextHeightForOneLineCheckShort>Insufficient Height for one line.</StiInsufficientTextHeightForOneLineCheckShort>
     <StiIsFirstPageIsLastPageDoublePassCheckLong>The IsFirstPage, IsFirstPageThrough, IsLastPage, IsLastPageThrough system variables provide incorrect results when one pass. It is required to set the NumberOfPass property to DoublePass.</StiIsFirstPageIsLastPageDoublePassCheckLong>
     <StiIsFirstPageIsLastPageDoublePassCheckShort>System variables which require double pass are used in the report</StiIsFirstPageIsLastPageDoublePassCheckShort>
     <StiIsFirstPassIsSecondPassCheckLong>For correct work of IsFirstPass, IsSecondPass functions double pass of the report rendering is required. maybe you forgot to set the NumberOfPass property of the report to DoublePass.</StiIsFirstPassIsSecondPassCheckLong>
@@ -158,8 +165,8 @@
     <StiSystemTextObsoleteCheckShort>The component is obsolete</StiSystemTextObsoleteCheckShort>
     <StiTextColorEqualToBackColorCheckLong>Possible reason is that the values of the TextBrush and Brush properties of the '{0}' component were set incorrectly. The text will not be visible.</StiTextColorEqualToBackColorCheckLong>
     <StiTextColorEqualToBackColorCheckShort>The TextBrush property is equal to the Brush property</StiTextColorEqualToBackColorCheckShort>
-    <StiTextTextFormatCheckLong>The selected format for the '{0}' component is not specified.</StiTextTextFormatCheckLong>
-    <StiTextTextFormatCheckShort>The format is not specified.</StiTextTextFormatCheckShort>
+    <StiTextTextFormatCheckLong>Selected text format for the '{0}' component can`t be applied, because the result of the expression is text string.</StiTextTextFormatCheckLong>
+    <StiTextTextFormatCheckShort>The format can`t be applied.</StiTextTextFormatCheckShort>
     <StiTotalPageCountDoublePassCheckLong>The TotalPageCount, TotalPageCountThrough system variables in scripts and conditions provide incorrect results when one pass. It is required to set the NumberOfPass property to DoublePass.</StiTotalPageCountDoublePassCheckLong>
     <StiUndefinedComponentCheckLong>Undefined '{0}' component is found in the report. The reporting tool cannot identify this component. Maybe this is a custom component. The report cannot be rendered!</StiUndefinedComponentCheckLong>
     <StiUndefinedComponentCheckShort>Undefined component</StiUndefinedComponentCheckShort>
@@ -224,6 +231,8 @@
     <StiOrientationPageCheckShort>Incorrect '{0}' page orientation.</StiOrientationPageCheckShort>
   </CheckPage>
   <CheckReport>
+    <StiCategoryRequestFromUserCheckLong>The '{0}' variable's categories can't be shown on the parameters panel of the viewer because it is possible only when the value of the 'ParametersOrientation' report property is set to 'Vertical'.</StiCategoryRequestFromUserCheckLong>
+    <StiCategoryRequestFromUserCheckShort>Showing categories on the parameters panel</StiCategoryRequestFromUserCheckShort>
     <StiCloudCompilationModeCheckLong>Stimulsoft Cloud cannot preview this report in the compilation mode. Change the report to the interpretation mode.</StiCloudCompilationModeCheckLong>
     <StiCloudCompilationModeCheckShort>This report is in the compilation mode</StiCloudCompilationModeCheckShort>
     <StiCompilationErrorAssemblyCheckLong>Could not load file or assembly '{0}' or one of its dependencies.</StiCompilationErrorAssemblyCheckLong>
@@ -231,11 +240,17 @@
     <StiCompilationErrorCheck3Long>The error of compilation is found in the '{1}' event of the '{2}' component:</StiCompilationErrorCheck3Long>
     <StiCompilationErrorCheckLong>The error of compilation is found in the '{0}' report:</StiCompilationErrorCheckLong>
     <StiCompilationErrorCheckShort>The error of compilation</StiCompilationErrorCheckShort>
+    <StiDataSourceLoopingCheckLong>Data band '{0}' and child data band '{1}' use the same data source '{2}'. To avoid looping, the child data band will not be shown.</StiDataSourceLoopingCheckLong>
+    <StiDataSourceLoopingCheckShort>Data looping is possible</StiDataSourceLoopingCheckShort>
     <StiDuplicatedName2CheckLong>There are several data sources with the '{0}' name.</StiDuplicatedName2CheckLong>
+    <StiDuplicatedName3CheckLong>There are several data sources with the name '{0}' which differ in case.</StiDuplicatedName3CheckLong>
     <StiDuplicatedNameCheckLong>There are several components with the '{0}' name.</StiDuplicatedNameCheckLong>
     <StiDuplicatedNameCheckShort>The components with duplicate names are found</StiDuplicatedNameCheckShort>
+    <StiDuplicatedNameInSourceCheckShort>Duplicates in the data source</StiDuplicatedNameInSourceCheckShort>
     <StiDuplicatedNameInSourceInDataRelationReportCheckLong>The '{0}' relations are found in the report. They have equal ('{1}') values in the NameInSource. All values in the NameInSource should be unique in the range of one relation to one database! It is necessary to correct these fields of relations.</StiDuplicatedNameInSourceInDataRelationReportCheckLong>
     <StiDuplicatedNameInSourceInDataRelationReportCheckShort>Duplicates in relations</StiDuplicatedNameInSourceInDataRelationReportCheckShort>
+    <StiDuplicatedReportName2CheckLong>The report name '{0}' is the same as the data source name.</StiDuplicatedReportName2CheckLong>
+    <StiDuplicatedReportNameCheckLong>The report name '{0}' is the same as the component name.</StiDuplicatedReportNameCheckLong>
     <StiNetCoreCompilationModeCheckLong>Stimulsoft .NET Core engine cannot render this report in the compilation mode. Change the report to the interpretation mode.</StiNetCoreCompilationModeCheckLong>
     <StiNetCoreCompilationModeCheckShort>This report is in the compilation mode</StiNetCoreCompilationModeCheckShort>
   </CheckReport>
@@ -261,6 +276,8 @@
     <ActionShow>Show</ActionShow>
     <AddNewConnection>Add New Connection</AddNewConnection>
     <Cancel>Cancel</Cancel>
+    <ChangeExportSettings>Change export settings</ChangeExportSettings>
+    <ChangeExportSettingsToolTip>The code for creating the settings class of the selected export format will be added. In the project, you can change the export settings.</ChangeExportSettingsToolTip>
     <Close>Close</Close>
     <ConnectionsFromReport>Use Connection from Report</ConnectionsFromReport>
     <ConnectionsFromReportToolTip>Connections saved in the report template will be used without any modifications.</ConnectionsFromReportToolTip>
@@ -270,6 +287,7 @@
     <ConnectionsReplaceToolTip>You will be offered to change the connection from the code, depending on its type - file path, database connection string.</ConnectionsReplaceToolTip>
     <Copy>Copy</Copy>
     <CopyingLibraries>Copying project files...</CopyingLibraries>
+    <DataAdapterPlatform>Data Adapter Platform</DataAdapterPlatform>
     <DeployReportPlatform>Deploy Report to Platform:</DeployReportPlatform>
     <DownloadingLibraries>Downloading libraries...</DownloadingLibraries>
     <EmbedAllDataToResources>The report contains data connections that are not supported in the selected platform. Do you want to embed available data in the report as resources? In this case, all connections will be replaced with XML resources.</EmbedAllDataToResources>
@@ -279,6 +297,8 @@
     <ExportFormatDataType>Data Type:</ExportFormatDataType>
     <ExportFormatImage>Image</ExportFormatImage>
     <ExportFormatImageType>Image Type:</ExportFormatImageType>
+    <FrameworkType>Framework Type</FrameworkType>
+    <FrameworkVersion>Framework Version</FrameworkVersion>
     <FullScreenViewer>Display the Viewer in Full Browser Window</FullScreenViewer>
     <FullScreenViewerToolTip>The viewer with the report will be displayed in the entire available space of the browser window.</FullScreenViewerToolTip>
     <GetLibrariesFrom>Get Stimulsoft Libraries from {0}</GetLibrariesFrom>
@@ -318,6 +338,7 @@
     <ParametersReplaceToolTip>You will be offered to change the values ​​of the report parameters from the code.</ParametersReplaceToolTip>
     <ParametersRequestFromUser>Request from User</ParametersRequestFromUser>
     <ParametersRequestFromUserToolTip>The report parameter will be requested from the user when viewing the report in the viewer window.</ParametersRequestFromUserToolTip>
+    <ProjectType>Project Type:</ProjectType>
     <Publish>Publish</Publish>
     <PublishType>Report Publish Type:</PublishType>
     <PublishTypeProject>Project</PublishTypeProject>
@@ -349,6 +370,8 @@
     <UseCompressedScriptsToolTip>Packed scripts will be used instead of regular ones. This allows you to reduce their size, but it takes some time to unpack when running.</UseCompressedScriptsToolTip>
     <UseLatestVersion>Use the latest version of libraries</UseLatestVersion>
     <UseLatestVersionToolTip>When connecting libraries and scripts, the latest available official version of the product will be used instead of the currently installed version.</UseLatestVersionToolTip>
+    <UseRenderedReport>Use Rendered Report</UseRenderedReport>
+    <UseRenderedReportToolTip>The report will be built and saved in document format. You will no longer need a data connection to view the report, but any interactivity and report parameters will not be available.</UseRenderedReportToolTip>
     <UseWpfDesignerV2>Use the Designer V2</UseWpfDesignerV2>
     <UseWpfDesignerV2ToolTip>The updated WPF report designer will be used. It has a new UI, increased speed, and other optimizations.</UseWpfDesignerV2ToolTip>
   </Publish>
@@ -630,8 +653,8 @@
     <AxisTitleColor>A color which will be used for title drawing.</AxisTitleColor>
     <BackColor>A background color for drawing this style.</BackColor>
     <BasicStyleColor>A base color for drawing this style.</BasicStyleColor>
-    <Border>A border of the component.</Border>
-    <Brush>A brush to fill the style.</Brush>
+    <Border>The appearance and behavior of the component border.</Border>
+    <Brush>The brush, which is used to draw background.</Brush>
     <BrushType>A value which indicates which type of brush will be used to draw this style.</BrushType>
     <ChartAreaBorderColor>A border color of area.</ChartAreaBorderColor>
     <ChartAreaBrush>A brush to fill a area.</ChartAreaBrush>
@@ -656,13 +679,13 @@
     <SeriesLabelsBrush>A brush that will be used to fill area of series labels.</SeriesLabelsBrush>
     <SeriesLabelsColor>A foreground color of series labels.</SeriesLabelsColor>
     <StyleColors>A list of colors which will be used for drawing chart series.</StyleColors>
-    <TextBrush>A brush to draw the text.</TextBrush>
+    <TextBrush>A brush of the style, which is used to display text.</TextBrush>
     <VertAlignment>A vertical alignment of the style.</VertAlignment>
   </StiBaseStyle>
   <StiBorder>
     <Color>A border color.</Color>
     <DropShadow>A value that indicates whether drop shadow is shown.</DropShadow>
-    <ShadowBrush>The border shadow brush.</ShadowBrush>
+    <ShadowBrush>A border shadow brush.</ShadowBrush>
     <ShadowSize>Shadow Size.</ShadowSize>
     <Side>Frame borders.</Side>
     <Size>A border size.</Size>
@@ -710,6 +733,9 @@
     <Style>A cap style.</Style>
     <Width>Width of the cap.</Width>
   </StiCap>
+  <StiCardsStyle>
+    <LineColor>The property defines the color which will be used to draw borders of the cards.</LineColor>
+  </StiCardsStyle>
   <StiChart>
     <Area>An area of the chart.</Area>
     <ChartType>A type of the chart.</ChartType>
@@ -727,21 +753,108 @@
     <Title>Chart title settings.</Title>
     <VertSpacing>Vertical space between border of the chart and the chart.</VertSpacing>
   </StiChart>
+  <StiChartArea>
+    <ColorEach>A value indicates that each series is drawn by its own colour.</ColorEach>
+    <GridLinesHor>Horizontal grid lines on left axis.</GridLinesHor>
+    <GridLinesVert>Grid lines on vertical axis.</GridLinesVert>
+    <InterlacingHor>Interlacing settings on horizontal axis.</InterlacingHor>
+    <InterlacingVert>Interlacing settings on vertical axis.</InterlacingVert>
+    <ReverseHor>A value that indicate that all values on horizontal axis is reverse.</ReverseHor>
+    <ReverseVert>A value that indicate that all values on vertical axis is reverse.</ReverseVert>
+    <XAxis>Settings of XAxis.</XAxis>
+    <XTopAxis>Settings of XTopAxis.</XTopAxis>
+    <YAxis>Settings of YAxis.</YAxis>
+    <YRightAxis>Settings of YRightAxis.</YRightAxis>
+  </StiChartArea>
+  <StiChartAxis>
+    <Visible>Visibility of axis.</Visible>
+  </StiChartAxis>
+  <StiChartAxisLabels>
+    <Angle>An angle of label rotation.</Angle>
+    <Color>A color of labels drawing.</Color>
+    <Font>a font which will be used for axis label drawing.</Font>
+    <Placement>A mode of labels placement on axis.</Placement>
+    <Step>A value which indicates with what steps do labels be shown on axis.</Step>
+    <TextAfter>A string which will be output after argument string representation.</TextAfter>
+    <TextAlignment>A label text alignment.</TextAlignment>
+    <TextBefore>A string which will be output before argument string representation.</TextBefore>
+  </StiChartAxisLabels>
+  <StiChartAxisRange>
+    <Auto>A value indicates that minimum and maximum values will be calculated automatically.</Auto>
+    <Maximum>Maximum value of axis range.</Maximum>
+    <Minimum>Minimum value of axis range.</Minimum>
+  </StiChartAxisRange>
+  <StiChartAxisTitle>
+    <Alignment>A title text alignment.</Alignment>
+    <Color>A color which will be used for title drawing.</Color>
+    <Font>A font which will be used for axis title drawing.</Font>
+    <Position>A title text position.</Position>
+    <Text>A title text.</Text>
+    <Visible>Title visibility.</Visible>
+  </StiChartAxisTitle>
   <StiChartElement>
+    <Area>An area of the chart.</Area>
     <Arguments>Chart arguments.</Arguments>
     <CloseValues>Close values of a chart.</CloseValues>
     <ColorEach />
+    <ConstantLines>Constant lines settings of the chart.</ConstantLines>
     <EndValues>End values of a chart.</EndValues>
     <Group />
     <HighValues>High values of a chart.</HighValues>
+    <Labels>Series labels.</Labels>
+    <Legend>Legend settings.</Legend>
     <LowValues>Low values of a chart.</LowValues>
     <Series>Chart series.</Series>
     <Style>A style of a chart.</Style>
     <TextFormat>The text format.</TextFormat>
     <Title>Chart title.</Title>
+    <TrendLines>Trend line settings.</TrendLines>
     <Values>Chart values.</Values>
     <Weights>Weight values of a chart.</Weights>
   </StiChartElement>
+  <StiChartGridLines>
+    <Color>Color which will be used for drawing major grid lines.</Color>
+  </StiChartGridLines>
+  <StiChartInterlacing>
+    <Color>Color which will be used for drawing interlaced bars.</Color>
+    <Visible>Visibility of interlaced bars.</Visible>
+  </StiChartInterlacing>
+  <StiChartLabels>
+    <AutoRotate>A value that enables or disables auto rotate mode drawing of series labels.</AutoRotate>
+    <Font>A font that will be used to draw series labels.</Font>
+    <ForeColor>A color of labels drawing.</ForeColor>
+    <Position>A position of the labels.</Position>
+    <Style>A style of the labels.</Style>
+    <TextAfter>A text that will be shown after label text.</TextAfter>
+    <TextBefore>A text that will be shown before label text.</TextBefore>
+  </StiChartLabels>
+  <StiChartLegend>
+    <Columns>Amount of columns.</Columns>
+    <Direction>Direction which used for series drawing in legend.</Direction>
+    <HorAlignment>Horizontal alignment of legend placement.</HorAlignment>
+    <VertAlignment>Vertical alignment of legend placement.</VertAlignment>
+    <Visible>Visibility of chart legend.</Visible>
+  </StiChartLegend>
+  <StiChartLegendLabels>
+    <Color>A color of the labels.</Color>
+    <Font>A font which used for series title drawing in chart legend.</Font>
+  </StiChartLegendLabels>
+  <StiChartLegendTitle>
+    <Color>A title color of legend.</Color>
+    <Font>A title font of the chart legend.</Font>
+    <Text>A title text of legend.</Text>
+  </StiChartLegendTitle>
+  <StiChartStyle>
+    <ChartAreaShowShadow>The property defines the area shadow will be displayed or not.</ChartAreaShowShadow>
+    <MarkerVisible>The property defines the marker will be displayed or not.</MarkerVisible>
+    <SeriesBorderThickness>The property defines the series border width.</SeriesBorderThickness>
+    <SeriesLabelsLineColor>The property defines the line color of series labels.</SeriesLabelsLineColor>
+    <SeriesLighting>The property defines the pie lighting will be displayed or not.</SeriesLighting>
+    <SeriesShowBorder>The property defines the series border will be displayed or not.</SeriesShowBorder>
+    <SeriesShowShadow>The property defines the series shadow will be displayed or not.</SeriesShowShadow>
+    <TrendLineColor>The property defines the color of trend line.</TrendLineColor>
+    <TrendLineShowShadow>The property defines the trend line shadow will be displayed or not.</TrendLineShowShadow>
+  </StiChartStyle>
   <StiChartTable>
     <Font>Font of the chart table.</Font>
     <GridLineColor>A color of the grid lines.</GridLineColor>
@@ -749,6 +862,8 @@
     <GridLinesVert>Visibility of grid lines vertical.</GridLinesVert>
     <GridOutline>Visibility of grid outline</GridOutline>
     <MarkerVisible>Visibility of markers.</MarkerVisible>
+    <NegativeSeriesColors>A list of colors which will be used for drawing series with negative values.</NegativeSeriesColors>
+    <SeriesColors>A list of colors which will be used for drawing series.</SeriesColors>
     <Visible>Visibility of chart table.</Visible>
   </StiChartTable>
   <StiChartTitle>
@@ -875,33 +990,44 @@
   </StiComboBoxControl>
   <StiComponent>
     <AfterPrintEvent>Occurs after the component printing.</AfterPrintEvent>
-    <Alias>A text that will be shown instead of a component name. If the text is not indicated then the name is shown.</Alias>
+    <Alias>Indicates the text that will be shown instead of the component name. If the text is not indicated, then the component name is shown.</Alias>
     <Anchor>Gets or sets a value which indicates the mode of linking component location to the parent component size..</Anchor>
+    <BackColor>The background color of the component.</BackColor>
     <BeforePrintEvent>Occurs before printing the component.</BeforePrintEvent>
     <Bookmark>An expression to fill the component Bookmark.</Bookmark>
-    <Border>A frame of the component.</Border>
-    <Brush>A brush to fill a component.</Brush>
+    <Border>The appearance and behavior of the component border.</Border>
+    <Brush>The brush, which is used to draw background.</Brush>
     <BusinessObject>Business Object that is used for getting data.</BusinessObject>
     <CanBreak>A value that indicates whether the component can or cannot break its contents on several pages.</CanBreak>
     <CanGrow>A value indicates that this object can grow.</CanGrow>
     <CanShrink>A value indicates that this object can shrink.</CanShrink>
     <CellDockStyle>A type of the cell docking.</CellDockStyle>
     <CellType>A type of the cell content.</CellType>
+    <CheckAlignment>Determines the location of the check inside the component.</CheckAlignment>
+    <CheckBrush>The check brush of the component.</CheckBrush>
+    <Checked>Indicates whether the component is in the checked state.</Checked>
+    <CheckedChangedEvent>Occurs when the Checked state is changed.</CheckedChangedEvent>
+    <CheckSize>The check size of the component.</CheckSize>
     <ClickEvent>Occurs when a user clicks the component in the window of the viewer.</ClickEvent>
     <ComponentStyle>A style of a component.</ComponentStyle>
     <Conditions>A collection of the conditions.</Conditions>
-    <CountData>The count of rows for virtual data.</CountData>
+    <CornerRadius>Represents the value to which the corners are rounded.</CornerRadius>
+    <CountData>A count of rows for virtual data.</CountData>
     <CrossFiltering>Gets or sets a value which controls applying cross-filters from the current page to that element.</CrossFiltering>
     <DataRelation>Link that is used for master-detail reports rendering.</DataRelation>
     <DataSource>Data source that is used for getting data.</DataSource>
+    <Disabled>The non-interactive state of the component.</Disabled>
     <DockStyle>A type of the component docking.</DockStyle>
     <DoubleClickEvent>Occurs when a user double clicks the component in the report viewer.</DoubleClickEvent>
     <Editable>A value indicates that a component can be edited in the window of viewer.</Editable>
-    <Enabled>A value that indicates will this component be available or not.</Enabled>
+    <Enabled>Indicates that this component will be available or not.</Enabled>
+    <ExceedMargins>Gets or sets a value to exceed margins of the component background.</ExceedMargins>
     <FilterMode>A logical operation of combining filters for the current band.</FilterMode>
     <FilterOn>A value that indicates, that filter is turned on.</FilterOn>
     <Filters>A collection of the data filters.</Filters>
     <FixedWidth>A value which indicates that the cell have fixed width.</FixedWidth>
+    <Font>The font used to display text in control.</Font>
+    <ForeColor>The foreground color of this component, which is used to display text.</ForeColor>
     <GetBookmarkEvent>Occurs when getting the Bookmark for the component.</GetBookmarkEvent>
     <GetDrillDownReportEvent>Occurs when it is required to get a report for the Drill-Down operation.</GetDrillDownReportEvent>
     <GetHyperlinkEvent>Occurs when getting the Hyperlink for the component.</GetHyperlinkEvent>
@@ -909,35 +1035,52 @@
     <GetToolTipEvent>Occurs when getting the ToolTip for the component.</GetToolTipEvent>
     <GrowToHeight>A value indicates that the height of this component increases/decreases to the bottom of a container.</GrowToHeight>
     <Height>Height of the component.</Height>
-    <HorAlignment>The horizontal alignment.</HorAlignment>
+    <HorAlignment>The horizontal alignment of the text that will be displayed on the component.</HorAlignment>
+    <Hover>The hover state when a user has placed a cursor above the component.</Hover>
     <Hyperlink>An expression to fill the component Hyperlink.</Hyperlink>
+    <Icon>The icon used for the component.</Icon>
+    <IconAlignment>The alignment of the icon that will be displayed on the component.</IconAlignment>
+    <IconBrush>The icon brush of the component.</IconBrush>
+    <IconSet>The set of icons used in the component.</IconSet>
     <Interaction>Interaction options of this component.</Interaction>
     <Left>Left position of the component.</Left>
     <Linked>A value indicates that the object snap to the container is turned on.</Linked>
     <Locked>A value indicates that moving is locked.</Locked>
+    <Margin>Specifies space between this component and another component's margin.</Margin>
     <MasterComponent>The master-component.</MasterComponent>
     <MaxSize>Maximal size.</MaxSize>
     <MinSize>Minimal size.</MinSize>
     <MouseEnterEvent>Occurs when a user enters the mouse into the area of the component in the report viewer.</MouseEnterEvent>
     <MouseLeaveEvent>Occurs when a user leaves the mouse out of the area of the component in the report viewer.</MouseLeaveEvent>
-    <Name>Component name.</Name>
+    <Name>Indicates the name which is used to identify the component.</Name>
+    <Padding>Specifies the interior spacing of the component.</Padding>
+    <Pressed>The pressed state when a user pressed on the component.</Pressed>
     <Printable>A value that indicates whether a component is printable or not.</Printable>
     <PrintOn>A value that indicates on which pages will a component be printed.</PrintOn>
     <Restrictions>A value that indicates the restrictions of a component.</Restrictions>
+    <Shadow>Shadow settings of the component.</Shadow>
+    <ShapeType>Indicates which shape is used to draw the form of the component.</ShapeType>
     <ShiftMode>A value that indicates the shift mode of a component.</ShiftMode>
     <Sort>The array of strings that describes rules of sorting.</Sort>
+    <Stretch>Describes how the component is resized to fill its allocated space.</Stretch>
     <Tag>An expression to fill the component tag.</Tag>
-    <TextBrush>A brush to draw text.</TextBrush>
+    <Text>The text is associated with the component.</Text>
+    <TextBrush>The brush of the component, which is used to display text.</TextBrush>
+    <ThreeStates>Indicates that control supports two or three states.</ThreeStates>
     <ToolTip>An expression to fill the component ToolTip.</ToolTip>
     <Top>Top position of the component.</Top>
     <TotalLabel>Gets or sets a value that is displayed as a label for a total.</TotalLabel>
+    <Type>Describes the type of that component behaviour.</Type>
     <UseParentStyles>A value indicates that this component must use styles from the parent component.</UseParentStyles>
-    <VertAlignment>The vertical alignment of an object.</VertAlignment>
+    <VertAlignment>The vertical alignment of the text that will be displayed on the component.</VertAlignment>
+    <VisualStates>Manages the different visual states of the component.</VisualStates>
+    <Watermark>The watermark used for the component.</Watermark>
     <Width>Width of the component.</Width>
+    <WordWrap>Indicates that the multiline text wraps words or not.</WordWrap>
   </StiComponent>
   <StiConstantLines>
     <Antialiasing>A value that control antialiasing drawing mode.</Antialiasing>
-    <AxisValue>Axis value through what the constant line is drawn.</AxisValue>
+    <AxisValue>Axis value through what the constant line is drawn. Sample: 1, yyyy.MM.dd</AxisValue>
     <Font>A font that is used for drawing constant line text.</Font>
     <LineColor>A color which will be used for drawing constant line.</LineColor>
     <LineStyle>Constant line style.</LineStyle>
@@ -950,6 +1093,12 @@
     <TitleVisible>Visibility of constant lines title.</TitleVisible>
     <Visible>Visibility of constant line.</Visible>
   </StiConstantLines>
+  <StiCornerRadius>
+    <BottomLeft>The value that specifies the radius of the bottom-left corner.</BottomLeft>
+    <BottomRight>The value that specifies the radius of the bottom-right corner.</BottomRight>
+    <TopLeft>The value that specifies the radius of the top-left corner.</TopLeft>
+    <TopRight>The value that specifies the radius of the top-right corner.</TopRight>
+  </StiCornerRadius>
   <StiCrossDataBand>
     <MaxWidth>Maximal width of a band.</MaxWidth>
     <MinWidth>Minimal width of a band.</MinWidth>
@@ -999,6 +1148,25 @@
     <Wrap>A value indicates that the cross-tab is to be output in one column. At the same time, everything that do not fit by the width is output below. For using this property it is necessary to enable the CanBreak property of the band on which the cross-tab is placed (if it is placed on the band).</Wrap>
     <WrapGap>Space between two parts of a wrapped cross-tab. The property is used jointly with the property Wrap.</WrapGap>
   </StiCrossTab>
+  <StiCrossTabStyle>
+    <AlternatingCellBackColor>The property defines the color which will be used to fill the background of the even rows.</AlternatingCellBackColor>
+    <AlternatingCellForeColor>The property defines the color which will be used for drawing of the values in the even rows.</AlternatingCellForeColor>
+    <CellBackColor>The property defines the color which will be used to fill the background of the cells.</CellBackColor>
+    <CellForeColor>The property defines the color which will be used for drawing of the values in the cells.</CellForeColor>
+    <ColumnHeaderBackColor>The property defines the color which will be used to fill the background of the column header cells.</ColumnHeaderBackColor>
+    <ColumnHeaderForeColor>The property defines the color which will be used for drawing of the text in the column header cells.</ColumnHeaderForeColor>
+    <HotColumnHeaderBackColor>The property defines the color which will be used to fill the background of the column header cell when the cursor is hovered on it.</HotColumnHeaderBackColor>
+    <HotRowHeaderBackColor>The property defines the color which will be used to fill the background of the row header cell when the cursor is hovered on it.</HotRowHeaderBackColor>
+    <LineColor>The property defines the color which will be used for drawing cell borders.</LineColor>
+    <RowHeaderBackColor>The property defines the color which will be used to fill the background of the row header cells.</RowHeaderBackColor>
+    <RowHeaderForeColor>The property defines the color which will be used for drawing of the text in the row header cells.</RowHeaderForeColor>
+    <SelectedCellBackColor>The property defines the color which will be used to fill the background of the selected cell.</SelectedCellBackColor>
+    <SelectedCellForeColor>The property defines the color which will be used for drawing of the values in the selected cells.</SelectedCellForeColor>
+    <TotalCellColumnBackColor>The property defines the color which will be used to fill the background of the total cell column.</TotalCellColumnBackColor>
+    <TotalCellColumnForeColor>The property defines the color which will be used for drawing of the values in the total cell column.</TotalCellColumnForeColor>
+    <TotalCellRowBackColor>The property defines the color which will be used to fill the background of the total cell row.</TotalCellRowBackColor>
+    <TotalCellRowForeColor>The property defines the color which will be used for drawing of the values in the total cell row.</TotalCellRowForeColor>
+  </StiCrossTabStyle>
   <StiDataBand>
     <BeginRenderEvent>Occurs when band begin render.</BeginRenderEvent>
     <CalcInvisible>A value indicates that, when aggregate functions calculation, it is nesessary to take into consideration invisible data bands.</CalcInvisible>
@@ -1017,6 +1185,7 @@
     <KeepGroupTogether>A value indicates that the group is to be kept together.</KeepGroupTogether>
     <KeepHeaderTogether>A value indicates that the header is printed with data together.</KeepHeaderTogether>
     <MinRowsInColumn>Minimum number of rows in one column.</MinRowsInColumn>
+    <MultipleInitialization>Initialize the data source for each container and detail section. For example, Filters will be applied for each detail section even if Relation is not assigned.</MultipleInitialization>
     <OddStyle>A value that indicates style of odd lines.</OddStyle>
     <PrintIfDetailEmpty>A value indicates that if detail is empty then the master data must be printed anyway.</PrintIfDetailEmpty>
     <PrintOnAllPages>A value indicates that the component is printed on all pages.</PrintOnAllPages>
@@ -1159,11 +1328,6 @@
     <SupplementCode>Gets or sets the component supplement bar code.</SupplementCode>
     <SupplementType>Gets or sets type of supplement code.</SupplementType>
   </StiEAN8BarCodeType>
-  <StiElement>
-    <BackColor>A back color for the element.</BackColor>
-    <Margin>Element margin.</Margin>
-    <Padding>Element margin.</Padding>
-  </StiElement>
   <StiEmptyBand>
     <BeginRenderEvent>Occurs when band begin render.</BeginRenderEvent>
     <EndRenderEvent>Occurs when band rendering is finished.</EndRenderEvent>
@@ -1215,6 +1379,38 @@
     <Style>Gauge Style.</Style>
     <Title>Gauge Title.</Title>
   </StiGaugeElement>
+  <StiGaugeStyle>
+    <BorderColor>Gets or sets border color.</BorderColor>
+    <BorderWidth>A border size.</BorderWidth>
+    <Brush>Gets or sets a brush to fill the style.</Brush>
+    <ForeColor>Gets or sets a brush to draw the text.</ForeColor>
+    <LinearBarBorderBrush>Gets or sets a border of the LinearBar.</LinearBarBorderBrush>
+    <LinearBarBrush>Gets or sets a brush LinearBar.</LinearBarBrush>
+    <LinearBarEmptyBorderBrush>Gets or sets a empty border of the LinearBar.</LinearBarEmptyBorderBrush>
+    <LinearBarEmptyBrush>Gets or sets a empty brush LinearBar.</LinearBarEmptyBrush>
+    <LinearScaleBrush>Gets or sets a brush LinearScale.</LinearScaleBrush>
+    <MarkerBrush>Gets or sets a brush marker.</MarkerBrush>
+    <NeedleBorderBrush>Gets or sets a border of the Needle.</NeedleBorderBrush>
+    <NeedleBorderWidth>A border size.</NeedleBorderWidth>
+    <NeedleBrush>Gets or sets a brush Needle.</NeedleBrush>
+    <NeedleCapBorderBrush>Gets or sets a border of the cap.</NeedleCapBorderBrush>
+    <NeedleCapBrush>Gets or sets a brush to fill the cap.</NeedleCapBrush>
+    <RadialBarBorderBrush>Gets or sets a border of the RadialBar.</RadialBarBorderBrush>
+    <RadialBarBrush>Gets or sets a brush RadialBar.</RadialBarBrush>
+    <RadialBarEmptyBorderBrush>Gets or sets a empty border of the RadialBar.</RadialBarEmptyBorderBrush>
+    <RadialBarEmptyBrush>Gets or sets a empty brush RadialBar.</RadialBarEmptyBrush>
+    <TargetColor>Gets or sets target color.</TargetColor>
+    <TickLabelMajorFont>Gets or sets a font for drawing TickLabelMajor.</TickLabelMajorFont>
+    <TickLabelMajorTextBrush>Gets or sets a brush to draw the text.</TickLabelMajorTextBrush>
+    <TickLabelMinorFont>Gets or sets a font for drawing TickLabelMinor.</TickLabelMinorFont>
+    <TickLabelMinorTextBrush>Gets or sets a brush to draw the text.</TickLabelMinorTextBrush>
+    <TickMarkMajorBorder>Gets or sets a border of the TickMarkMajor.</TickMarkMajorBorder>
+    <TickMarkMajorBorderWidth>A border size.</TickMarkMajorBorderWidth>
+    <TickMarkMajorBrush>Gets or sets a brush to fill the TickMarkMajor.</TickMarkMajorBrush>
+    <TickMarkMinorBorder>Gets or sets a border of the TickMarkMinor.</TickMarkMinorBorder>
+    <TickMarkMinorBorderWidth>A border size.</TickMarkMinorBorderWidth>
+    <TickMarkMinorBrush>Gets or sets a brush to fill the TickMarkMinor.</TickMarkMinorBrush>
+  </StiGaugeStyle>
   <StiGlareBrush>
     <Angle>The angle, measured in degrees clockwise from the x-axis, of the gradient's orientation line.</Angle>
     <EndColor>The end color for the gradient.</EndColor>
@@ -1303,6 +1499,16 @@
     <PrintIfEmpty>A value indicates that the header if data not present.</PrintIfEmpty>
     <PrintOnAllPages>A value indicates that the component is printed on all pages.</PrintOnAllPages>
   </StiHeaderBand>
+  <StiHeatmapStyleData>
+    <Color>This property defines the color which will be used to fill the geographic object Map, which contains the max value.</Color>
+    <Mode>The property defines the mode which will be used to form the colors collection of the heatmap.</Mode>
+    <ZeroColor>This property defines the color which will be used to fill the geographic object Map, which contains the zero value.</ZeroColor>
+  </StiHeatmapStyleData>
+  <StiHeatmapWithGroupStyleData>
+    <Colors>The property allows the creation of a collection of colors. Each color of the collection will be used as the primary color of the specific group.</Colors>
+    <Mode>The property defines the mode which will be used to form the colors collection of the heatmap.</Mode>
+    <ZeroColor>This property defines the color which will be used to fill the geographic object Map, which contains the zero value.</ZeroColor>
+  </StiHeatmapWithGroupStyleData>
   <StiHierarchicalBand>
     <Footers>A list of footers for the hierarchical band.</Footers>
     <Headers>A list of headers for the hierarchical band.</Headers>
@@ -1311,6 +1517,9 @@
     <MasterKeyDataColumn>A column that contains data master key.</MasterKeyDataColumn>
     <ParentValue>A column that contains parent value which identifies parent rows.</ParentValue>
   </StiHierarchicalBand>
+  <StiHorChartGridLines>
+    <Visible>Visibility of major grid lines.</Visible>
+  </StiHorChartGridLines>
   <StiImage>
     <DataColumn>A name of the column that contains an image.</DataColumn>
     <File>The path to the file that contains an image.</File>
@@ -1323,6 +1532,12 @@
     <ImageURL>The expression to fill a component image URL.</ImageURL>
     <ProcessingDuplicates>A value that indicates how the report engine processes duplicated images.</ProcessingDuplicates>
   </StiImage>
+  <StiIndicatorStyle>
+    <GlyphColor>The property defines the color which will be used to draw icon.</GlyphColor>
+    <HotBackColor>The property defines the color which will be used to fill indicator background when cursor is hovered.</HotBackColor>
+    <NegativeColor>The property defines the color which will be used for variation value when it is less than zero.</NegativeColor>
+    <PositiveColor>The property defines the color which will be used for variation value when it is more than zero.</PositiveColor>
+  </StiIndicatorStyle>
   <StiInteraction>
     <AllowSeries>A value that indicates whether the Drill-Down operation can be executed for Series.</AllowSeries>
     <AllowSeriesElements>A value that indicates whether the Drill-Down operation can be executed for Series Elements.</AllowSeriesElements>
@@ -1439,6 +1654,20 @@
     <KeysBinding>Data bindings for the keys.</KeysBinding>
     <SelectedKeyBinding>Data bindings for the selected key.</SelectedKeyBinding>
   </StiLookUpBoxControl>
+  <StiMapStyle>
+    <BackColor>The property defines the color which will be used to fill map background.</BackColor>
+    <BorderColor>The property defines the color which will be used to draw borders of the map geographic objects.</BorderColor>
+    <BorderSize>The property defines the border width which will be used for the map geographic objects.</BorderSize>
+    <BubbleBackColor>The property defines the color which will be used to fill map bubbles.</BubbleBackColor>
+    <BubbleBorderColor>The property defines the color which will be used to draw borders of the map bubbles.</BubbleBorderColor>
+    <Colors>The property allows to create colors set which will be used to fill the map geographic objects when color each mode is used.</Colors>
+    <DefaultColor>The property defines the color by default which will be used to fill the map geographic objects when the map type is setted any type except individual.</DefaultColor>
+    <Heatmap>The properties set define the settings which will be used for heatmap.</Heatmap>
+    <HeatmapWithGroup>The properties set define the settings which will be used for heatmap with group.</HeatmapWithGroup>
+    <IndividualColor>The property defines the color which will be used to fill the map geographic objects.</IndividualColor>
+    <LabelForeground>The property defines the color which will be used to draw labels of the map geographic objects.</LabelForeground>
+    <LabelShadowForeground>The property defines the color which will be used to draw label shadow of the map geographic objects.</LabelShadowForeground>
+  </StiMapStyle>
   <StiMargin>
     <Bottom>The value sets a margin from the bottom edge of the element.</Bottom>
     <Left>The value sets a margin from the left edge of the element.</Left>
@@ -1487,6 +1716,7 @@
     <EndRenderEvent>Occurs when a page render ends.</EndRenderEvent>
     <ExcelSheet>An expression that is used for generation name of excel sheet.</ExcelSheet>
     <GetExcelSheetEvent>Occurs when the ExcelSheet is calculated.</GetExcelSheetEvent>
+    <Icon>A page icon.</Icon>
     <LargeHeight>A value indicates that this page has large height in the designer.</LargeHeight>
     <LargeHeightFactor>Large height factor for the LargeHeight property of this page.</LargeHeightFactor>
     <Margins>Page margins.</Margins>
@@ -1510,7 +1740,6 @@
     <UnlimitedBreakable>A value indicates that, when printing multiple-sheet cross-reports, columns and strings are to be broken.</UnlimitedBreakable>
     <UnlimitedHeight>A value indicates that the page has an unlimited height.</UnlimitedHeight>
     <UnlimitedWidth>A value indicates that the page has an unlimited width.</UnlimitedWidth>
-    <Watermark>Watermark of a page.</Watermark>
   </StiPage>
   <StiPanel>
     <ColumnGaps>Distance between two columns.</ColumnGaps>
@@ -1570,6 +1799,11 @@
     <PrinterName>A name of printer which will be used for report printing.</PrinterName>
     <ShowDialog>A value indicates that print dialog will be shown or not.</ShowDialog>
   </StiPrinterSettings>
+  <StiProgressStyle>
+    <BandColor>The property defines the color which will be used to fill the area graphics of the progress value.</BandColor>
+    <SeriesColors>The property allows to create color set for drawing the progress series.</SeriesColors>
+    <TrackColor>The property defines the color which will be used to fill the progress track.</TrackColor>
+  </StiProgressStyle>
   <StiQRCodeBarCodeType>
     <ErrorCorrectionLevel>Gets or sets the error correction level.</ErrorCorrectionLevel>
     <Height>Gets os sets height factor of the bar code.</Height>
@@ -1615,18 +1849,25 @@
     <ConvertNulls>A value that shows whether it is necessary to convert null or DBNull.</ConvertNulls>
     <EndRenderEvent>Occurs when the report rendering is finished.</EndRenderEvent>
     <EngineVersion>The current report engine.</EngineVersion>
+    <ExportedEvent>Occurs when report ends exporting.</ExportedEvent>
+    <ExportingEvent>Occurs when report starts exporting.</ExportingEvent>
     <GlobalizationStrings>A collection which consists of globalization strings.</GlobalizationStrings>
     <NumberOfPass>Number of passes which the report generator makes while report rendering.</NumberOfPass>
     <ParametersOrientation>A value which indicates parameters panel orientation.</ParametersOrientation>
+    <ParameterWidth>Gets or sets a width in pixels of a parameter in the viewer. The default value is used if a zero value is specified.</ParameterWidth>
     <PreviewMode>The preview mode of a report.</PreviewMode>
     <PreviewSettings>Controls which will be shown in the Preview Window.</PreviewSettings>
+    <PrintedEvent>Occurs when report ends printing.</PrintedEvent>
     <PrinterSettings>Printer settings.</PrinterSettings>
+    <PrintingEvent>Occurs when report starts printing.</PrintingEvent>
     <ReferencedAssemblies>An array of referenced assemblies.</ReferencedAssemblies>
     <RenderingEvent>Occurs when a page is rendered.</RenderingEvent>
     <ReportAlias>A report alias.</ReportAlias>
     <ReportAuthor>A report author.</ReportAuthor>
     <ReportCacheMode>A value that indicates how the report engine uses the report cache.</ReportCacheMode>
     <ReportDescription>A report description.</ReportDescription>
+    <ReportIcon>A report icon.</ReportIcon>
+    <ReportImage>A report image.</ReportImage>
     <ReportName>A report name.</ReportName>
     <ReportUnit>The current unit of the report.</ReportUnit>
     <RequestParameters>Gets or sets value which indicates whether to request parameters from a user before report rendering or render a report with the default value of parameters.</RequestParameters>
@@ -1900,6 +2141,20 @@
   <StiTableOfContents>
     <RightToLeft>Gets or sets horizontal output direction.</RightToLeft>
   </StiTableOfContents>
+  <StiTableStyle>
+    <AlternatingDataColor>The property defines the color which will be used to fill the background of the alternating rows.</AlternatingDataColor>
+    <AlternatingDataForeground>The property defines the color which will be used for drawing the value in the alternating rows.</AlternatingDataForeground>
+    <DataColor>The property defines the color which will be used to fill the background of the rows.</DataColor>
+    <DataForeground>The property defines the color which will be used for drawing the value in the rows.</DataForeground>
+    <FooterColor>The property defines the color which will be used to fill the background of the footer row.</FooterColor>
+    <FooterForeground>The property defines the color which will be used for drawing the values in the footer row.</FooterForeground>
+    <GridColor>The property defines the color which will be used for drawing the cell borders.</GridColor>
+    <HeaderColor>The property defines the color which will be used to fill the background of the header row.</HeaderColor>
+    <HeaderForeground>The property defines the color which will be used for drawing the values in the header row.</HeaderForeground>
+    <HotHeaderColor>The property defines the color which will be used to fill the background of the header row when the cursor is hovered on it.</HotHeaderColor>
+    <SelectedDataColor>The property defines the color which will be used to fill the background of the selected cell.</SelectedDataColor>
+    <SelectedDataForeground>The property defines the color which will be used for drawing the value in the selected cell.</SelectedDataForeground>
+  </StiTableStyle>
   <StiText>
     <AllowHtmlTags>A value indicates that this component allows HTML tags in a text.</AllowHtmlTags>
     <Angle>An angle of a text rotation.</Angle>
@@ -1928,6 +2183,9 @@
     <TextBinding>Data bindings for the text.</TextBinding>
     <WordWrap>Indicates whether a multiline text box control automatically wraps words to the beginning of the next line when necessary.</WordWrap>
   </StiTextBoxControl>
+  <StiTextElement>
+    <SizeMode>Specifies how the text output in the component area depends on the text size.</SizeMode>
+  </StiTextElement>
   <StiTextInCells>
     <CellHeight>Height of the cell.</CellHeight>
     <CellWidth>Width of the cell.</CellWidth>
@@ -1993,6 +2251,9 @@
     <Description>A description of the variable.</Description>
     <Name>A name of the variable.</Name>
   </StiVariable>
+  <StiVertChartGridLines>
+    <Visible>Visibility of major grid lines.</Visible>
+  </StiVertChartGridLines>
   <StiView>
     <AspectRatio>A value indicates that an image will save its aspect ratio.</AspectRatio>
     <MultipleFactor>A value to multiply by it an image size.</MultipleFactor>
@@ -2014,7 +2275,7 @@
     <ShowBehind>A value that indicates whether Watermark should be drawn behind or in front of page.</ShowBehind>
     <ShowImageBehind>A value that indicates whether the Watermark image should be drawn behind or in front of a page.</ShowImageBehind>
     <Text>A text of a Watermark.</Text>
-    <TextBrush>A brush to a Watermark.</TextBrush>
+    <TextBrush>The brush of the watermark, which is used to display text.</TextBrush>
   </StiWatermark>
   <StiWinControl>
     <BackColor>The background color for the control.</BackColor>
@@ -2026,6 +2287,20 @@
   <StiXAxis>
     <DateTimeStep>Date time step settings.</DateTimeStep>
   </StiXAxis>
+  <StiXChartAxis>
+    <ShowEdgeValues>A value indicates that first and last arguments on axis will be shown anyway.</ShowEdgeValues>
+    <StartFromZero>A value indicates that all arguments will be shows from zero.</StartFromZero>
+    <Title>Axis title settings.</Title>
+  </StiXChartAxis>
+  <StiXChartAxisTitle>
+    <Direction>A text direction for axis title drawing.</Direction>
+  </StiXChartAxisTitle>
+  <StiYChartAxis>
+    <StartFromZero>A value indicates that all arguments will be shows from zero.</StartFromZero>
+  </StiYChartAxis>
+  <StiYChartAxisTitle>
+    <Direction>A text direction for axis title drawing.</Direction>
+  </StiYChartAxisTitle>
   <StiZipCode>
     <Code>An expression to fill a code of zip code.</Code>
     <ForeColor>A fore color.</ForeColor>
@@ -2036,7 +2311,7 @@
   <Universal>
     <AllowApplyStyle>A value indicates that chart style will be used.</AllowApplyStyle>
     <Key>A Key which will be used in variables when user select associated with it Value in GUI.</Key>
-    <Value>A Value which will be displayed instead of the Key value in GUI.</Value>
     <Label>A Label which will be displayed instead of Key in GUI.</Label>
+    <Value>A Value which will be displayed instead of the Key value in GUI.</Value>
   </Universal>
 </Localization>

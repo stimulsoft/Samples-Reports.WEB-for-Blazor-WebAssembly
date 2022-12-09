@@ -5,13 +5,13 @@
 @using Stimulsoft.Report.Web
 @inject HttpClient Http
 
-<!--Report viewer-->
-<StiBlazorViewer Report="@report" />
+<!--Report Viewer-->
+<StiBlazorViewer Report="@Report" />
 
 @code
 {
-    //Report object to use in viewer
-    private StiReport report;
+    //Report object to use in Viewer
+    private StiReport Report;
 
     protected override async Task OnInitializedAsync()
     {
@@ -22,10 +22,12 @@
         //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
-        //Create report object and load template
-        report = new StiReport();
+        //Create empty report object
+        this.Report = new StiReport();
+
+        //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/UserData.mrt");
-        report.Load(reportBytes);
+        this.Report.Load(reportBytes);
 
         //Create User Data
         var stiUserData1 = new Stimulsoft.Report.Dictionary.StiUserData();
@@ -36,7 +38,7 @@
         stiUserData1.GetData += new Stimulsoft.Report.Dictionary.StiUserGetDataEventHandler(stiUserData1_GetData);
 
         //Register new data in the report template
-        report.RegData("UserData", stiUserData1);
+        this.Report.RegData("UserData", stiUserData1);
     }
 
 

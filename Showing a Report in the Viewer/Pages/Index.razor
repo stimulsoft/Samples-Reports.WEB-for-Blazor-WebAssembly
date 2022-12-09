@@ -4,13 +4,13 @@
 @using Stimulsoft.Report.Blazor
 @inject HttpClient Http
 
-<!--Report viewer-->
-<StiBlazorViewer Report="@report" />
+<!--Report Viewer-->
+<StiBlazorViewer Report="@Report" />
 
 @code
 {
-    //Report object to use in viewer
-    private StiReport report;
+    //Report object to use in Viewer
+    private StiReport Report;
 
     protected override async Task OnInitializedAsync()
     {
@@ -22,10 +22,10 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
         //Create empty report object
-        report = new StiReport();
+        this.Report = new StiReport();
 
         //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
-        report.Load(reportBytes);
+        this.Report.Load(reportBytes);
     }
 }

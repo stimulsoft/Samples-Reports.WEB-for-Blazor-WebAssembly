@@ -38,6 +38,8 @@
     <StiGenerateNewNamePageActionLong>페이지의 새 이름을 생성합니다.</StiGenerateNewNamePageActionLong>
     <StiGenerateNewNameRelationActionLong>관계의 새 이름을 생성합니다.</StiGenerateNewNameRelationActionLong>
     <StiGrowToHeightOverlappingLong>구성 요소 GrowToHeight 속성 값을 false로 설정합니다.</StiGrowToHeightOverlappingLong>
+    <StiInsufficientTextHeightForOneLineLong>구성요소의 높이는 적어도 한 줄의 텍스트 높이 또는 보고서 그리드의 다음 셀까지 증가합니다.</StiInsufficientTextHeightForOneLineLong>
+    <StiInsufficientTextHeightForOneLineShort>높이 고정</StiInsufficientTextHeightForOneLineShort>
     <StiLargeHeightAtPageActionLong>편리한 구성 요소보기 및 편집을 위해 페이지 LargeHeight 속성이 true로 설정됩니다.</StiLargeHeightAtPageActionLong>
     <StiMinRowsInColumnsActionLong>MinRowsInColumns 속성을 제로로 설정합니다.</StiMinRowsInColumnsActionLong>
     <StiMoveComponentToPageAreaActionLong>요소는 페이지에 완전히 배치되도록 배치됩니다. 이 경우 페이지 필드는 고려되지 않습니다.</StiMoveComponentToPageAreaActionLong>
@@ -54,6 +56,7 @@
     <StiPropertiesOnlyEngineV1ActionLong>EngineV2에서 지원되지 않는 '{0}'구성 요소의 속성을 해제합니다.</StiPropertiesOnlyEngineV1ActionLong>
     <StiPropertiesOnlyEngineV2ActionLong>EngineV1에서 지원되지 않는 구성 요소의 속성을 해제합니다.</StiPropertiesOnlyEngineV2ActionLong>
     <StiResetPageNumberActionLong>페이지의 ResetPageNumber 속성을 false로 설정합니다.</StiResetPageNumberActionLong>
+    <StiSwitchToParametersVerticalOrientationAction>'매개변수 Orientation' 보고서 속성의 값을 '세로'로 전환합니다.</StiSwitchToParametersVerticalOrientationAction>
     <StiSwitchWidthAndHeightOfPageActionLong>페이지의 높이와 너비를 변경합니다.</StiSwitchWidthAndHeightOfPageActionLong>
     <StiVerySmallSizesOfComponentsLong>구성 요소의 크기는 보고서 GridSize 값으로 증가합니다. 이 작업은 100 % 정확한 수정이 보장되는 것은 아닙니다!</StiVerySmallSizesOfComponentsLong>
     <StiVerySmallSizesOfComponentsShort>크기 확대</StiVerySmallSizesOfComponentsShort>
@@ -71,6 +74,7 @@
     <StiCanGrowGrowToHeightComponentInContainerShort>구성 요소의 표시가 정확하지 않을 수 있습니다.</StiCanGrowGrowToHeightComponentInContainerShort>
     <StiCanGrowWordWrapTextAndWysiwygCheckLong>TextQuality 속성이 Standard 또는 Typographic로 설정되어있는 경우. 텍스트 미리 다른 줌 모드 및 GDI + 라이브러리의 반올림 오류에 대한 인쇄가 다를 수 있습니다.</StiCanGrowWordWrapTextAndWysiwygCheckLong>
     <StiCanGrowWordWrapTextAndWysiwygCheckShort>잘못된 텍스트 랩이있을 수 있습니다</StiCanGrowWordWrapTextAndWysiwygCheckShort>
+    <StiChartSeriesValueCheckLong>Value 속성은 차트 "{0}"의 시리즈에 대해 지정되었지만 차트에 데이터 원본 속성 세트가 없습니다.</StiChartSeriesValueCheckLong>
     <StiColumnsWidthGreaterContainerWidthCheckLong>총 열 너비는 '{0}'구성 요소의 폭보다 커집니다. 이렇게하면 보고서의 렌더링이 제대로 작동하지 않을 수 있습니다. 또한 보고서를 다른 형식으로 내보낼 때 몇 가지 문제가 발생할 수 있습니다.</StiColumnsWidthGreaterContainerWidthCheckLong>
     <StiColumnsWidthGreaterContainerWidthCheckShort>총 열 너비는 구성 요소의 폭보다 커집니다.</StiColumnsWidthGreaterContainerWidthCheckShort>
     <StiColumnsWidthGreaterPageWidthCheckLong>'{0}'페이지에 열의 합계 폭이 페이지 너비보다 커지고 있습니다. 이렇게하면 보고서의 렌더링이 제대로 작동하지 않을 수 있습니다. 또한 보고서를 다른 형식으로 내보낼 때 몇 가지 문제가 발생할 수 있습니다.</StiColumnsWidthGreaterPageWidthCheckLong>
@@ -111,8 +115,12 @@
     <StiGroupHeaderNotEqualToGroupFooterOnContainerLong>GroupFooter 수가 '{0}'컨테이너의 GroupHeader의 수에 대응하고 있지 않습니다. 홀수의 구성 요소는 렌더링되지 않습니다.</StiGroupHeaderNotEqualToGroupFooterOnContainerLong>
     <StiGroupHeaderNotEqualToGroupFooterOnPageLong>GroupFooter 수가 '{0}'페이지의 GroupHeader의 수에 대응하고 있지 않습니다. 홀수 성분은 렌더링되지 않습니다.</StiGroupHeaderNotEqualToGroupFooterOnPageLong>
     <StiGroupHeaderNotEqualToGroupFooterShort>일부 구성 요소는 렌더링되지 않습니다.</StiGroupHeaderNotEqualToGroupFooterShort>
+    <StiGroupHeaderSummaryExpressionCheckLong>요약그룹 헤더 {0}에 대한 식에 집계 함수가 포함되어 있지만 이 함수는 별도의 속성에 설정되어 있습니다. 보고서를 생성할 수 없습니다.</StiGroupHeaderSummaryExpressionCheckLong>
+    <StiGroupHeaderSummaryExpressionCheckShort>식에 잘못된 함수가 있습니다.</StiGroupHeaderSummaryExpressionCheckShort>
     <StiGrowToHeightOverlappingLong>'{0}'구성 요소의 GrowToHeight 속성이 true로 설정되어 있습니다. 보고서를 렌더링 할 때이 구성 요소는 하나 이상의 기본 구성 요소와 겹치는 수 있습니다.</StiGrowToHeightOverlappingLong>
     <StiGrowToHeightOverlappingShort>구성 요소를 오버랩시킬 수 있습니다.</StiGrowToHeightOverlappingShort>
+    <StiInsufficientTextHeightForOneLineCheckLong>텍스트 구성 요소 {0}의 높이가 텍스트 한 줄에 대해 너무 작습니다. 이로 인해 일부 형식으로 내보내거나 웹에서 인쇄하는 데 문제가 발생할 수 있습니다. 높이를 높이거나 CanGrow 속성을 true로 설정하는 것이 좋습니다.</StiInsufficientTextHeightForOneLineCheckLong>
+    <StiInsufficientTextHeightForOneLineCheckShort>한 줄에 대한 높이가 부족합니다.</StiInsufficientTextHeightForOneLineCheckShort>
     <StiIsFirstPageIsLastPageDoublePassCheckLong>IsFirstPage, IsFirstPageThrough, IsLastPage, IsLastPageThrough 시스템 변수는 1 회 통과하면 잘못된 결과를 반환합니다. NumberOfPass 속성을 DoublePass로 설정해야합니다.</StiIsFirstPageIsLastPageDoublePassCheckLong>
     <StiIsFirstPageIsLastPageDoublePassCheckShort>더블 패스가 필요한 시스템 변수는 보고서</StiIsFirstPageIsLastPageDoublePassCheckShort>
     <StiIsFirstPassIsSecondPassCheckLong>IsFirstPass의 올바른 작업을 위해, IsSecondPass 함수는 보고서의 렌더링 더블패스이 필요합니다. 보고서 NumberOfPass 속성을 DoublePass로 설정하는 것을 잊었다 수 있습니다.</StiIsFirstPassIsSecondPassCheckLong>
@@ -223,6 +231,8 @@
     <StiOrientationPageCheckShort>페이지 방향이 {0}에서 잘못된 것입니다.</StiOrientationPageCheckShort>
   </CheckPage>
   <CheckReport>
+    <StiCategoryRequestFromUserCheckLong>'{0}' 변수의 카테고리는 'ParametersOrientation' 보고서 속성의 값이 'Vertical'로 설정된 경우에만 가능하기 때문에 뷰어의 매개변수 패널에 표시할 수 없습니다.</StiCategoryRequestFromUserCheckLong>
+    <StiCategoryRequestFromUserCheckShort>매개 변수 패널에 범주 표시</StiCategoryRequestFromUserCheckShort>
     <StiCloudCompilationModeCheckLong>Stimulsoft Cloud는이 보고서를 컴파일 모드에서 미리 볼 수 없습니다. 보고서를 통역 모드로 변경합니다.</StiCloudCompilationModeCheckLong>
     <StiCloudCompilationModeCheckShort>이 보고서는 컴파일 모드입니다</StiCloudCompilationModeCheckShort>
     <StiCompilationErrorAssemblyCheckLong>파일 또는 어셈블리 '{0}'또는 해당 종속성 중 하나를로드 할 수 없습니다.</StiCompilationErrorAssemblyCheckLong>
@@ -230,11 +240,17 @@
     <StiCompilationErrorCheck3Long>컴파일 오류는 '{2}'구성 요소 '{1}'이벤트에서 발견 :</StiCompilationErrorCheck3Long>
     <StiCompilationErrorCheckLong>컴파일 오류가 '{0}'보고서에 발견 :</StiCompilationErrorCheckLong>
     <StiCompilationErrorCheckShort>컴파일 오류</StiCompilationErrorCheckShort>
+    <StiDataSourceLoopingCheckLong>데이터 밴드 '{0}'과(와) 하위 데이터 밴드 '{1}'이 동일한 데이터 소스 '{2}'를 사용합니다. 루프를 방지하기 위해 하위 데이터 밴드는 표시되지 않습니다..</StiDataSourceLoopingCheckLong>
+    <StiDataSourceLoopingCheckShort>데이터 반복이 가능합니다.</StiDataSourceLoopingCheckShort>
     <StiDuplicatedName2CheckLong>'{0}'라는 데이터 소스가 몇 가지 있습니다.</StiDuplicatedName2CheckLong>
+    <StiDuplicatedName3CheckLong>이름이 '{0}'인 데이터 소스가 여러 개 있지만 대소문자가 다릅니다.</StiDuplicatedName3CheckLong>
     <StiDuplicatedNameCheckLong>'{0}'라는 구성 요소가 몇 가지 있습니다.</StiDuplicatedNameCheckLong>
     <StiDuplicatedNameCheckShort>중복 된 이름의 구성 요소가 발견</StiDuplicatedNameCheckShort>
+    <StiDuplicatedNameInSourceCheckShort>데이터 소스에서 중복됩니다</StiDuplicatedNameInSourceCheckShort>
     <StiDuplicatedNameInSourceInDataRelationReportCheckLong>보고서에 '{0}'관계가 있습니다. 그들은 NameInSource 동등한 ( '{1}') 값을 가지고 있습니다. NameInSource의 모든 하나의 관계에서 하나의 데이터베이스 범위에서 고유해야합니다. 이러한 관계 필드를 수정해야합니다.</StiDuplicatedNameInSourceInDataRelationReportCheckLong>
     <StiDuplicatedNameInSourceInDataRelationReportCheckShort>릴레이션에서 중복됩니다.</StiDuplicatedNameInSourceInDataRelationReportCheckShort>
+    <StiDuplicatedReportName2CheckLong>보고서 이름 '{0}'은(는) 데이터소스 이름과 동일합니다.</StiDuplicatedReportName2CheckLong>
+    <StiDuplicatedReportNameCheckLong>보고서 이름 '{0}'은(는) 구성 요소 이름과 동일합니다.</StiDuplicatedReportNameCheckLong>
     <StiNetCoreCompilationModeCheckLong>Stimulsoft .NET Core 엔진이 컴파일 모드에서 이 보고서를 렌더링 할 수 없습니다. 보고서를 해석 모드로 변경하십시오.</StiNetCoreCompilationModeCheckLong>
     <StiNetCoreCompilationModeCheckShort>이 보고서는 편집 모드입니다.</StiNetCoreCompilationModeCheckShort>
   </CheckReport>
@@ -260,6 +276,8 @@
     <ActionShow>보기</ActionShow>
     <AddNewConnection>새 연결 추가</AddNewConnection>
     <Cancel>취소</Cancel>
+    <ChangeExportSettings>내보내기 설정 변경</ChangeExportSettings>
+    <ChangeExportSettingsToolTip>선택한 내보내기 형식의 설정 클래스를 만들기 위한 코드가 추가됩니다. 프로젝트에서 내보내기 설정을 변경할 수 있습니다.</ChangeExportSettingsToolTip>
     <Close>닫기</Close>
     <ConnectionsFromReport>보고서에서 연결을 사용하는</ConnectionsFromReport>
     <ConnectionsFromReportToolTip>리포트 템플릿에 저장된 연결은 수정없이 사용됩니다.</ConnectionsFromReportToolTip>
@@ -269,6 +287,7 @@
     <ConnectionsReplaceToolTip>유형(파일 경로, 데이터베이스 연결 문자열)에 따라 코드에서 연결을 변경하라는 메시지가 표시됩니다.</ConnectionsReplaceToolTip>
     <Copy>복사</Copy>
     <CopyingLibraries>프로젝트 파일의 복사...</CopyingLibraries>
+    <DataAdapterPlatform>데이터 어댑터 플랫폼</DataAdapterPlatform>
     <DeployReportPlatform>플랫폼에 보고서 배포 :</DeployReportPlatform>
     <DownloadingLibraries>라이브러리 다운로드...</DownloadingLibraries>
     <EmbedAllDataToResources>보고서에는 선택한 플랫폼에서 지원되지 않는 데이터 연결이 포함되어 있습니다. 보고서에 사용 가능한 데이터를 리소스로 포함 하시겠습니까? 이 경우 모든 연결이 XML리소스로 대체됩니다.</EmbedAllDataToResources>
@@ -278,6 +297,8 @@
     <ExportFormatDataType>데이터 형식 :</ExportFormatDataType>
     <ExportFormatImage>이미지</ExportFormatImage>
     <ExportFormatImageType>이미지 유형 :</ExportFormatImageType>
+    <FrameworkType>프레임워크 종류</FrameworkType>
+    <FrameworkVersion>프레임워크 버전</FrameworkVersion>
     <FullScreenViewer>전체 브라우저 창에 뷰어보기</FullScreenViewer>
     <FullScreenViewerToolTip>리포트가있는 뷰어는 브라우저 창의 사용 가능한 전체 공간에 표시됩니다.</FullScreenViewerToolTip>
     <GetLibrariesFrom>{0}에서 Stimulsoft 라이브러리를 얻을</GetLibrariesFrom>
@@ -317,6 +338,7 @@
     <ParametersReplaceToolTip>코드에서 리포트 매개 변수의 값을 변경하라는 메시지가 표시됩니다.</ParametersReplaceToolTip>
     <ParametersRequestFromUser>사용자의 요청</ParametersRequestFromUser>
     <ParametersRequestFromUserToolTip>뷰어 창에서 리포트를 볼 때 사용자에게 리포트 매개 변수가 요청됩니다.</ParametersRequestFromUserToolTip>
+    <ProjectType>프로젝트 유형:</ProjectType>
     <Publish>Publish</Publish>
     <PublishType>보고서 게시 유형 :</PublishType>
     <PublishTypeProject>프로젝트</PublishTypeProject>
@@ -348,6 +370,8 @@
     <UseCompressedScriptsToolTip>일반 스크립트 대신 압축 된 스크립트가 사용됩니다. 이렇게하면 크기를 줄일 수 있지만 실행할 때 압축을 푸는 데 시간이 걸립니다.</UseCompressedScriptsToolTip>
     <UseLatestVersion>최신 버전의 라이브러리를 사용</UseLatestVersion>
     <UseLatestVersionToolTip>라이브러리와 스크립트를 연결할 때 현재 설치된 버전 대신 사용 가능한 최신 공식 버전의 제품이 사용됩니다.</UseLatestVersionToolTip>
+    <UseRenderedReport>렌더링된 보고서 사용</UseRenderedReport>
+    <UseRenderedReportToolTip>보고서가 작성되어 문서 형식으로 저장됩니다. 리포트를 표시하기 위해 데이터 연결이 더 이상 필요하지 않지만 대화형 및 보고서 매개 변수를 사용할 수 없습니다.</UseRenderedReportToolTip>
     <UseWpfDesignerV2>Designer V2를 사용</UseWpfDesignerV2>
     <UseWpfDesignerV2ToolTip>업데이트 된 WPF 보고서 디자이너가 사용됩니다. 새로운 UI, 향상된 속도 및 기타 최적화 기능이 있습니다.</UseWpfDesignerV2ToolTip>
   </Publish>
@@ -709,6 +733,9 @@
     <Style>모자 스타일</Style>
     <Width>캡의 폭</Width>
   </StiCap>
+  <StiCardsStyle>
+    <LineColor>속성은 카드의 테두리를 그리는 데 사용할 색상을 정의합니다.</LineColor>
+  </StiCardsStyle>
   <StiChart>
     <Area>차트 영역</Area>
     <ChartType>차트 유형</ChartType>
@@ -726,21 +753,108 @@
     <Title>차트 제목 설정</Title>
     <VertSpacing>그래프의 경계와 그래프 사이의 수직 간격</VertSpacing>
   </StiChart>
+  <StiChartArea>
+    <ColorEach>각 계열이 자신의 색으로 표현되는 것을 나타내는 값</ColorEach>
+    <GridLinesHor>왼쪽 축의 수평 눈금 선</GridLinesHor>
+    <GridLinesVert>수직 눈금 선</GridLinesVert>
+    <InterlacingHor>수평축의 인터레이스 설정</InterlacingHor>
+    <InterlacingVert>수직축의 인터레이스 설정</InterlacingVert>
+    <ReverseHor>수평축의 모든 값이 반대임을 나타내는 값</ReverseHor>
+    <ReverseVert>세로축의 모든 값이 반대임을 나타내는 값</ReverseVert>
+    <XAxis>XAxis 설정</XAxis>
+    <XTopAxis>XTopAxis 설정</XTopAxis>
+    <YAxis>YAxis 설정</YAxis>
+    <YRightAxis>YRightAxis 설정</YRightAxis>
+  </StiChartArea>
+  <StiChartAxis>
+    <Visible>축 표시</Visible>
+  </StiChartAxis>
+  <StiChartAxisLabels>
+    <Angle>라벨의 회전 각도</Angle>
+    <Color>라벨 그리기 색상</Color>
+    <Font>축 레이블 그리기에 사용되는 글꼴</Font>
+    <Placement>축에 레이블을 배치 모드</Placement>
+    <Step>어떤 단계에서 축 레이블을 표시할지 여부를 나타내는 값</Step>
+    <TextAfter>인수의 캐릭터 라인 표현 후 출력되는 문자열</TextAfter>
+    <TextAlignment>레이블 텍스트 정렬</TextAlignment>
+    <TextBefore>인수 문자열 표현 앞에 출력되는 문자열</TextBefore>
+  </StiChartAxisLabels>
+  <StiChartAxisRange>
+    <Auto>최소값과 최대 값이 자동으로 계산되는 것을 나타내는 값</Auto>
+    <Maximum>축 범위의 최대 값</Maximum>
+    <Minimum>축 범위의 최소값</Minimum>
+  </StiChartAxisRange>
+  <StiChartAxisTitle>
+    <Alignment>제목 텍스트 정렬</Alignment>
+    <Color>제목 그리는 데 사용되는 색</Color>
+    <Font>축 제목을 그리는 데 사용되는 글꼴</Font>
+    <Position>제목 텍스트의 위치</Position>
+    <Text>제목 텍스트</Text>
+    <Visible>제목 표시.</Visible>
+  </StiChartAxisTitle>
   <StiChartElement>
+    <Area>차트 영역</Area>
     <Arguments>차트 인수.</Arguments>
     <CloseValues>차트의 닫기 값.</CloseValues>
     <ColorEach />
+    <ConstantLines>그래프의 상수 행 설정</ConstantLines>
     <EndValues>차트의 끝 값.</EndValues>
     <Group />
     <HighValues>차트의 높은 값.</HighValues>
+    <Labels>시리즈의 레이블</Labels>
+    <Legend>범례 설정</Legend>
     <LowValues>차트의 낮은 값.</LowValues>
     <Series>차트 시리즈.</Series>
     <Style>차트 스타일.</Style>
     <TextFormat>텍스트 형식.</TextFormat>
     <Title>차트 제목.</Title>
+    <TrendLines>트렌드 라인 설정</TrendLines>
     <Values>차트 값.</Values>
     <Weights>차트의 가중치.</Weights>
   </StiChartElement>
+  <StiChartGridLines>
+    <Color>메이저 눈금 선을 그리는 데 사용되는 색</Color>
+  </StiChartGridLines>
+  <StiChartInterlacing>
+    <Color>인터레이스 바를 그리는 데 사용할 색상입니다.</Color>
+    <Visible>인터레이스 바의 표시</Visible>
+  </StiChartInterlacing>
+  <StiChartLabels>
+    <AutoRotate>시리즈 레이블 자동 회전 모드 렌더링을 활성화하거나 비활성화 할 값</AutoRotate>
+    <Font>시리즈 레이블을 렌더링하는 데 사용되는 글꼴</Font>
+    <ForeColor>라벨 그리기 색상</ForeColor>
+    <Position>라벨의 위치입니다.</Position>
+    <Style>라벨의 스타일입니다.</Style>
+    <TextAfter>레이블 텍스트 뒤에 표시되는 텍스트</TextAfter>
+    <TextBefore>레이블 텍스트 앞에 표시되는 텍스트</TextBefore>
+  </StiChartLabels>
+  <StiChartLegend>
+    <Columns>열의 양</Columns>
+    <Direction>범례 연속 그리는 데 사용 된 방향</Direction>
+    <HorAlignment>범례 배치의 수평 정렬</HorAlignment>
+    <VertAlignment>범례 배치의 수직 정렬</VertAlignment>
+    <Visible>차트 범례 표시</Visible>
+  </StiChartLegend>
+  <StiChartLegendLabels>
+    <Color>라벨 색상</Color>
+    <Font>차트 범례에서 시리즈 타이틀을 그리는 데 사용 된 글꼴</Font>
+  </StiChartLegendLabels>
+  <StiChartLegendTitle>
+    <Color>범례 제목 색상</Color>
+    <Font>차트의 범례 제목 글꼴</Font>
+    <Text>범례의 제목 텍스트입니다.</Text>
+  </StiChartLegendTitle>
+  <StiChartStyle>
+    <ChartAreaShowShadow>영역 그림자가 표시될지 여부를 정의하는 속성입니다.</ChartAreaShowShadow>
+    <MarkerVisible>마커가 표시될지 여부를 정의하는 속성입니다.</MarkerVisible>
+    <SeriesBorderThickness>속성은 계열 테두리 너비를 정의합니다.</SeriesBorderThickness>
+    <SeriesLabelsLineColor>속성은 계열 레이블의 선 색상을 정의합니다.</SeriesLabelsLineColor>
+    <SeriesLighting>속성은 파이 조명이 표시되는지 여부를 정의합니다.</SeriesLighting>
+    <SeriesShowBorder>속성은 계열 테두리가 표시되는지 여부를 정의합니다.</SeriesShowBorder>
+    <SeriesShowShadow>속성은 시리즈 그림자가 표시되는지 여부를 정의합니다.</SeriesShowShadow>
+    <TrendLineColor>속성은 추세선의 색상을 정의합니다.</TrendLineColor>
+    <TrendLineShowShadow>속성은 추세선 그림자가 표시되는지 여부를 정의합니다.</TrendLineShowShadow>
+  </StiChartStyle>
   <StiChartTable>
     <Font>그래프 표 글꼴</Font>
     <GridLineColor>눈금 선 색상</GridLineColor>
@@ -748,6 +862,8 @@
     <GridLinesVert>세로 눈금 선 표시</GridLinesVert>
     <GridOutline>그리드 개요 표시</GridOutline>
     <MarkerVisible>마커의 표시</MarkerVisible>
+    <NegativeSeriesColors>음수 값으로 시리즈를 그리는 데 사용할 색상 목록입니다.</NegativeSeriesColors>
+    <SeriesColors>시리즈를 그리는 데 사용할 색상 목록입니다.</SeriesColors>
     <Visible>그래프 표 표시</Visible>
   </StiChartTable>
   <StiChartTitle>
@@ -876,6 +992,7 @@
     <AfterPrintEvent>구성 요소 인쇄 후 발생</AfterPrintEvent>
     <Alias>요소 이름 대신 표시되는 텍스트입니다. 텍스트가 표시되지 않는 경우, 이름이 표시됩니다.</Alias>
     <Anchor>구성 요소의 위치를 ​​부모 요소의 크기에 연결 모드를 나타내는 값을 가져 오거나 설정합니다.</Anchor>
+    <BackColor>구성 요소의 배경색입니다.</BackColor>
     <BeforePrintEvent>구성 요소를 인쇄하기 전에 발생</BeforePrintEvent>
     <Bookmark>요소를 포함 식 Bookmark</Bookmark>
     <Border>구성 요소의 프레임</Border>
@@ -886,21 +1003,31 @@
     <CanShrink>이 개체를 축소 할 수 있음을 나타내는 값</CanShrink>
     <CellDockStyle>셀 도킹의 유형</CellDockStyle>
     <CellType>셀 내용의 유형</CellType>
+    <CheckAlignment>구성 요소 내부의 검사 위치를 결정합니다.</CheckAlignment>
+    <CheckBrush>구성 요소의 체크 브러시입니다.</CheckBrush>
+    <Checked>구성 요소가 선택 상태인지 여부를 나타냅니다.</Checked>
+    <CheckedChangedEvent>Checked 상태가 변경되면 발생합니다.</CheckedChangedEvent>
+    <CheckSize>구성 요소의 크기를 확인합니다.</CheckSize>
     <ClickEvent>사용자가 뷰어 창에서 구성 요소를 클릭 할 때 발생</ClickEvent>
     <ComponentStyle>구성 요소의 스타일</ComponentStyle>
     <Conditions>조건 집계</Conditions>
+    <CornerRadius>코드의 라운드 값을 나타냅니다.</CornerRadius>
     <CountData>가상 데이터의 행수</CountData>
     <CrossFiltering>현재 페이지에서 해당 요소로 교차 필터 적용을 제어하는 값을 가져오거나 설정합니다.</CrossFiltering>
     <DataRelation>마스터 세부 보고서의 렌더링에 사용되는 링크</DataRelation>
     <DataSource>데이터를 검색하는 데 사용되는 데이터 소스</DataSource>
+    <Disabled>구성 요소의 비대화형 상태입니다.</Disabled>
     <DockStyle>구성 요소 도킹 유형</DockStyle>
     <DoubleClickEvent>사용자가 보고서 뷰어 컴포넌트를 더블 클릭했을 때 발생</DoubleClickEvent>
     <Editable>뷰어 창에서 구성 요소를 편집 할 수있는 것을 나타내는 값</Editable>
     <Enabled>이 구성 요소를 사용할 수 있는지 여부를 나타내는 값</Enabled>
+    <ExceedMargins>구성 요소 배경의 여백을 초과하는 값을 가져오거나 설정합니다.</ExceedMargins>
     <FilterMode>필터 모드</FilterMode>
     <FilterOn>필터가 켜져 있는지를 나타내는 값</FilterOn>
     <Filters>데이터 필터 컬렉션</Filters>
     <FixedWidth>셀이 고정 폭을 가지는 것을 나타내는 값</FixedWidth>
+    <Font>컨트롤에서 텍스트를 표시하는 데 사용되는 글꼴입니다.</Font>
+    <ForeColor>텍스트를 표시하는 데 사용되는 이 구성 요소의 전경색입니다.</ForeColor>
     <GetBookmarkEvent>구성 요소의 북마크를 얻을 때 발생</GetBookmarkEvent>
     <GetDrillDownReportEvent>드릴 다운 작업 보고서를받을 필요가있는 경우에 발생</GetDrillDownReportEvent>
     <GetHyperlinkEvent>구성 요소의 하이퍼 링크를받을 때 발생</GetHyperlinkEvent>
@@ -909,30 +1036,47 @@
     <GrowToHeight>이 구성 요소의 높이가 컨테이너의 바닥을 향해 증감을 나타내는 값</GrowToHeight>
     <Height>구성 요소의 높이</Height>
     <HorAlignment>수평 배치</HorAlignment>
+    <Hover>사용자가 구성요소 위에 커서를 놓았을 때의 호버 상태입니다.</Hover>
     <Hyperlink>구성 요소의 하이퍼 링크를 충족 식</Hyperlink>
+    <Icon>구성 요소에 사용되는 아이콘입니다.</Icon>
+    <IconAlignment>구성 요소에 표시될 아이콘의 정렬값입니다.</IconAlignment>
+    <IconBrush>구성 요소의 아이콘 브러시입니다.</IconBrush>
+    <IconSet>구성 요소에서 사용되는 아이콘 집합입니다.</IconSet>
     <Interaction>이 구성 요소의 상호 작용 옵션</Interaction>
     <Left>구성 요소의 왼쪽 위치</Left>
     <Linked>컨테이너에 객체 스냅이 켜져 있는지를 나타내는 값</Linked>
     <Locked>이동이 잠겨 있는지를 나타내는 값</Locked>
+    <Margin>이 구성 요소와 다른 구성 요소의 여백 사이의 마진을 지정합니다.</Margin>
     <MasterComponent>마스터 구성 요소</MasterComponent>
     <MaxSize>최대 크기</MaxSize>
     <MinSize>최소 크기</MinSize>
     <MouseEnterEvent>사용자가 보고서 뷰어 구성 요소의 영역에 마우스를 놓을 때 발생</MouseEnterEvent>
     <MouseLeaveEvent>사용자가 보고서 뷰어 구성 요소의 영역에서 마우스를 놓을 때 발생</MouseLeaveEvent>
     <Name>요소 이름</Name>
+    <Padding>구성요소의 내부 간격을 지정합니다.</Padding>
+    <Pressed>사용자가 구성 요소를 눌렀을 때의 눌린 상태입니다.</Pressed>
     <Printable>구성 요소를 인쇄 할 수 있는지 여부를 나타내는 값</Printable>
     <PrintOn>요소를 모든 페이지에 인쇄할지 여부를 나타내는 값</PrintOn>
     <Restrictions>구성 요소의 제한을 나타내는 값</Restrictions>
+    <Shadow>구성 요소의 그림자 설정입니다.</Shadow>
+    <ShapeType>구성 요소의 형태를 그리는 데 사용되는 모양을 나타냅니다.</ShapeType>
     <ShiftMode>구성 요소의 이동 모드를 나타내는 값</ShiftMode>
     <Sort>정렬 규칙을 기술하는 캐릭터 라인의 배열</Sort>
+    <Stretch>할당된 공간을 채우기 위해 구성 요소의 크기를 조정하는 방법을 설명합니다.</Stretch>
     <Tag>구성 요소 태그를 충족 식</Tag>
+    <Text>텍스트는 구성 요소와 관련되어 있습니다.</Text>
     <TextBrush>텍스트를 그리는 브러시</TextBrush>
+    <ThreeStates>컨트롤이 두 개 또는 세 개의 상태를 지원함을 나타냅니다.</ThreeStates>
     <ToolTip>구성 요소 ToolTip를 채우는 식</ToolTip>
     <Top>구성 요소의 상단 위치</Top>
     <TotalLabel>합계의 라벨로 표시되는 값을 가져오거나 설정합니다.</TotalLabel>
+    <Type>해당 구성 요소 동작의 유형을 설명합니다.</Type>
     <UseParentStyles>이 구성 요소가 부모 요소의 스타일을 사용할 필요가있는 것을 나타내는 값</UseParentStyles>
     <VertAlignment>객체의 수직 정렬</VertAlignment>
+    <VisualStates>구성 요소의 다양한 시각적 상태를 관리합니다.</VisualStates>
+    <Watermark>구성 요소에 사용된 워터마크입니다.</Watermark>
     <Width>구성 요소의 폭</Width>
+    <WordWrap>여러 줄 텍스트가 단어를 줄바꿈할지 여부를 나타냅니다.</WordWrap>
   </StiComponent>
   <StiConstantLines>
     <Antialiasing>앤티 그리기 모드를 제어하는 ​​값</Antialiasing>
@@ -949,6 +1093,12 @@
     <TitleVisible>상수 행의 표시</TitleVisible>
     <Visible>상수 행의 표시</Visible>
   </StiConstantLines>
+  <StiCornerRadius>
+    <BottomLeft>왼쪽 아래 모서리의 반지름을 지정하는 값입니다.</BottomLeft>
+    <BottomRight>오른쪽 아래 모서리의 반지름을 지정하는 값입니다.</BottomRight>
+    <TopLeft>왼쪽 상단 모서리의 반지름을 지정하는 값입니다.</TopLeft>
+    <TopRight>오른쪽 상단 모서리의 반지름을 지정하는 값입니다.</TopRight>
+  </StiCornerRadius>
   <StiCrossDataBand>
     <MaxWidth>밴드 최대폭</MaxWidth>
     <MinWidth>밴드의 최소 폭</MinWidth>
@@ -998,6 +1148,25 @@
     <Wrap>크로스 탭을 하나의 라인에 출력하는 것을 나타내는 값. 동시에 폭에 들어 가지 않는 것은 모든 출력됩니다. 이 속성을 사용하려면 크로스 탭이 배치 된 밴드의 CanBreak 속성을 활성화해야합니다 (밴드에 배치되는 경우).</Wrap>
     <WrapGap>랩 된 크로스 탭의 두 부분 사이의 공간. 이 속성은 Wrap 속성과 함께 사용됩니다.</WrapGap>
   </StiCrossTab>
+  <StiCrossTabStyle>
+    <AlternatingCellBackColor>속성은 짝수 행의 배경을 채우는 데 사용할 색상을 정의합니다.</AlternatingCellBackColor>
+    <AlternatingCellForeColor>속성은 짝수 행의 값을 그리는 데 사용할 색상을 정의합니다.</AlternatingCellForeColor>
+    <CellBackColor>속성은 셀의 배경을 채우는 데 사용할 색상을 정의합니다.</CellBackColor>
+    <CellForeColor>속성은 셀의 값을 그리는 데 사용할 색상을 정의합니다.</CellForeColor>
+    <ColumnHeaderBackColor>속성은 열 머리글 셀의 배경을 채우는 데 사용할 색상을 정의합니다.</ColumnHeaderBackColor>
+    <ColumnHeaderForeColor>속성은 열 머리글 셀의 텍스트를 그리는 데 사용할 색상을 정의합니다.</ColumnHeaderForeColor>
+    <HotColumnHeaderBackColor>속성은 커서가 열 머리글 셀 위에 있을 때 열 머리글 셀의 배경을 채우는 데 사용할 색상을 정의합니다.</HotColumnHeaderBackColor>
+    <HotRowHeaderBackColor>속성은 커서가 행 머리글 셀 위에 있을 때 행 머리글 셀의 배경을 채우는 데 사용할 색상을 정의합니다.</HotRowHeaderBackColor>
+    <LineColor>속성은 셀 테두리를 그리는 데 사용할 색상을 정의합니다..</LineColor>
+    <RowHeaderBackColor>속성은 행 머리글 셀의 배경을 채우는 데 사용할 색상을 정의합니다.</RowHeaderBackColor>
+    <RowHeaderForeColor>속성은 행 머리글 셀의 텍스트를 그리는 데 사용할 색상을 정의합니다.</RowHeaderForeColor>
+    <SelectedCellBackColor>속성은 선택한 셀의 배경을 채우는 데 사용할 색상을 정의합니다.</SelectedCellBackColor>
+    <SelectedCellForeColor>속성은 선택한 셀의 값을 그리는 데 사용할 색상을 정의합니다.</SelectedCellForeColor>
+    <TotalCellColumnBackColor>속성은 전체 셀 열의 배경을 채우는 데 사용할 색상을 정의합니다.</TotalCellColumnBackColor>
+    <TotalCellColumnForeColor>속성은 전체 셀 열의 값을 그리는 데 사용할 색상을 정의합니다.</TotalCellColumnForeColor>
+    <TotalCellRowBackColor>속성은 전체 셀 행의 배경을 채우는 데 사용할 색상을 정의합니다.</TotalCellRowBackColor>
+    <TotalCellRowForeColor>속성은 전체 셀 행의 값을 그리는 데 사용할 색상을 정의합니다.</TotalCellRowForeColor>
+  </StiCrossTabStyle>
   <StiDataBand>
     <BeginRenderEvent>밴드가 렌더 시작시 발생</BeginRenderEvent>
     <CalcInvisible>집계를 계산할 때 눈에 보이지 않는 데이터 밴드를 고려할 것을 의미합니다.</CalcInvisible>
@@ -1016,6 +1185,7 @@
     <KeepGroupTogether>그룹을 함께 유지하는 것을 나타내는 값</KeepGroupTogether>
     <KeepHeaderTogether>헤더에 데이터가 함께 인쇄되어 있는지를 나타내는 값</KeepHeaderTogether>
     <MinRowsInColumn>1 열의 최소 행수</MinRowsInColumn>
+    <MultipleInitialization>각 컨테이너 및 세부 섹션에 대한 데이터 소스를 초기화합니다. 예를 들어, 관계가 할당되지 않은 경우에도 각 세부 섹션에 필터가 적용됩니다.</MultipleInitialization>
     <OddStyle>홀수 행의 스타일을 나타내는 값</OddStyle>
     <PrintIfDetailEmpty>상세가 비어 있으면 마스터 데이터를 인쇄 할 필요가있는 것을 나타내는 값</PrintIfDetailEmpty>
     <PrintOnAllPages>구성 요소가 모든 페이지에 인쇄되어있는 것을 나타내는 값</PrintOnAllPages>
@@ -1214,6 +1384,38 @@
     <Style>게이지 스타일.</Style>
     <Title>게이지 제목.</Title>
   </StiGaugeElement>
+  <StiGaugeStyle>
+    <BorderColor>테두리 색상을 가져오거나 설정합니다.</BorderColor>
+    <BorderWidth>테두리 크기입니다.</BorderWidth>
+    <Brush>스타일을 채울 브러시를 가져오거나 설정합니다.</Brush>
+    <ForeColor>텍스트를 그릴 브러시를 가져오거나 설정합니다.</ForeColor>
+    <LinearBarBorderBrush>LinearBar의 테두리를 가져오거나 설정합니다.</LinearBarBorderBrush>
+    <LinearBarBrush>브러시 LinearBar를 가져오거나 설정합니다.</LinearBarBrush>
+    <LinearBarEmptyBorderBrush>LinearBar의 빈 테두리를 가져오거나 설정합니다.</LinearBarEmptyBorderBrush>
+    <LinearBarEmptyBrush>빈 브러시 LinearBar를 가져오거나 설정합니다.</LinearBarEmptyBrush>
+    <LinearScaleBrush>브러시 LinearScale을 가져오거나 설정합니다.</LinearScaleBrush>
+    <MarkerBrush>브러시 마커를 가져오거나 설정합니다.</MarkerBrush>
+    <NeedleBorderBrush>Needle의 테두리를 가져오거나 설정합니다.</NeedleBorderBrush>
+    <NeedleBorderWidth>테두리 크기입니다.</NeedleBorderWidth>
+    <NeedleBrush>브러시 Needle을 가져오거나 설정합니다.</NeedleBrush>
+    <NeedleCapBorderBrush>테두리 연결모양을 가져오거나 설정합니다.</NeedleCapBorderBrush>
+    <NeedleCapBrush>연결모양을 채울 브러시를 가져오거나 설정합니다.</NeedleCapBrush>
+    <RadialBarBorderBrush>RadialBar의 테두리를 가져오거나 설정합니다.</RadialBarBorderBrush>
+    <RadialBarBrush>브러시 RadialBar를 가져오거나 설정합니다.</RadialBarBrush>
+    <RadialBarEmptyBorderBrush>RadialBar의 빈 테두리를 가져오거나 설정합니다.</RadialBarEmptyBorderBrush>
+    <RadialBarEmptyBrush>빈 브러시 RadialBar를 가져오거나 설정합니다.</RadialBarEmptyBrush>
+    <TargetColor>대상 색상을 가져오거나 설정합니다.</TargetColor>
+    <TickLabelMajorFont>TickLabelMajor를 그리기 위한 글꼴을 가져오거나 설정합니다.</TickLabelMajorFont>
+    <TickLabelMajorTextBrush>텍스트를 그릴 브러시를 가져오거나 설정합니다.</TickLabelMajorTextBrush>
+    <TickLabelMinorFont>TickLabelMinor를 그리기 위한 글꼴을 가져오거나 설정합니다</TickLabelMinorFont>
+    <TickLabelMinorTextBrush>텍스트를 그릴 브러시를 가져오거나 설정합니다.</TickLabelMinorTextBrush>
+    <TickMarkMajorBorder>TickMarkMajor의 테두리를 가져오거나 설정합니다.</TickMarkMajorBorder>
+    <TickMarkMajorBorderWidth>테두리 크기입니다.</TickMarkMajorBorderWidth>
+    <TickMarkMajorBrush>TickMarkMajor를 채울 브러시를 가져오거나 설정합니다.</TickMarkMajorBrush>
+    <TickMarkMinorBorder>TickMarkMinor의 테두리를 가져오거나 설정합니다.</TickMarkMinorBorder>
+    <TickMarkMinorBorderWidth>테두리 크기입니다.</TickMarkMinorBorderWidth>
+    <TickMarkMinorBrush>TickMarkMinor를 채울 브러시를 가져오거나 설정합니다.</TickMarkMinorBrush>
+  </StiGaugeStyle>
   <StiGlareBrush>
     <Angle>그레디언트의 방향 선 x 축에서 시계 방향으로 측정 한 각도</Angle>
     <EndColor>그라데이션의 끝 색</EndColor>
@@ -1302,6 +1504,16 @@
     <PrintIfEmpty>데이터가 존재하지 않는 경우 헤더를 나타내는 값</PrintIfEmpty>
     <PrintOnAllPages>구성 요소가 모든 페이지에 인쇄되어있는 것을 나타내는 값</PrintOnAllPages>
   </StiHeaderBand>
+  <StiHeatmapStyleData>
+    <Color>이 속성은 최대값을 포함하는 지도 개체를 채우는 데 사용할 색상을 정의합니다.</Color>
+    <Mode>속성은 히트맵의 색상 컬렉션을 형성하는 데 사용할 모드를 정의합니다.</Mode>
+    <ZeroColor>이 속성은 0 값을 포함하는 지도 개체를 채우는 데 사용할 색상을 정의합니다.</ZeroColor>
+  </StiHeatmapStyleData>
+  <StiHeatmapWithGroupStyleData>
+    <Colors>이 속성을 사용하면 색상 컬렉션을 만들 수 있습니다. 컬렉션의 각 색상은 특정 그룹의 기본 색상으로 사용됩니다.</Colors>
+    <Mode>속성은 히트맵의 색상 컬렉션을 형성하는 데 사용할 모드를 정의합니다.</Mode>
+    <ZeroColor>이 속성은 0 값을 포함하는 지도 개체를 채우는 데 사용할 색상을 정의합니다.</ZeroColor>
+  </StiHeatmapWithGroupStyleData>
   <StiHierarchicalBand>
     <Footers>계층 밴드의 바닥 글 목록</Footers>
     <Headers>계층 밴드의 헤더 목록</Headers>
@@ -1310,6 +1522,9 @@
     <MasterKeyDataColumn>데이터 마스터 키를 포함하는 열</MasterKeyDataColumn>
     <ParentValue>부모 행을 식별하는 부모 값을 포함하는 열</ParentValue>
   </StiHierarchicalBand>
+  <StiHorChartGridLines>
+    <Visible>주요 그리드 선의 표시</Visible>
+  </StiHorChartGridLines>
   <StiImage>
     <DataColumn>이미지가 포함 된 열 이름</DataColumn>
     <File>이미지를 포함하는 파일의 경로</File>
@@ -1322,6 +1537,12 @@
     <ImageURL>구성 요소 이미지 URL을 기입 식</ImageURL>
     <ProcessingDuplicates>보고서 엔진이 중복 된 이미지를 어떻게 처리 하는지를 나타내는 값</ProcessingDuplicates>
   </StiImage>
+  <StiIndicatorStyle>
+    <GlyphColor>속성은 아이콘을 그리는 데 사용할 색상을 정의합니다.</GlyphColor>
+    <HotBackColor>속성은 커서를 가리킬 때 표시기 배경을 채우는 데 사용할 색상을 정의합니다.</HotBackColor>
+    <NegativeColor>속성은 0보다 작을 때 변형 값에 사용할 색상을 정의합니다.</NegativeColor>
+    <PositiveColor>속성은 0보다 클 때 변형 값에 사용할 색상을 정의합니다.</PositiveColor>
+  </StiIndicatorStyle>
   <StiInteraction>
     <AllowSeries>Series에서 드릴 다운 작업을 수행 할 수 있는지 여부를 나타내는 값</AllowSeries>
     <AllowSeriesElements>Series Elements에서 드릴 다운 작업을 수행 할 수 있는지 여부를 나타내는 값</AllowSeriesElements>
@@ -1438,6 +1659,20 @@
     <KeysBinding>키의 데이터 바인딩</KeysBinding>
     <SelectedKeyBinding>선택한 키의 데이터 바인딩</SelectedKeyBinding>
   </StiLookUpBoxControl>
+  <StiMapStyle>
+    <BackColor>속성은 지도 배경을 채우는 데 사용할 색상을 정의합니다.</BackColor>
+    <BorderColor>속성은 지도 지리적 개체의 테두리를 그리는 데 사용할 색상을 정의합니다.</BorderColor>
+    <BorderSize>속성은 지도 지리적 개체에 사용할 테두리 너비를 정의합니다.</BorderSize>
+    <BubbleBackColor>속성은 지도 거품을 채우는 데 사용할 색상을 정의합니다.</BubbleBackColor>
+    <BubbleBorderColor>속성은 지도 버블의 테두리를 그리는 데 사용할 색상을 정의합니다.</BubbleBorderColor>
+    <Colors>이 속성을 사용하면 각 모드에서 색상을 지정할 때 지도의 지리적 개체를 채우는 데 사용할 색상 세트를 만들 수 있습니다.</Colors>
+    <DefaultColor>이 속성은 기본적으로 지도 유형이 개인을 제외한 모든 유형으로 설정된 경우 지도 지리적 개체를 채우는 데 사용되는 색상을 정의합니다.</DefaultColor>
+    <Heatmap>속성 집합은 히트맵에 사용할 설정을 정의합니다.</Heatmap>
+    <HeatmapWithGroup>속성 집합은 그룹이 있는 히트맵에 사용할 설정을 정의합니다.</HeatmapWithGroup>
+    <IndividualColor>속성은 지도의 지리적 개체를 채우는 데 사용할 색상을 정의합니다.</IndividualColor>
+    <LabelForeground>속성은 지도 지리적 개체의 레이블을 그리는 데 사용할 색상을 정의합니다.</LabelForeground>
+    <LabelShadowForeground>속성은 지도 지리적 개체의 레이블 그림자를 그리는 데 사용할 색상을 정의합니다.</LabelShadowForeground>
+  </StiMapStyle>
   <StiMargin>
     <Bottom>값은 요소의 하단 모서리에서 여백을 설정합니다..</Bottom>
     <Left>값은 요소의 왼쪽 모서리에서 여백을 설정합니다..</Left>
@@ -1486,6 +1721,7 @@
     <EndRenderEvent>페이지의 렌더링이 완료되면 발생</EndRenderEvent>
     <ExcelSheet>Excel 시트의 생성 이름에 사용되는 식</ExcelSheet>
     <GetExcelSheetEvent>ExcelSheet가 계산 될 때 발생</GetExcelSheetEvent>
+    <Icon>페이지 아이콘입니다.</Icon>
     <LargeHeight>이 페이지의 높이가 디자이너에서 큰 수를 나타내는 값</LargeHeight>
     <LargeHeightFactor>이 페이지의 LargeHeight 속성의 큰 높이 계수</LargeHeightFactor>
     <Margins>페이지의 여백</Margins>
@@ -1569,6 +1805,11 @@
     <PrinterName>보고서 인쇄에 사용되는 프린터의 이름</PrinterName>
     <ShowDialog>인쇄 대화 상자가 표시되는지 여부를 나타내는 값</ShowDialog>
   </StiPrinterSettings>
+  <StiProgressStyle>
+    <BandColor>속성은 진행률 값의 영역 그래픽을 채우는 데 사용할 색상을 정의합니다.</BandColor>
+    <SeriesColors>이 속성을 사용하면 진행 시리즈를 그리기 위한 색상 세트를 만들 수 있습니다.</SeriesColors>
+    <TrackColor>속성은 진행률 트랙을 채우는 데 사용할 색상을 정의합니다.</TrackColor>
+  </StiProgressStyle>
   <StiQRCodeBarCodeType>
     <ErrorCorrectionLevel>오류 수정 수준을 가져 오거나 설정</ErrorCorrectionLevel>
     <Height>바코드의 높이를 설정</Height>
@@ -1614,18 +1855,25 @@
     <ConvertNulls>null 또는 DBNull을 변환 할 필요가 있는지 여부를 나타내는 값</ConvertNulls>
     <EndRenderEvent>보고서 렌더링이 완료되면 발생</EndRenderEvent>
     <EngineVersion>현재보고 엔진</EngineVersion>
+    <ExportedEvent>보고서 내보내기가 종료될 때 발생합니다.</ExportedEvent>
+    <ExportingEvent>보고서 내보내기가 시작될 때 발생합니다.</ExportingEvent>
     <GlobalizationStrings>국제화 문자열로 구성된 컬렉션</GlobalizationStrings>
     <NumberOfPass>보고서 생성시 보고서 생성기를 만들 경로의 수</NumberOfPass>
     <ParametersOrientation>매개 변수 패널 방향을 나타내는 값</ParametersOrientation>
+    <ParameterWidth>뷰어에서 매개 변수의 너비를 픽셀 단위로 가져오거나 설정합니다. 0 값이 지정된 경우 기본값이 사용됩니다.</ParameterWidth>
     <PreviewMode>보고서 미리보기 모드</PreviewMode>
     <PreviewSettings>미리보기 창에 표시되는 컨트롤</PreviewSettings>
+    <PrintedEvent>보고서 인쇄가 종료될 때 발생합니다.</PrintedEvent>
     <PrinterSettings>프린터 설정</PrinterSettings>
+    <PrintingEvent>보고서가 인쇄를 시작할 때 발생합니다.</PrintingEvent>
     <ReferencedAssemblies>참조되는 어셈블리의 배열</ReferencedAssemblies>
     <RenderingEvent>페이지가 렌더링 될 때 발생</RenderingEvent>
     <ReportAlias>보고서 별칭</ReportAlias>
     <ReportAuthor>보고서 작성자</ReportAuthor>
     <ReportCacheMode>보고서 엔진이 보고서 캐시를 어떻게 사용 하는지를 나타내는 값</ReportCacheMode>
     <ReportDescription>보고서 설명</ReportDescription>
+    <ReportIcon>보고서 아이콘입니다.</ReportIcon>
+    <ReportImage>보고서 이미지입니다.</ReportImage>
     <ReportName>보고서 이름</ReportName>
     <ReportUnit>보고서의 현재 단위</ReportUnit>
     <RequestParameters>사용자가 보고서를 렌더링하기 전에 매개 변수를 요구하거나 기본값 매개 변수를 사용하여 보고서를 렌더링할지 여부를 나타내는 값을 가져 오거나 설정합니다.</RequestParameters>
@@ -1899,6 +2147,20 @@
   <StiTableOfContents>
     <RightToLeft>수평 출력 방향을 가져오거나 설정합니다.</RightToLeft>
   </StiTableOfContents>
+  <StiTableStyle>
+    <AlternatingDataColor>속성은 교대 행의 배경을 채우는 데 사용할 색상을 정의합니다.</AlternatingDataColor>
+    <AlternatingDataForeground>속성은 교대로 행에 값을 그리는 데 사용할 색상을 정의합니다.</AlternatingDataForeground>
+    <DataColor>속성은 행의 배경을 채우는 데 사용할 색상을 정의합니다.</DataColor>
+    <DataForeground>속성은 행에 값을 그리는 데 사용할 색상을 정의합니다.</DataForeground>
+    <FooterColor>속성은 바닥글 행의 배경을 채우는 데 사용할 색상을 정의합니다.</FooterColor>
+    <FooterForeground>속성은 바닥글 행에 값을 그리는 데 사용할 색상을 정의합니다.</FooterForeground>
+    <GridColor>속성은 셀 테두리를 그리는 데 사용할 색상을 정의합니다.</GridColor>
+    <HeaderColor>속성은 셀 테두리를 그리는 데 사용할 색상을 정의합니다.</HeaderColor>
+    <HeaderForeground>속성은 헤더 행의 값을 그리는 데 사용할 색상을 정의합니다.</HeaderForeground>
+    <HotHeaderColor>속성은 커서가 머리글 행 위에 놓일 때 머리글 행의 배경을 채우는 데 사용할 색상을 정의합니다.</HotHeaderColor>
+    <SelectedDataColor>속성은 선택한 셀의 배경을 채우는 데 사용할 색상을 정의합니다.</SelectedDataColor>
+    <SelectedDataForeground>속성은 선택한 셀에 값을 그리는 데 사용할 색상을 정의합니다.</SelectedDataForeground>
+  </StiTableStyle>
   <StiText>
     <AllowHtmlTags>이 구성 요소가 텍스트의 HTML 태그를 허용하는 것을 나타내는 값</AllowHtmlTags>
     <Angle>텍스트 회전 각도</Angle>
@@ -1927,6 +2189,9 @@
     <TextBinding>텍스트 데이터 바인딩</TextBinding>
     <WordWrap>여러 줄의 텍스트 상자 컨트롤이 필요한 단어를 다음 줄의 처음으로 자동으로 바뀌는 지 여부를 나타내는 값</WordWrap>
   </StiTextBoxControl>
+  <StiTextElement>
+    <SizeMode>구성 요소 영역의 텍스트 출력이 텍스트 크기에 따라 달라지는 방식을 지정합니다.</SizeMode>
+  </StiTextElement>
   <StiTextInCells>
     <CellHeight>셀의 높이</CellHeight>
     <CellWidth>셀의 폭</CellWidth>
@@ -1992,6 +2257,9 @@
     <Description>변수 설명</Description>
     <Name>변수의 이름</Name>
   </StiVariable>
+  <StiVertChartGridLines>
+    <Visible>주요 그리드 선의 표시</Visible>
+  </StiVertChartGridLines>
   <StiView>
     <AspectRatio>이미지가 화면 비율을 저장할 수를 나타내는 값</AspectRatio>
     <MultipleFactor>이미지 크기를 곱한 값</MultipleFactor>
@@ -2025,6 +2293,20 @@
   <StiXAxis>
     <DateTimeStep>날짜 시간 단계 설정</DateTimeStep>
   </StiXAxis>
+  <StiXChartAxis>
+    <ShowEdgeValues>축의 첫 번째와 마지막 인수가 어쨌든 나타날 수를 나타내는 값</ShowEdgeValues>
+    <StartFromZero>모든 인수가 제로에서의 공연이 될 것을 나타내는 값</StartFromZero>
+    <Title>축 제목 설정</Title>
+  </StiXChartAxis>
+  <StiXChartAxisTitle>
+    <Direction>축 제목 그리기 텍스트 방향</Direction>
+  </StiXChartAxisTitle>
+  <StiYChartAxis>
+    <StartFromZero>모든 인수가 제로에서의 공연이 될 것을 나타내는 값</StartFromZero>
+  </StiYChartAxis>
+  <StiYChartAxisTitle>
+    <Direction>축 제목 그리기 텍스트 방향</Direction>
+  </StiYChartAxisTitle>
   <StiZipCode>
     <Code>우편 번호 코드를 기입 식</Code>
     <ForeColor>전경</ForeColor>
@@ -2035,6 +2317,7 @@
   <Universal>
     <AllowApplyStyle>값은 차트 스타일이 사용되는 것을 나타내는 값</AllowApplyStyle>
     <Key>변수를 GUI에서 선택한 때 변수에 사용되는 키</Key>
+    <Label>GUI에서 키 대신 표시되는 레이블.</Label>
     <Value>GUI의 키 값 대신 표시된 값</Value>
   </Universal>
 </Localization>

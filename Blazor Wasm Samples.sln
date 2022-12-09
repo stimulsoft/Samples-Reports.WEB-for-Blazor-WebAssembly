@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Editing a Report Template i
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loading and Saving a Report Template", "Loading and Saving a Report Template\Loading and Saving a Report Template.csproj", "{56696729-CA55-402E-B67A-B4CBD641FB03}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Localizing the viewer", "Localizing the viewer\Localizing the viewer.csproj", "{FA65051F-7ABC-4B76-B80B-38E54C8470AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Localizing the Viewer", "Localizing the Viewer\Localizing the Viewer.csproj", "{FA65051F-7ABC-4B76-B80B-38E54C8470AE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using Report Variables in Code", "Using Report Variables in Code\Using Report Variables in Code.csproj", "{454AAA72-0FBF-4F74-B156-43348C68C031}"
 EndProject

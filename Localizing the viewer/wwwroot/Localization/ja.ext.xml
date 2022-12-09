@@ -38,6 +38,8 @@
     <StiGenerateNewNamePageActionLong>ページの新しい名前を生成します。</StiGenerateNewNamePageActionLong>
     <StiGenerateNewNameRelationActionLong>リレーションの新しい名前を生成します。</StiGenerateNewNameRelationActionLong>
     <StiGrowToHeightOverlappingLong>コンポーネントのGrowToHeightプロパティの値をfalseに設定します。</StiGrowToHeightOverlappingLong>
+    <StiInsufficientTextHeightForOneLineLong>The height of the component will increase at least to the height of one line of text or to the next cell of the report grid.</StiInsufficientTextHeightForOneLineLong>
+    <StiInsufficientTextHeightForOneLineShort>Fix height</StiInsufficientTextHeightForOneLineShort>
     <StiLargeHeightAtPageActionLong>便利なコンポーネントの表示と編集のために、ページのLargeHeightプロパティがtrueに設定されます。</StiLargeHeightAtPageActionLong>
     <StiMinRowsInColumnsActionLong>MinRowsInColumnsプロパティをゼロに設定します。</StiMinRowsInColumnsActionLong>
     <StiMoveComponentToPageAreaActionLong>コンポーネントは、ページ上に完全に配置されるように配置されます。この場合、ページフィールドは考慮されません。</StiMoveComponentToPageAreaActionLong>
@@ -54,6 +56,7 @@
     <StiPropertiesOnlyEngineV1ActionLong>EngineV2でサポートされていない '{0}'コンポーネントのプロパティを無効にします。</StiPropertiesOnlyEngineV1ActionLong>
     <StiPropertiesOnlyEngineV2ActionLong>EngineV1でサポートされていないコンポーネントのプロパティを無効にします。</StiPropertiesOnlyEngineV2ActionLong>
     <StiResetPageNumberActionLong>ページのResetPageNumberプロパティをfalseに設定します。</StiResetPageNumberActionLong>
+    <StiSwitchToParametersVerticalOrientationAction>レポートプロパティ「Parameters Orientation」の値を「Vertical」に変更します。</StiSwitchToParametersVerticalOrientationAction>
     <StiSwitchWidthAndHeightOfPageActionLong>ページの高さと幅を変更します。</StiSwitchWidthAndHeightOfPageActionLong>
     <StiVerySmallSizesOfComponentsLong>コンポーネントのサイズは、レポートのGridSize値に増加します。この操作では、100％正しい修正が保証されるわけではありません！</StiVerySmallSizesOfComponentsLong>
     <StiVerySmallSizesOfComponentsShort>サイズを大きくする</StiVerySmallSizesOfComponentsShort>
@@ -71,6 +74,7 @@
     <StiCanGrowGrowToHeightComponentInContainerShort>コンポーネントの表示が正しくない可能性があります。</StiCanGrowGrowToHeightComponentInContainerShort>
     <StiCanGrowWordWrapTextAndWysiwygCheckLong>TextQualityプロパティがStandardまたはTypographicに設定されている場合。テキストプレビュー、異なるズームモード、およびGDI +ライブラリの丸め誤差のため印刷が異なる場合があります。</StiCanGrowWordWrapTextAndWysiwygCheckLong>
     <StiCanGrowWordWrapTextAndWysiwygCheckShort>不正なテキストラップがある可能性があります</StiCanGrowWordWrapTextAndWysiwygCheckShort>
+    <StiChartSeriesValueCheckLong>Valueプロパティは、チャート "{0}"からシリーズに指定されていますが、チャートにはデータソースプロパティが設定されていません。</StiChartSeriesValueCheckLong>
     <StiColumnsWidthGreaterContainerWidthCheckLong>合計列幅は、'{0}'コンポーネントの幅より大きくなります。これにより、レポートのレンダリングが正しく行われないことがあります。また、レポートを他の形式にエクスポートする際にいくつか問題が発生する可能性があります。</StiColumnsWidthGreaterContainerWidthCheckLong>
     <StiColumnsWidthGreaterContainerWidthCheckShort>合計列幅は、コンポーネントの幅より大きくなります。</StiColumnsWidthGreaterContainerWidthCheckShort>
     <StiColumnsWidthGreaterPageWidthCheckLong>'{0}'ページの列の合計幅がページ幅より大きくなっています。これにより、レポートのレンダリングが正しく行われないことがあります。また、レポートを他の形式にエクスポートする際にいくつかの問題が発生する可能性があります。</StiColumnsWidthGreaterPageWidthCheckLong>
@@ -111,8 +115,12 @@
     <StiGroupHeaderNotEqualToGroupFooterOnContainerLong>GroupFooterの数が '{0}'コンテナのGroupHeaderの数に対応していません。奇数のコンポーネントはレンダリングされません。</StiGroupHeaderNotEqualToGroupFooterOnContainerLong>
     <StiGroupHeaderNotEqualToGroupFooterOnPageLong>GroupFooterの数が '{0}'ページのGroupHeaderの数に対応していません。奇数成分はレンダリングされません。</StiGroupHeaderNotEqualToGroupFooterOnPageLong>
     <StiGroupHeaderNotEqualToGroupFooterShort>一部のコンポーネントはレンダリングされません。</StiGroupHeaderNotEqualToGroupFooterShort>
+    <StiGroupHeaderSummaryExpressionCheckLong>The SummaryExpression for the group header {0} contains an aggregate function, but this function is set in a separate property. Report generation is not possible.</StiGroupHeaderSummaryExpressionCheckLong>
+    <StiGroupHeaderSummaryExpressionCheckShort>Invalid function in expression</StiGroupHeaderSummaryExpressionCheckShort>
     <StiGrowToHeightOverlappingLong>'{0}'コンポーネントのGrowToHeightプロパティがtrueに設定されています。レポートをレンダリングするとき、このコンポーネントは1つまたは複数の基本コンポーネントと重なり合うことがあります。</StiGrowToHeightOverlappingLong>
     <StiGrowToHeightOverlappingShort>コンポーネントをオーバーラップさせることができます。</StiGrowToHeightOverlappingShort>
+    <StiInsufficientTextHeightForOneLineCheckLong>The height of the text component {0} is too small, even for one line of text. This can cause issues with exporting to some formats, as well as with printing on the Web. It is recommended to increase the height or set the CanGrow property to true.</StiInsufficientTextHeightForOneLineCheckLong>
+    <StiInsufficientTextHeightForOneLineCheckShort>Insufficient Height for one line.</StiInsufficientTextHeightForOneLineCheckShort>
     <StiIsFirstPageIsLastPageDoublePassCheckLong>IsFirstPage、IsFirstPageThrough、IsLastPage、IsLastPageThroughシステム変数は、1回通過すると不正な結果を返します。 NumberOfPassプロパティをDoublePassに設定する必要があります。</StiIsFirstPageIsLastPageDoublePassCheckLong>
     <StiIsFirstPageIsLastPageDoublePassCheckShort>ダブルパスが必要なシステム変数は、レポート</StiIsFirstPageIsLastPageDoublePassCheckShort>
     <StiIsFirstPassIsSecondPassCheckLong>IsFirstPassの正しい作業のために、IsSecondPass関数はレポートのレンダリングのダブルパスが必要です。レポートのNumberOfPassプロパティをDoublePassに設定するのを忘れていた可能性があります。</StiIsFirstPassIsSecondPassCheckLong>
@@ -213,6 +221,7 @@
   </CheckGlobal>
   <CheckLicense>
     <StiLicenseTrialCheckLong>Stimulsoft Reports と Dashboardsの試用版を使用しています。 本番環境でソフトウェアを使用するには、ライセンスを購入する必要があります。</StiLicenseTrialCheckLong>
+    <StiValidSubscriptioRequiredCheckLong>有効なサブスクリプションが必要です。 Stimulsoft Designerの完全に機能するバージョンを使用するには、サブスクリプションを更新してください。</StiValidSubscriptioRequiredCheckLong>
   </CheckLicense>
   <CheckPage>
     <StiLostPointsOnPageCheckLong>'{0}'ページで失われたポイントが見つかりました：'{1}'点は不可視であり、以下のプリミティブで使用されます：垂直線、矩形、および丸みのある矩形。ポイントがどのコンポーネントにも一致しない場合は、そのポイントを削除することができます。</StiLostPointsOnPageCheckLong>
@@ -222,6 +231,8 @@
     <StiOrientationPageCheckShort>ページの向きが{0}で間違っています。</StiOrientationPageCheckShort>
   </CheckPage>
   <CheckReport>
+    <StiCategoryRequestFromUserCheckLong>ParametersOrientation」レポートプロパティの値が「Vertical」に設定されているときのみ可能なため、「{0}」変数のカテゴリをビューアのパラメータパネルに表示することができません。</StiCategoryRequestFromUserCheckLong>
+    <StiCategoryRequestFromUserCheckShort>パラメーターパネルにカテゴリーを表示する</StiCategoryRequestFromUserCheckShort>
     <StiCloudCompilationModeCheckLong>Stimulsoft Cloudは、このレポートをコンパイルモードでプレビューできません。レポートを通訳モードに変更します。</StiCloudCompilationModeCheckLong>
     <StiCloudCompilationModeCheckShort>このレポートはコンパイルモードです</StiCloudCompilationModeCheckShort>
     <StiCompilationErrorAssemblyCheckLong>ファイルまたはアセンブリ '{0}'またはその依存関係の1つを読み込めませんでした。</StiCompilationErrorAssemblyCheckLong>
@@ -229,11 +240,17 @@
     <StiCompilationErrorCheck3Long>コンパイルエラーは、 '{2}'コンポーネントの '{1}'イベントで見つかりました：</StiCompilationErrorCheck3Long>
     <StiCompilationErrorCheckLong>コンパイルエラーが '{0}'レポートに見つかりました：</StiCompilationErrorCheckLong>
     <StiCompilationErrorCheckShort>コンパイルエラー</StiCompilationErrorCheckShort>
+    <StiDataSourceLoopingCheckLong>Data band '{0}' and child data band '{1}' use the same data source '{2}'. To avoid looping, the child data band will not be shown.</StiDataSourceLoopingCheckLong>
+    <StiDataSourceLoopingCheckShort>Data looping is possible</StiDataSourceLoopingCheckShort>
     <StiDuplicatedName2CheckLong>'{0}'という名前のデータソースがいくつかあります。</StiDuplicatedName2CheckLong>
+    <StiDuplicatedName3CheckLong>大文字と小文字が異なる「{0}」という名前のデータソースがいくつかあります。</StiDuplicatedName3CheckLong>
     <StiDuplicatedNameCheckLong>'{0}'という名前のコンポーネントがいくつかあります。</StiDuplicatedNameCheckLong>
     <StiDuplicatedNameCheckShort>重複する名前のコンポーネントが見つかりました</StiDuplicatedNameCheckShort>
+    <StiDuplicatedNameInSourceCheckShort>データソースで重複</StiDuplicatedNameInSourceCheckShort>
     <StiDuplicatedNameInSourceInDataRelationReportCheckLong>レポートに'{0}'リレーションがあります。彼らはNameInSourceの等しい（ '{1}'）値を持っています。 NameInSource内のすべての1つの関係から1つのデータベースの範囲で一意である必要があります。これらのリレーションフィールドを修正する必要があります。</StiDuplicatedNameInSourceInDataRelationReportCheckLong>
     <StiDuplicatedNameInSourceInDataRelationReportCheckShort>リレーションで重複します。</StiDuplicatedNameInSourceInDataRelationReportCheckShort>
+    <StiDuplicatedReportName2CheckLong>レポート名 '{0}'はデータソース名と同じです。</StiDuplicatedReportName2CheckLong>
+    <StiDuplicatedReportNameCheckLong>レポート名 '{0}'はコンポーネント名と同じです。</StiDuplicatedReportNameCheckLong>
     <StiNetCoreCompilationModeCheckLong>Stimulsoft .NET Coreエンジンは、このレポートをコンパイルモードでレンダリングできません。 レポートを解釈モードに変更します。</StiNetCoreCompilationModeCheckLong>
     <StiNetCoreCompilationModeCheckShort>このレポートはコンパイルモードです</StiNetCoreCompilationModeCheckShort>
   </CheckReport>
@@ -259,6 +276,8 @@
     <ActionShow>表示</ActionShow>
     <AddNewConnection>新しい接続を追加する</AddNewConnection>
     <Cancel>キャンセル</Cancel>
+    <ChangeExportSettings>エクスポート設定を変更する</ChangeExportSettings>
+    <ChangeExportSettingsToolTip>選択したエクスポート形式の設定クラスを作成するためのコードが追加されます。 プロジェクトでは、エクスポート設定を変更できます。</ChangeExportSettingsToolTip>
     <Close>閉じる</Close>
     <ConnectionsFromReport>レポートからの接続を使用する</ConnectionsFromReport>
     <ConnectionsFromReportToolTip>レポートテンプレートに保存された接続は、変更なしで使用されます。</ConnectionsFromReportToolTip>
@@ -268,6 +287,7 @@
     <ConnectionsReplaceToolTip>ファイルパス、データベース接続文字列などのタイプに応じて、コードから接続を変更するように求められます。</ConnectionsReplaceToolTip>
     <Copy>コピー</Copy>
     <CopyingLibraries>プロジェクトファイルのコピー... </CopyingLibraries>
+    <DataAdapterPlatform>データアダプタプラットフォーム</DataAdapterPlatform>
     <DeployReportPlatform>プラットフォームへのレポートのデプロイ：</DeployReportPlatform>
     <DownloadingLibraries>ライブラリのダウンロード... </DownloadingLibraries>
     <EmbedAllDataToResources>レポートには、選択したプラットフォームでサポートされていないデータ接続が含まれています。 利用可能なデータをリソースとしてレポートに埋め込みますか？ この場合、すべての接続はXMLリソースに置き換えられます。</EmbedAllDataToResources>
@@ -277,6 +297,8 @@
     <ExportFormatDataType>データ型：</ExportFormatDataType>
     <ExportFormatImage>イメージ</ExportFormatImage>
     <ExportFormatImageType>イメージタイプ：</ExportFormatImageType>
+    <FrameworkType>フレームワークタイプ</FrameworkType>
+    <FrameworkVersion>フレームワークバージョン</FrameworkVersion>
     <FullScreenViewer>フルブラウザウィンドウにビューアを表示する</FullScreenViewer>
     <FullScreenViewerToolTip>レポートのあるビューアは、ブラウザウィンドウの使用可能なスペース全体に表示されます。</FullScreenViewerToolTip>
     <GetLibrariesFrom>{0}からStimulsoftライブラリを取得する</GetLibrariesFrom>
@@ -316,6 +338,7 @@
     <ParametersReplaceToolTip>コードからレポートパラメータの値を変更するように求められます。</ParametersReplaceToolTip>
     <ParametersRequestFromUser>ユーザーからのリクエスト</ParametersRequestFromUser>
     <ParametersRequestFromUserToolTip>レポートパラメータは、ビューアウィンドウでレポートを表示するときにユーザーから要求されます。</ParametersRequestFromUserToolTip>
+    <ProjectType>プロジェクトタイプ：</ProjectType>
     <Publish>Publish </Publish>
     <PublishType>レポートのパブリッシュタイプ：</PublishType>
     <PublishTypeProject>プロジェクト</PublishTypeProject>
@@ -347,6 +370,8 @@
     <UseCompressedScriptsToolTip>通常のスクリプトの代わりに、パックされたスクリプトが使用されます。 これにより、サイズを小さくすることができますが、実行時に解凍するのに時間がかかります。</UseCompressedScriptsToolTip>
     <UseLatestVersion>ライブラリの最新バージョンを使用</UseLatestVersion>
     <UseLatestVersionToolTip>ライブラリとスクリプトを接続する場合、現在インストールされているバージョンの代わりに、製品の最新の公式バージョンが使用されます。</UseLatestVersionToolTip>
+    <UseRenderedReport>レンダリングされたレポートを使用する</UseRenderedReport>
+    <UseRenderedReportToolTip>レポートは作成され、ドキュメント形式で保存されます。 レポートを表示するためにデータ接続は不要になりますが、対話型とレポートパラメータは使用できなくなります。</UseRenderedReportToolTip>
     <UseWpfDesignerV2>Designer V2を使用する</UseWpfDesignerV2>
     <UseWpfDesignerV2ToolTip>更新されたWPFレポートデザイナーが使用されます。 新しいUI、速度の向上、その他の最適化が含まれます。</UseWpfDesignerV2ToolTip>
   </Publish>
@@ -709,6 +734,9 @@
     <Style>キャップスタイル</Style>
     <Width>キャップの幅</Width>
   </StiCap>
+  <StiCardsStyle>
+    <LineColor>The property defines the color which will be used to draw borders of the cards.</LineColor>
+  </StiCardsStyle>
   <StiChart>
     <Area>チャートのエリア</Area>
     <ChartType>チャートのタイプ</ChartType>
@@ -726,21 +754,108 @@
     <Title>チャートのタイトル設定</Title>
     <VertSpacing>グラフの境界線とグラフの間の垂直方向の間隔</VertSpacing>
   </StiChart>
+  <StiChartArea>
+    <ColorEach>各系列が独自の色で描画されることを示す値</ColorEach>
+    <GridLinesHor>左軸の水平グリッド線</GridLinesHor>
+    <GridLinesVert>垂直軸のグリッド線</GridLinesVert>
+    <InterlacingHor>水平軸のインターレース設定</InterlacingHor>
+    <InterlacingVert>縦軸のインターレース設定</InterlacingVert>
+    <ReverseHor>水平軸のすべての値が逆であることを示す値</ReverseHor>
+    <ReverseVert>縦軸のすべての値が逆であることを示す値</ReverseVert>
+    <XAxis>XAxisの設定</XAxis>
+    <XTopAxis>XTopAxisの設定</XTopAxis>
+    <YAxis>YAxisの設定</YAxis>
+    <YRightAxis>YRightAxisの設定</YRightAxis>
+  </StiChartArea>
+  <StiChartAxis>
+    <Visible>軸の可視性</Visible>
+  </StiChartAxis>
+  <StiChartAxisLabels>
+    <Angle>ラベルの回転角度</Angle>
+    <Color>ラベル描画の色</Color>
+    <Font>軸ラベル描画に使用されるフォント</Font>
+    <Placement>軸にラベルを配置するモード</Placement>
+    <Step>どのステップで軸にラベルを表示するかを示す値</Step>
+    <TextAfter>引数の文字列表現の後に出力される文字列</TextAfter>
+    <TextAlignment>ラベルテキストの配置</TextAlignment>
+    <TextBefore>引数文字列表現の前に出力される文字列</TextBefore>
+  </StiChartAxisLabels>
+  <StiChartAxisRange>
+    <Auto>最小値と最大値が自動的に計算されることを示す値</Auto>
+    <Maximum>軸範囲の最大値</Maximum>
+    <Minimum>軸範囲の最小値</Minimum>
+  </StiChartAxisRange>
+  <StiChartAxisTitle>
+    <Alignment>タイトルテキストの配置</Alignment>
+    <Color>タイトル描画に使用される色</Color>
+    <Font>軸のタイトルの描画に使用されるフォント</Font>
+    <Position>タイトルテキストの位置</Position>
+    <Text>タイトルテキスト</Text>
+    <Visible>タイトルの可視性</Visible>
+  </StiChartAxisTitle>
   <StiChartElement>
+    <Area>チャートのエリア</Area>
     <Arguments>チャートの引数</Arguments>
     <CloseValues>チャートの値を閉じます。</CloseValues>
     <ColorEach />
+    <ConstantLines>グラフの定数行の設定</ConstantLines>
     <EndValues>チャートの終了値</EndValues>
     <Group />
     <HighValues>チャートの最高値</HighValues>
+    <Labels>シリーズのラベル</Labels>
+    <Legend>凡例の設定</Legend>
     <LowValues>チャートの最低値</LowValues>
     <Series>チャートシリーズ</Series>
     <Style>チャートのスタイル</Style>
     <TextFormat>テキスト形式</TextFormat>
     <Title>チャートのタイトル</Title>
+    <TrendLines>トレンドラインの設定</TrendLines>
     <Values>チャート値</Values>
     <Weights>チャートの重み値</Weights>
   </StiChartElement>
+  <StiChartGridLines>
+    <Color>メジャーグリッド線の描画に使用される色</Color>
+  </StiChartGridLines>
+  <StiChartInterlacing>
+    <Color>Color which will be used for drawing interlaced bars.</Color>
+    <Visible>インターレースバーの可視性</Visible>
+  </StiChartInterlacing>
+  <StiChartLabels>
+    <AutoRotate>シリーズラベルの自動回転モード描画を有効または無効にする値</AutoRotate>
+    <Font>シリーズラベルを描画するために使用されるフォント</Font>
+    <ForeColor>ラベル描画の色</ForeColor>
+    <Position>ラベルの位置</Position>
+    <Style>ラベルのスタイル。</Style>
+    <TextAfter>ラベルテキストの後に表示されるテキスト</TextAfter>
+    <TextBefore>ラベルテキストの前に表示されるテキスト</TextBefore>
+  </StiChartLabels>
+  <StiChartLegend>
+    <Columns>列の量</Columns>
+    <Direction>凡例の連続描画に使用された方向</Direction>
+    <HorAlignment>凡例配置の水平方向の整列</HorAlignment>
+    <VertAlignment>凡例配置の垂直方向の配置</VertAlignment>
+    <Visible>グラフの凡例の可視性</Visible>
+  </StiChartLegend>
+  <StiChartLegendLabels>
+    <Color>ラベルの色</Color>
+    <Font>グラフの凡例でシリーズタイトルの描画に使用されたフォント</Font>
+  </StiChartLegendLabels>
+  <StiChartLegendTitle>
+    <Color>凡例のタイトルカラー</Color>
+    <Font>チャートの凡例のタイトルフォント</Font>
+    <Text>凡例のタイトルテキスト</Text>
+  </StiChartLegendTitle>
+  <StiChartStyle>
+    <ChartAreaShowShadow>The property defines the area shadow will be displayed or not.</ChartAreaShowShadow>
+    <MarkerVisible>The property defines the marker will be displayed or not.</MarkerVisible>
+    <SeriesBorderThickness>The property defines the series border width.</SeriesBorderThickness>
+    <SeriesLabelsLineColor>The property defines the line color of series labels.</SeriesLabelsLineColor>
+    <SeriesLighting>The property defines the pie lighting will be displayed or not.</SeriesLighting>
+    <SeriesShowBorder>The property defines the series border will be displayed or not.</SeriesShowBorder>
+    <SeriesShowShadow>The property defines the series shadow will be displayed or not.</SeriesShowShadow>
+    <TrendLineColor>The property defines the color of trend line.</TrendLineColor>
+    <TrendLineShowShadow>The property defines the trend line shadow will be displayed or not.</TrendLineShowShadow>
+  </StiChartStyle>
   <StiChartTable>
     <Font>グラフ表のフォント</Font>
     <GridLineColor>グリッド線の色</GridLineColor>
@@ -748,6 +863,8 @@
     <GridLinesVert>垂直グリッド線の可視性</GridLinesVert>
     <GridOutline>グリッドアウトラインの可視性</GridOutline>
     <MarkerVisible>マーカーの可視性</MarkerVisible>
+    <NegativeSeriesColors>負の値の描画シリーズに使用される色のリスト</NegativeSeriesColors>
+    <SeriesColors>描画シリーズに使用される色のリスト</SeriesColors>
     <Visible>グラフ表の可視性</Visible>
   </StiChartTable>
   <StiChartTitle>
@@ -853,6 +970,11 @@
     <Module>バーコードの最も細かい要素の幅を取得または設定します。</Module>
     <Ratio>WideToNarrow比を示す値を取得または設定します。</Ratio>
   </StiCode93ExtBarCodeType>
+  <StiColumnSize>
+    <MaxWidth>テーブル列の最大幅を取得または設定します。</MaxWidth>
+    <MinWidth>テーブル列の最小幅を取得または設定します。</MinWidth>
+    <Width>テーブル列に指定された幅を取得または設定します。 値がゼロに等しい場合、幅はテーブル要素によって自動的に計算されます。</Width>
+  </StiColumnSize>
   <StiComboBoxControl>
     <DropDownStyle>スタイルを指定する値。</DropDownStyle>
     <DropDownWidth>ドロップダウン部分の幅</DropDownWidth>
@@ -872,6 +994,7 @@
     <AfterPrintEvent>コンポーネント印刷後に発生</AfterPrintEvent>
     <Alias>コンポーネント名の代わりに表示されるテキスト。テキストが表示されていない場合、名前が表示されます。</Alias>
     <Anchor>コンポーネントの位置を親コンポーネントのサイズにリンクするモードを示す値を取得または設定します。</Anchor>
+    <BackColor>コンポーネントの背景色。</BackColor>
     <BeforePrintEvent>コンポーネントを印刷する前に発生</BeforePrintEvent>
     <Bookmark>コンポーネントを埋め込む式Bookmark</Bookmark>
     <Border>コンポーネントのフレーム</Border>
@@ -882,20 +1005,31 @@
     <CanShrink>このオブジェクトが縮小できることを示す値</CanShrink>
     <CellDockStyle>セルドッキングのタイプ</CellDockStyle>
     <CellType>セルコンテンツのタイプ</CellType>
+    <CheckAlignment>コンポーネント内のチェックの場所を決定します。</CheckAlignment>
+    <CheckBrush>コンポーネントのチェックブラシ。</CheckBrush>
+    <Checked>コンポーネントがチェック状態にあるかどうかを示します。</Checked>
+    <CheckedChangedEvent>チェック状態が変更されたときに発生します。</CheckedChangedEvent>
+    <CheckSize>コンポーネントのサイズを確認します。</CheckSize>
     <ClickEvent>ユーザーがビューアのウィンドウでコンポーネントをクリックすると発生</ClickEvent>
     <ComponentStyle>コンポーネントのスタイル</ComponentStyle>
     <Conditions>条件の集計</Conditions>
+    <CornerRadius>角丸の値を表示します。</CornerRadius>
     <CountData>仮想データの行数</CountData>
+    <CrossFiltering>現在のページからその要素へのクロスフィルターの適用を制御する値を取得または設定します。</CrossFiltering>
     <DataRelation>マスター詳細レポートのレンダリングに使用されるリンク</DataRelation>
     <DataSource>データを取得するために使用されるデータソース</DataSource>
+    <Disabled>コンポーネントの非対話状態。</Disabled>
     <DockStyle>コンポーネントドッキングのタイプ</DockStyle>
     <DoubleClickEvent>ユーザーがレポートビューアでコンポーネントをダブルクリックしたときに発生</DoubleClickEvent>
     <Editable>ビューアのウィンドウでコンポーネントを編集できることを示す値</Editable>
     <Enabled>このコンポーネントが使用可能かどうかを示す値</Enabled>
+    <ExceedMargins>コンポーネントの背景のマージンを超える値を取得または設定します。</ExceedMargins>
     <FilterMode>フィルタモード</FilterMode>
     <FilterOn>フィルタがオンになっていることを示す値</FilterOn>
     <Filters>データフィルタのコレクション</Filters>
     <FixedWidth>セルが固定幅を持つことを示す値</FixedWidth>
+    <Font>コントロール内のテキストを表示するために使用されるフォント。</Font>
+    <ForeColor>テキストを表示するために使用される、このコンポーネントの前景色。</ForeColor>
     <GetBookmarkEvent>コンポーネントのブックマークを取得するときに発生</GetBookmarkEvent>
     <GetDrillDownReportEvent>ドリルダウン操作のレポートを取得する必要がある場合に発生</GetDrillDownReportEvent>
     <GetHyperlinkEvent>コンポーネントのハイパーリンクを取得するときに発生</GetHyperlinkEvent>
@@ -904,29 +1038,47 @@
     <GrowToHeight>このコンポーネントの高さがコンテナの底部に向かって増減することを示す値</GrowToHeight>
     <Height>コンポーネントの高さ</Height>
     <HorAlignment>水平方向の配置</HorAlignment>
+    <Hover>ユーザーがコンポーネントの上にカーソルを置いたときのホバー状態。</Hover>
     <Hyperlink>コンポーネントのハイパーリンクを満たす式</Hyperlink>
+    <Icon>コンポーネントに使用されるアイコン。</Icon>
+    <IconAlignment>コンポーネントに表示されるアイコンの配置。</IconAlignment>
+    <IconBrush>コンポーネントのアイコンブラシ。</IconBrush>
+    <IconSet>コンポーネントで使用されるアイコンのセット。</IconSet>
     <Interaction>このコンポーネントの対話オプション</Interaction>
     <Left>コンポーネントの左位置</Left>
     <Linked>コンテナへのオブジェクトスナップがオンになっていることを示す値</Linked>
     <Locked>移動がロックされていることを示す値</Locked>
+    <Margin>このコンポーネントと別のコンポーネントのマージンの間のスペースを指定します。</Margin>
     <MasterComponent>マスターコンポーネント</MasterComponent>
     <MaxSize>最大サイズ</MaxSize>
     <MinSize>最小サイズ</MinSize>
     <MouseEnterEvent>ユーザーがレポートビューアのコンポーネントの領域にマウスを置いたときに発生</MouseEnterEvent>
     <MouseLeaveEvent>ユーザーがレポートビューアのコンポーネントの領域からマウスを離したときに発生</MouseLeaveEvent>
     <Name>コンポーネント名</Name>
+    <Padding>コンポーネントの内部間隔を指定します。</Padding>
+    <Pressed>ユーザーがコンポーネントを押したときの押された状態。</Pressed>
     <Printable>コンポーネントが印刷可能かどうかを示す値</Printable>
     <PrintOn>コンポーネントをどのページに印刷するかを示す値</PrintOn>
     <Restrictions>コンポーネントの制限を示す値</Restrictions>
+    <Shadow>コンポーネントのシャドウ設定。</Shadow>
+    <ShapeType>コンポーネントの形状を描画するために使用される形状を示します。</ShapeType>
     <ShiftMode>コンポーネントのシフトモードを示す値</ShiftMode>
     <Sort>ソートの規則を記述する文字列の配列</Sort>
+    <Stretch>割り当てられたスペースを埋めるためにコンポーネントのサイズを変更する方法について説明します。</Stretch>
     <Tag>コンポーネントタグを満たす式</Tag>
+    <Text>テキストはコンポーネントに関連付けられています。</Text>
     <TextBrush>テキストを描画するブラシ</TextBrush>
+    <ThreeStates>コントロールが2つまたは3つの状態をサポートすることを示します。</ThreeStates>
     <ToolTip>コンポーネントのToolTipを塗りつぶす式</ToolTip>
     <Top>コンポーネントの上部位置</Top>
+    <TotalLabel>合計のラベルとして表示される値を取得または設定します。</TotalLabel>
+    <Type>そのコンポーネントの動作のタイプを説明します。</Type>
     <UseParentStyles>このコンポーネントが親コンポーネントのスタイルを使用する必要があることを示す値</UseParentStyles>
     <VertAlignment>オブジェクトの垂直方向の配置</VertAlignment>
+    <VisualStates>コンポーネントのさまざまな視覚的状態を管理します。</VisualStates>
+    <Watermark>コンポーネントに使用される透かし。</Watermark>
     <Width>コンポーネントの幅</Width>
+    <WordWrap>複数行のテキストが単語を折り返すかどうかを示します。</WordWrap>
   </StiComponent>
   <StiConstantLines>
     <Antialiasing>アンチエイリアス描画モードを制御する値</Antialiasing>
@@ -943,6 +1095,12 @@
     <TitleVisible>定数行の可視性</TitleVisible>
     <Visible>定数行の可視性</Visible>
   </StiConstantLines>
+  <StiCornerRadius>
+    <BottomLeft>左下隅の半径を指定する値。</BottomLeft>
+    <BottomRight>右下隅の半径を指定する値。</BottomRight>
+    <TopLeft>左上隅の半径を指定する値。</TopLeft>
+    <TopRight>右上隅の半径を指定する値。</TopRight>
+  </StiCornerRadius>
   <StiCrossDataBand>
     <MaxWidth>バンドの最大幅</MaxWidth>
     <MinWidth>バンドの最小幅</MinWidth>
@@ -992,6 +1150,25 @@
     <Wrap>クロスタブを1つの列に出力することを示す値。同時に、幅に収まらないものはすべて出力されます。このプロパティを使用するには、クロスタブが配置されているバンドのCanBreakプロパティを有効にする必要があります（バンドに配置されている場合）。</Wrap>
     <WrapGap>ラップされたクロスタブの2つの部分の間のスペース。このプロパティはWrapプロパティと共同で使用されます。</WrapGap>
   </StiCrossTab>
+  <StiCrossTabStyle>
+    <AlternatingCellBackColor>The property defines the color which will be used to fill the background of the even rows.</AlternatingCellBackColor>
+    <AlternatingCellForeColor>The property defines the color which will be used for drawing of the values in the even rows.</AlternatingCellForeColor>
+    <CellBackColor>The property defines the color which will be used to fill the background of the cells.</CellBackColor>
+    <CellForeColor>The property defines the color which will be used for drawing of the values in the cells.</CellForeColor>
+    <ColumnHeaderBackColor>The property defines the color which will be used to fill the background of the column header cells.</ColumnHeaderBackColor>
+    <ColumnHeaderForeColor>The property defines the color which will be used for drawing of the text in the column header cells.</ColumnHeaderForeColor>
+    <HotColumnHeaderBackColor>The property defines the color which will be used to fill the background of the column header cell when the cursor is hovered on it.</HotColumnHeaderBackColor>
+    <HotRowHeaderBackColor>The property defines the color which will be used to fill the background of the row header cell when the cursor is hovered on it.</HotRowHeaderBackColor>
+    <LineColor>The property defines the color which will be used for drawing cell borders.</LineColor>
+    <RowHeaderBackColor>The property defines the color which will be used to fill the background of the row header cells.</RowHeaderBackColor>
+    <RowHeaderForeColor>The property defines the color which will be used for drawing of the text in the row header cells.</RowHeaderForeColor>
+    <SelectedCellBackColor>The property defines the color which will be used to fill the background of the selected cell.</SelectedCellBackColor>
+    <SelectedCellForeColor>The property defines the color which will be used for drawing of the values in the selected cells.</SelectedCellForeColor>
+    <TotalCellColumnBackColor>The property defines the color which will be used to fill the background of the total cell column.</TotalCellColumnBackColor>
+    <TotalCellColumnForeColor>The property defines the color which will be used for drawing of the values in the total cell column.</TotalCellColumnForeColor>
+    <TotalCellRowBackColor>The property defines the color which will be used to fill the background of the total cell row.</TotalCellRowBackColor>
+    <TotalCellRowForeColor>The property defines the color which will be used for drawing of the values in the total cell row.</TotalCellRowForeColor>
+  </StiCrossTabStyle>
   <StiDataBand>
     <BeginRenderEvent>バンドがレンダー開始時に発生</BeginRenderEvent>
     <CalcInvisible>集計関数の計算時に、目に見えないデータバンドを考慮に入れることを意味します。</CalcInvisible>
@@ -1010,6 +1187,7 @@
     <KeepGroupTogether>グループをまとめて保持することを示す値</KeepGroupTogether>
     <KeepHeaderTogether>ヘッダーにデータが一緒に印刷されていることを示す値</KeepHeaderTogether>
     <MinRowsInColumn>1列の最小行数</MinRowsInColumn>
+    <MultipleInitialization>各コンテナ、詳細セクションのデータソースを初期化する。例えば、Relationが割り当てられていなくても、Filtersは各詳細セクションに適用されます。</MultipleInitialization>
     <OddStyle>奇数行のスタイルを示す値</OddStyle>
     <PrintIfDetailEmpty>詳細が空であればマスターデータを印刷する必要があることを示す値</PrintIfDetailEmpty>
     <PrintOnAllPages>コンポーネントがすべてのページに印刷されていることを示す値</PrintOnAllPages>
@@ -1211,6 +1389,38 @@
     <Style>ゲージスタイル</Style>
     <Title>ゲージタイトル</Title>
   </StiGaugeElement>
+  <StiGaugeStyle>
+    <BorderColor>境界線の色を取得または設定します。</BorderColor>
+    <BorderWidth>ボーダーサイズ</BorderWidth>
+    <Brush>スタイルを塗りつぶすブラシを取得または設定します。</Brush>
+    <ForeColor>テキストを描画するためのブラシを取得または設定します。</ForeColor>
+    <LinearBarBorderBrush>LinearBarの境界線を取得または設定します。</LinearBarBorderBrush>
+    <LinearBarBrush>ブラシLinearBarを取得または設定します。</LinearBarBrush>
+    <LinearBarEmptyBorderBrush>LinearBarの空の境界線を取得または設定します。</LinearBarEmptyBorderBrush>
+    <LinearBarEmptyBrush>空のブラシLinearBarを取得または設定します。</LinearBarEmptyBrush>
+    <LinearScaleBrush>ブラシLinearScaleを取得または設定します。</LinearScaleBrush>
+    <MarkerBrush>ブラシマーカーを取得または設定します。</MarkerBrush>
+    <NeedleBorderBrush>針の境界線を取得または設定します。</NeedleBorderBrush>
+    <NeedleBorderWidth>ボーダーサイズ</NeedleBorderWidth>
+    <NeedleBrush>ブラシニードルを取得または設定します。</NeedleBrush>
+    <NeedleCapBorderBrush>キャップの境界線を取得または設定します。</NeedleCapBorderBrush>
+    <NeedleCapBrush>キャップを埋めるためのブラシを取得または設定します。</NeedleCapBrush>
+    <RadialBarBorderBrush>RadialBarの境界線を取得または設定します。</RadialBarBorderBrush>
+    <RadialBarBrush>ブラシRadialBarを取得または設定します。</RadialBarBrush>
+    <RadialBarEmptyBorderBrush>RadialBarの空の境界線を取得または設定します。</RadialBarEmptyBorderBrush>
+    <RadialBarEmptyBrush>空のブラシRadialBarを取得または設定します。</RadialBarEmptyBrush>
+    <TargetColor>ターゲットカラーを取得または設定します。</TargetColor>
+    <TickLabelMajorFont>TickLabelMajorを描画するためのフォントを取得または設定します。</TickLabelMajorFont>
+    <TickLabelMajorTextBrush>テキストを描画するためのブラシを取得または設定します。</TickLabelMajorTextBrush>
+    <TickLabelMinorFont>TickLabelMinorを描画するためのフォントを取得または設定します。</TickLabelMinorFont>
+    <TickLabelMinorTextBrush>テキストを描画するためのブラシを取得または設定します。</TickLabelMinorTextBrush>
+    <TickMarkMajorBorder>TickMarkMajorの境界線を取得または設定します。</TickMarkMajorBorder>
+    <TickMarkMajorBorderWidth>ボーダーサイズ</TickMarkMajorBorderWidth>
+    <TickMarkMajorBrush>TickMarkMajorを埋めるためのブラシを取得または設定します。</TickMarkMajorBrush>
+    <TickMarkMinorBorder>TickMarkMinorの境界線を取得または設定します。</TickMarkMinorBorder>
+    <TickMarkMinorBorderWidth>ボーダーサイズ</TickMarkMinorBorderWidth>
+    <TickMarkMinorBrush>TickMarkMinorを埋めるためのブラシを取得または設定します。</TickMarkMinorBrush>
+  </StiGaugeStyle>
   <StiGlareBrush>
     <Angle>グラジエントの方向線のx軸から時計回りに測った角度</Angle>
     <EndColor>グラデーションの終了色</EndColor>
@@ -1299,6 +1509,16 @@
     <PrintIfEmpty>データが存在しない場合のヘッダーを示す値</PrintIfEmpty>
     <PrintOnAllPages>コンポーネントがすべてのページに印刷されていることを示す値</PrintOnAllPages>
   </StiHeaderBand>
+  <StiHeatmapStyleData>
+    <Color>This property defines the color which will be used to fill the geographic object Map, which contains the max value.</Color>
+    <Mode>The property defines the mode which will be used to form the colors collection of the heatmap.</Mode>
+    <ZeroColor>This property defines the color which will be used to fill the geographic object Map, which contains the zero value.</ZeroColor>
+  </StiHeatmapStyleData>
+  <StiHeatmapWithGroupStyleData>
+    <Colors>The property allows the creation of a collection of colors. Each color of the collection will be used as the primary color of the specific group.</Colors>
+    <Mode>The property defines the mode which will be used to form the colors collection of the heatmap.</Mode>
+    <ZeroColor>This property defines the color which will be used to fill the geographic object Map, which contains the zero value.</ZeroColor>
+  </StiHeatmapWithGroupStyleData>
   <StiHierarchicalBand>
     <Footers>階層バンドのフッターのリスト</Footers>
     <Headers>階層バンドのヘッダーのリスト</Headers>
@@ -1307,6 +1527,9 @@
     <MasterKeyDataColumn>データマスターキーを含む列</MasterKeyDataColumn>
     <ParentValue>親行を識別する親値を含む列</ParentValue>
   </StiHierarchicalBand>
+  <StiHorChartGridLines>
+    <Visible>主要なグリッド線の可視性</Visible>
+  </StiHorChartGridLines>
   <StiImage>
     <DataColumn>イメージを含む列の名前</DataColumn>
     <File>画像を含むファイルへのパス</File>
@@ -1319,6 +1542,12 @@
     <ImageURL>コンポーネントイメージURLを埋める式</ImageURL>
     <ProcessingDuplicates>レポートエンジンが重複したイメージをどのように処理するかを示す値</ProcessingDuplicates>
   </StiImage>
+  <StiIndicatorStyle>
+    <GlyphColor>The property defines the color which will be used to draw icon.</GlyphColor>
+    <HotBackColor>The property defines the color which will be used to fill indicator background when cursor is hovered.</HotBackColor>
+    <NegativeColor>The property defines the color which will be used for variation value when it is less than zero.</NegativeColor>
+    <PositiveColor>The property defines the color which will be used for variation value when it is more than zero.</PositiveColor>
+  </StiIndicatorStyle>
   <StiInteraction>
     <AllowSeries>Seriesでドリルダウン操作を実行できるかどうかを示す値</AllowSeries>
     <AllowSeriesElements>Series Elementsでドリルダウン操作を実行できるかどうかを示す値</AllowSeriesElements>
@@ -1435,6 +1664,20 @@
     <KeysBinding>キーのデータバインディング</KeysBinding>
     <SelectedKeyBinding>選択したキーのデータバインディング</SelectedKeyBinding>
   </StiLookUpBoxControl>
+  <StiMapStyle>
+    <BackColor>The property defines the color which will be used to fill map background.</BackColor>
+    <BorderColor>The property defines the color which will be used to draw borders of the map geographic objects.</BorderColor>
+    <BorderSize>The property defines the border width which will be used for the map geographic objects.</BorderSize>
+    <BubbleBackColor>The property defines the color which will be used to fill map bubbles.</BubbleBackColor>
+    <BubbleBorderColor>The property defines the color which will be used to draw borders of the map bubbles.</BubbleBorderColor>
+    <Colors>The property allows to create colors set which will be used to fill the map geographic objects when color each mode is used.</Colors>
+    <DefaultColor>The property defines the color by default which will be used to fill the map geographic objects when the map type is setted any type except individual.</DefaultColor>
+    <Heatmap>The properties set define the settings which will be used for heatmap.</Heatmap>
+    <HeatmapWithGroup>The properties set define the settings which will be used for heatmap with group.</HeatmapWithGroup>
+    <IndividualColor>The property defines the color which will be used to fill the map geographic objects.</IndividualColor>
+    <LabelForeground>The property defines the color which will be used to draw labels of the map geographic objects.</LabelForeground>
+    <LabelShadowForeground>The property defines the color which will be used to draw label shadow of the map geographic objects.</LabelShadowForeground>
+  </StiMapStyle>
   <StiMargin>
     <Bottom>値は、要素の下端からマージンを設定します。</Bottom>
     <Left>値は、要素の左端からマージンを設定します。</Left>
@@ -1483,6 +1726,7 @@
     <EndRenderEvent>ページのレンダリングが終了したときに発生</EndRenderEvent>
     <ExcelSheet>Excelシートの生成名に使用される式</ExcelSheet>
     <GetExcelSheetEvent>ExcelSheetが計算されると発生</GetExcelSheetEvent>
+    <Icon>ページアイコン</Icon>
     <LargeHeight>このページの高さがデザイナーで大きいことを示す値</LargeHeight>
     <LargeHeightFactor>このページのLargeHeightプロパティの大きな高さ係数</LargeHeightFactor>
     <Margins>ページの余白</Margins>
@@ -1566,6 +1810,11 @@
     <PrinterName>レポート印刷に使用されるプリンタの名前</PrinterName>
     <ShowDialog>印刷ダイアログが表示されるかどうかを示す値</ShowDialog>
   </StiPrinterSettings>
+  <StiProgressStyle>
+    <BandColor>The property defines the color which will be used to fill the area graphics of the progress value.</BandColor>
+    <SeriesColors>The property allows to create color set for drawing the progress series.</SeriesColors>
+    <TrackColor>The property defines the color which will be used to fill the progress track.</TrackColor>
+  </StiProgressStyle>
   <StiQRCodeBarCodeType>
     <ErrorCorrectionLevel>エラー修正レベルを取得または設定</ErrorCorrectionLevel>
     <Height>バーコードの高さを設定</Height>
@@ -1611,18 +1860,25 @@
     <ConvertNulls>nullまたはDBNullを変換する必要があるかどうかを示す値</ConvertNulls>
     <EndRenderEvent>レポートのレンダリングが完了したときに発生</EndRenderEvent>
     <EngineVersion>現在のレポートエンジン</EngineVersion>
+    <ExportedEvent>レポートのエクスポートが終了したときに発生します。</ExportedEvent>
+    <ExportingEvent>レポートがエクスポートを開始したときに発生します。</ExportingEvent>
     <GlobalizationStrings>グローバリゼーション文字列で構成されるコレクション</GlobalizationStrings>
     <NumberOfPass>レポート生成時にレポートジェネレータが作成するパスの数</NumberOfPass>
     <ParametersOrientation>パラメータのパネル方向を示す値</ParametersOrientation>
+    <ParameterWidth>Gets or sets a width in pixels of a parameter in the viewer. The default value is used if a zero value is specified.</ParameterWidth>
     <PreviewMode>レポートのプレビューモード</PreviewMode>
     <PreviewSettings>プレビューウィンドウに表示されるコントロール</PreviewSettings>
+    <PrintedEvent>レポートの印刷が終了したときに発生します。</PrintedEvent>
     <PrinterSettings>プリンタ設定</PrinterSettings>
+    <PrintingEvent>レポートの印刷が開始されたときに発生します。</PrintingEvent>
     <ReferencedAssemblies>参照されるアセンブリの配列</ReferencedAssemblies>
     <RenderingEvent>ページがレンダリングされたときに発生</RenderingEvent>
     <ReportAlias>レポートエイリアス</ReportAlias>
     <ReportAuthor>レポート作成者</ReportAuthor>
     <ReportCacheMode>レポートエンジンがレポートキャッシュをどのように使用するかを示す値</ReportCacheMode>
     <ReportDescription>レポートの説明</ReportDescription>
+    <ReportIcon>レポートアイコン</ReportIcon>
+    <ReportImage>レポート画像</ReportImage>
     <ReportName>レポート名</ReportName>
     <ReportUnit>レポートの現在の単位</ReportUnit>
     <RequestParameters>ユーザーがレポートをレンダリングする前にパラメータを要求するか、デフォルト値のパラメータを使用してレポートをレンダリングするかを示す値を取得または設定します。</RequestParameters>
@@ -1893,6 +2149,23 @@
     <Style>テーブルスタイル。</Style>
     <Title>テーブルのタイトル</Title>
   </StiTableElement>
+  <StiTableOfContents>
+    <RightToLeft>水平出力方向を取得または設定します。</RightToLeft>
+  </StiTableOfContents>
+  <StiTableStyle>
+    <AlternatingDataColor>The property defines the color which will be used to fill the background of the alternating rows.</AlternatingDataColor>
+    <AlternatingDataForeground>The property defines the color which will be used for drawing the value in the alternating rows.</AlternatingDataForeground>
+    <DataColor>The property defines the color which will be used to fill the background of the rows.</DataColor>
+    <DataForeground>The property defines the color which will be used for drawing the value in the rows.</DataForeground>
+    <FooterColor>The property defines the color which will be used to fill the background of the footer row.</FooterColor>
+    <FooterForeground>The property defines the color which will be used for drawing the values in the footer row.</FooterForeground>
+    <GridColor>The property defines the color which will be used for drawing the cell borders.</GridColor>
+    <HeaderColor>The property defines the color which will be used to fill the background of the header row.</HeaderColor>
+    <HeaderForeground>The property defines the color which will be used for drawing the values in the header row.</HeaderForeground>
+    <HotHeaderColor>The property defines the color which will be used to fill the background of the header row when the cursor is hovered on it.</HotHeaderColor>
+    <SelectedDataColor>The property defines the color which will be used to fill the background of the selected cell.</SelectedDataColor>
+    <SelectedDataForeground>The property defines the color which will be used for drawing the value in the selected cell.</SelectedDataForeground>
+  </StiTableStyle>
   <StiText>
     <AllowHtmlTags>このコンポーネントがテキスト内のHTMLタグを許可することを示す値</AllowHtmlTags>
     <Angle>テキスト回転の角度</Angle>
@@ -1921,6 +2194,9 @@
     <TextBinding>テキストのデータバインディング</TextBinding>
     <WordWrap>複数行のテキストボックスコントロールが、必要に応じて単語を次の行の先頭に自動的に折り返すかどうかを示す値</WordWrap>
   </StiTextBoxControl>
+  <StiTextElement>
+    <SizeMode>Specifies how the text output in the component area depends on the text size.</SizeMode>
+  </StiTextElement>
   <StiTextInCells>
     <CellHeight>セルの高さ</CellHeight>
     <CellWidth>セルの幅</CellWidth>
@@ -1986,6 +2262,9 @@
     <Description>変数の説明</Description>
     <Name>変数の名前</Name>
   </StiVariable>
+  <StiVertChartGridLines>
+    <Visible>主要なグリッド線の可視性</Visible>
+  </StiVertChartGridLines>
   <StiView>
     <AspectRatio>画像がアスペクト比を保存することを示す値</AspectRatio>
     <MultipleFactor>画像サイズを乗算する値</MultipleFactor>
@@ -2019,6 +2298,20 @@
   <StiXAxis>
     <DateTimeStep>日付タイムステップ設定</DateTimeStep>
   </StiXAxis>
+  <StiXChartAxis>
+    <ShowEdgeValues>軸の最初と最後の引数がとにかく表示されることを示す値</ShowEdgeValues>
+    <StartFromZero>すべての引数がゼロからのショーになることを示す値</StartFromZero>
+    <Title>軸のタイトル設定</Title>
+  </StiXChartAxis>
+  <StiXChartAxisTitle>
+    <Direction>軸タイトル描画のテキスト方向</Direction>
+  </StiXChartAxisTitle>
+  <StiYChartAxis>
+    <StartFromZero>すべての引数がゼロからのショーになることを示す値</StartFromZero>
+  </StiYChartAxis>
+  <StiYChartAxisTitle>
+    <Direction>軸タイトル描画のテキスト方向</Direction>
+  </StiYChartAxisTitle>
   <StiZipCode>
     <Code>郵便番号のコードを記入する式</Code>
     <ForeColor>前景色</ForeColor>
@@ -2029,6 +2322,7 @@
   <Universal>
     <AllowApplyStyle>値はチャートスタイルが使用されることを示す値</AllowApplyStyle>
     <Key>変数をGUIで選択したときに変数で使用されるキー</Key>
+    <Label>GUIでキーの代わりに表示されるラベル。</Label>
     <Value>GUIのキー値の代わりに表示される値</Value>
   </Universal>
 </Localization>

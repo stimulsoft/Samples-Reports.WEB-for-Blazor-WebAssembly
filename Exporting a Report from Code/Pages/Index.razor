@@ -25,12 +25,14 @@
         //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
-        //Initialize JSRuntime service
+        //Initialize JSRuntime service, if the Viewer or Designer is not used
         StiBlazorHelper.Initialize(JSRuntime);
     }
 
     private async Task ExportReportAsHTML()
     {
+        message = new MarkupString("Processing...");
+
         //Create empty report object
         var report = new StiReport();
 
@@ -49,6 +51,8 @@
 
     private async Task ExportReportAsPDF()
     {
+        message = new MarkupString("Processing...");
+
         //Create empty report object
         var report = new StiReport();
 

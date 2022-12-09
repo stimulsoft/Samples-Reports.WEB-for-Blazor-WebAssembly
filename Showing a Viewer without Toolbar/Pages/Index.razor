@@ -5,16 +5,16 @@
 @using Stimulsoft.Report.Web
 @inject HttpClient Http
 
-<!--Report viewer-->
-<StiBlazorViewer Report="@report" Options="@options" />
+<!--Report Viewer-->
+<StiBlazorViewer Report="@Report" Options="@Options" />
 
 @code
 {
-    //Report object to use in viewer
-    private StiReport report;
+    //Report object to use in Viewer
+    private StiReport Report;
 
-    //Options object
-    private StiBlazorViewerOptions options;
+    //Viewer options object
+    private StiBlazorViewerOptions Options;
 
     protected override async Task OnInitializedAsync()
     {
@@ -26,22 +26,22 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
         //Init options object
-        options = new StiBlazorViewerOptions();
+        this.Options = new StiBlazorViewerOptions();
 
         //Set option to hide toolbar
-        options.Toolbar.Visible = false;
+        this.Options.Toolbar.Visible = false;
 
         //View mode to show all pages
-        options.Toolbar.ViewMode = StiWebViewMode.Continuous;
+        this.Options.Toolbar.ViewMode = StiWebViewMode.Continuous;
 
         //Turning on the full-screen mode
-        options.Appearance.FullScreenMode = true;
+        this.Options.Appearance.FullScreenMode = true;
 
         //Create empty report object
-        report = new StiReport();
+        this.Report = new StiReport();
 
         //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
-        report.Load(reportBytes);
+        this.Report.Load(reportBytes);
     }
 }

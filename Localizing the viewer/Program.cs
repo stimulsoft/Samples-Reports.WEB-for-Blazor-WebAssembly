@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Localizing_the_viewer
+namespace Localizing_the_Viewer
 {
     public class Program
     {

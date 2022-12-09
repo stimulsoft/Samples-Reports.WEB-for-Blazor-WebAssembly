@@ -5,13 +5,13 @@
 @using Stimulsoft.Report.Web
 @inject HttpClient Http
 
-<!--Report designer-->
-<StiBlazorDesigner Report="@report" OnSaveReport="@SaveReport" />
+<!--Report Designer-->
+<StiBlazorDesigner Report="@Report" OnSaveReport="@OnSaveReport" />
 
 @code
 {
-    //Report object to use in designer
-    private StiReport report;
+    //Report object to use in Designer
+    private StiReport Report;
 
     protected override async Task OnInitializedAsync()
     {
@@ -23,14 +23,14 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
         //Create empty report object
-        report = new StiReport();
+        this.Report = new StiReport();
 
         //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
-        report.Load(reportBytes);
+        this.Report.Load(reportBytes);
     }
 
-    private async void SaveReport(StiSaveReportEventArgs args)
+    private async void OnSaveReport(StiSaveReportEventArgs args)
     {
         var reportJson = args.Report.SaveToJsonString();
 

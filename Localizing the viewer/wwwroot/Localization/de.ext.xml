@@ -38,6 +38,8 @@
     <StiGenerateNewNamePageActionLong>Neuen Namen für die Seite vergeben.</StiGenerateNewNamePageActionLong>
     <StiGenerateNewNameRelationActionLong>Neuen Namen für die Beziehung vergeben.</StiGenerateNewNameRelationActionLong>
     <StiGrowToHeightOverlappingLong>Den Wert der Eigenschaft 'In die Höhe wachsen' einer Komponente auf wahr setzen.</StiGrowToHeightOverlappingLong>
+    <StiInsufficientTextHeightForOneLineLong>Die Höhe der Komponente wird mindestens bis der Höhe einer Textzeile oder nächster Zeile des Bericht-Rasters vergrößern.</StiInsufficientTextHeightForOneLineLong>
+    <StiInsufficientTextHeightForOneLineShort>Die Höhe festlegen</StiInsufficientTextHeightForOneLineShort>
     <StiLargeHeightAtPageActionLong>Für das bequeme Ansehen und Ändern einer Komponente wird die Eigenschaft 'Überlänge' der Seite auf wahr gesetzt.</StiLargeHeightAtPageActionLong>
     <StiMinRowsInColumnsActionLong>Die minimale Seitenanzahl pro Spalte auf 0 setzen.</StiMinRowsInColumnsActionLong>
     <StiMoveComponentToPageAreaActionLong>Die Komponente wurde so angeordnet, dass sie ganz auf der Seite Platz findet. In diesem Fall werden die Seiten-Felder nicht berücksichtigt.</StiMoveComponentToPageAreaActionLong>
@@ -54,6 +56,7 @@
     <StiPropertiesOnlyEngineV1ActionLong>Diejenigen Eigenschaften der Komponente '{0}' deaktivieren, die nicht in der EngineV1 unterstützt werden.</StiPropertiesOnlyEngineV1ActionLong>
     <StiPropertiesOnlyEngineV2ActionLong>Diejenigen Eigenschaften der Komponente '{0}' deaktivieren, die nicht in der EngineV2 unterstützt werden.</StiPropertiesOnlyEngineV2ActionLong>
     <StiResetPageNumberActionLong>Die Eigenschaft 'Seitennummer zurücksetzen' wird auf falsch gesetzt.</StiResetPageNumberActionLong>
+    <StiSwitchToParametersVerticalOrientationAction>Wechseln Sie den Wert der Eigenschaft des Berichtes 'Orientierung-Parameter' auf 'Vertikal'.</StiSwitchToParametersVerticalOrientationAction>
     <StiSwitchWidthAndHeightOfPageActionLong>Neuanordnung der Höhe und Breite einer Seite.</StiSwitchWidthAndHeightOfPageActionLong>
     <StiVerySmallSizesOfComponentsLong>Die Größe einer Komponente erreicht den Rasterwert eines Reports. Diese Operation garantiert keine 100%ige korrekte Darstellung!</StiVerySmallSizesOfComponentsLong>
     <StiVerySmallSizesOfComponentsShort>Komponente vergrößern</StiVerySmallSizesOfComponentsShort>
@@ -112,8 +115,12 @@
     <StiGroupHeaderNotEqualToGroupFooterOnContainerLong>Die Anzahl der Gruppenfüsse stimmt nicht mit der Anzahl der Gruppenköpfe der Komponente '{0}' überein. Gerade Komponenten werden nicht dargestellt..</StiGroupHeaderNotEqualToGroupFooterOnContainerLong>
     <StiGroupHeaderNotEqualToGroupFooterOnPageLong>Die Anzahl der Gruppenfüsse stimmt nicht mit der Anzahl der Gruppenköpfe auf der Seite '{0}' überein. Gerade Komponenten werden nicht dargestellt.</StiGroupHeaderNotEqualToGroupFooterOnPageLong>
     <StiGroupHeaderNotEqualToGroupFooterShort>Einige Komponenten werden im Report nicht dargestellt</StiGroupHeaderNotEqualToGroupFooterShort>
+    <StiGroupHeaderSummaryExpressionCheckLong>Der Ausdruck für Zusammenfassung für den Gruppenkopf {0} enthält eine Aggregatfunktion, aber diese Funktion wird in einer separaten Eigenschaft gestellt. Die Berichterstellung ist unmöglich.</StiGroupHeaderSummaryExpressionCheckLong>
+    <StiGroupHeaderSummaryExpressionCheckShort>Ungültige Funktion im Ausdruck.</StiGroupHeaderSummaryExpressionCheckShort>
     <StiGrowToHeightOverlappingLong>Die Eigenschaft 'In die Höhe wachsen' der Komponente '{0}' ist auf wahr gesetzt. Beim Ausführen des Reports kann diese Komponente eine oder mehrere unterhalb angeordneten Komponenten überlappen. </StiGrowToHeightOverlappingLong>
     <StiGrowToHeightOverlappingShort>Es ist möglich, Komponenten zu überlappen.</StiGrowToHeightOverlappingShort>
+    <StiInsufficientTextHeightForOneLineCheckLong>Die Höhe der Textkomponente {0} ist zu klein, sogar für eine Textzeile. Das kann die Probleme beim Export in einige Formate, und auch beim Drucken in Web, verursachen. Wir empfehlen die Höhe zu vergrößern oder die Eigenschaft CanGrow auf Ja zu setzen.</StiInsufficientTextHeightForOneLineCheckLong>
+    <StiInsufficientTextHeightForOneLineCheckShort>Unzureichende Höhe für eine Zeile.</StiInsufficientTextHeightForOneLineCheckShort>
     <StiIsFirstPageIsLastPageDoublePassCheckLong>Die Systemvariablen IsFirstPage, IsFirstPageThrough, IsLastPage, IsLastPageThrough ergeben fehlerhafte Ergebnisse bei nur einem Durchlaufs. Es ist notwendig, die Eigenschaft 'Anzahl der Durchläufe' auf doppelten Durchlauf zu setzen.</StiIsFirstPageIsLastPageDoublePassCheckLong>
     <StiIsFirstPageIsLastPageDoublePassCheckShort>Systemvariable, die einen doppelten urchlauf erfordern, werden in diesem Report benutzt</StiIsFirstPageIsLastPageDoublePassCheckShort>
     <StiIsFirstPassIsSecondPassCheckLong>Für die korrekte Durchführung der Funktionen IsFirstPass, IsSecondPass ist ein doppelter Durchlauf bei der Ausführung des Reports erforderlich. Möglicherlicherweise haben Sie vergessen, die Eigenschaft 'Anzahl der Durchläufe' für den Report auf doppelten Durchlauf zu setzen.</StiIsFirstPassIsSecondPassCheckLong>
@@ -224,6 +231,8 @@
     <StiOrientationPageCheckShort>Fehlerhaftes Seitenformat der Seite '{0}'.</StiOrientationPageCheckShort>
   </CheckPage>
   <CheckReport>
+    <StiCategoryRequestFromUserCheckLong>Die Variable-Kategorien '{0}' können nicht auf der Parameter-Leiste des Viewers angezeigt werden, weil es möglich ist, nur wenn die Eigenschaft des Berichtes 'Orientierung-Parameter' auf 'Vertikal' gesetzt ist.</StiCategoryRequestFromUserCheckLong>
+    <StiCategoryRequestFromUserCheckShort>Die Kategorien auf Parameter-Leiste anzeigen</StiCategoryRequestFromUserCheckShort>
     <StiCloudCompilationModeCheckLong>Der Bericht soll in den Interpretation-Modus geandert werden.</StiCloudCompilationModeCheckLong>
     <StiCloudCompilationModeCheckShort>Dieser Bericht ist im  Kompilierungsmodus</StiCloudCompilationModeCheckShort>
     <StiCompilationErrorAssemblyCheckLong>Man kann nicht die Datei oder Assemblierung '{0}' oder eine von ihnen abhängige Komponente laden.</StiCompilationErrorAssemblyCheckLong>
@@ -231,11 +240,17 @@
     <StiCompilationErrorCheck3Long>Der Kompilierungsfehler wurde im Ereignis '{1}' der Komponente '{2}' gefunden:</StiCompilationErrorCheck3Long>
     <StiCompilationErrorCheckLong>Ein Umwandlungsfehler wurde im Report '{0}' gefunden.</StiCompilationErrorCheckLong>
     <StiCompilationErrorCheckShort>Umwandlungsfehler</StiCompilationErrorCheckShort>
+    <StiDataSourceLoopingCheckLong>Datenband '{0}' und untergeordnetes Datenband '{1}' verwenden gleiche Datenquelle '{2}'. Um die Schleife zu vermeiden, wird das untergeordnete Datenband nicht angezeigt werden.</StiDataSourceLoopingCheckLong>
+    <StiDataSourceLoopingCheckShort>Datenschleife ist möglich.</StiDataSourceLoopingCheckShort>
     <StiDuplicatedName2CheckLong>Die Datenquellen mit dem gleichen Namen '{0}' sind gefunden.</StiDuplicatedName2CheckLong>
+    <StiDuplicatedName3CheckLong>Es gibt einige Datenquellen mit dem Namen '{0}' mit dem unterschiedlichen Register.</StiDuplicatedName3CheckLong>
     <StiDuplicatedNameCheckLong>Die Komponenten mit dem gleichen Namen '{0}' sind gefunden.</StiDuplicatedNameCheckLong>
     <StiDuplicatedNameCheckShort>Die Komponenten mit dem gleichen Namen sind gefunden</StiDuplicatedNameCheckShort>
+    <StiDuplicatedNameInSourceCheckShort>Duplikate in Datenquellen</StiDuplicatedNameInSourceCheckShort>
     <StiDuplicatedNameInSourceInDataRelationReportCheckLong>'{0}' Beziehungen wurden im Report gefunden. Sie haben gleiche Werte ('{1}') in 'Name in der Datenquelle' . Alle Werte in 'Name in der Datenquelle' sollten eindeutig im Bereich einer Beziehung einer Datenbank sein! Es ist notwendig, diese Felder in den Beziehungen zu korrigieren.</StiDuplicatedNameInSourceInDataRelationReportCheckLong>
     <StiDuplicatedNameInSourceInDataRelationReportCheckShort>Duplikate in Beziehungen</StiDuplicatedNameInSourceInDataRelationReportCheckShort>
+    <StiDuplicatedReportName2CheckLong>Der Berichtsname '{0}' ist gleich wie der Datenuellenname.</StiDuplicatedReportName2CheckLong>
+    <StiDuplicatedReportNameCheckLong>Der Berichtsname '{0}' ist gleich wie der Komponentennname</StiDuplicatedReportNameCheckLong>
     <StiNetCoreCompilationModeCheckLong>Stimulsoft .NET Core-Engine kann nicht diesen Bericht im Kompilation-Modus rendern. Wechseln Sie den Bericht in Interpretation-Modus.</StiNetCoreCompilationModeCheckLong>
     <StiNetCoreCompilationModeCheckShort>Dieser Bericht ist im Kompilation-Modus</StiNetCoreCompilationModeCheckShort>
   </CheckReport>
@@ -261,6 +276,8 @@
     <ActionShow>Anzeigen</ActionShow>
     <AddNewConnection>Neue Verbindung hinzufügen</AddNewConnection>
     <Cancel>Abbrechen</Cancel>
+    <ChangeExportSettings>Export-Einstellungen ändern</ChangeExportSettings>
+    <ChangeExportSettingsToolTip>Der Code für Erstellen von Klasse des ausgewählten Export-Formates wird hinzugefügt werden. Im Projekt können Sie Export-Einstellung ändern.</ChangeExportSettingsToolTip>
     <Close>Schlie?en</Close>
     <ConnectionsFromReport>Verbindung aus dem Bericht verwenden</ConnectionsFromReport>
     <ConnectionsFromReportToolTip>In der Berichtsvorlage gespeicherte Verbindungen werden ohne irgendwelche Änderungen verwendet werden.</ConnectionsFromReportToolTip>
@@ -270,6 +287,7 @@
     <ConnectionsReplaceToolTip>Es wird angeboten werden, die Verbindung aus dem Code abhängig vom seinen Typen - Weg zur Datei, Verbindungszeichenfolge zur Datenbank, ändern.</ConnectionsReplaceToolTip>
     <Copy>Kopieren</Copy>
     <CopyingLibraries>Projektdateien werden kopiert...</CopyingLibraries>
+    <DataAdapterPlatform>Datenadapter-Plattform</DataAdapterPlatform>
     <DeployReportPlatform>Den Bericht in die Plattform bereitstellen:</DeployReportPlatform>
     <DownloadingLibraries>Bibliotheken werden heruntergeladen...</DownloadingLibraries>
     <EmbedAllDataToResources>Der Bericht enthält die Verbindungen mit Daten, die in ausgewählter Plattform nicht unterstützt werden. Möchten Sie die verfügbaren Daten als Ressourcen in den Bericht einbetten? In diesem Fall werden alle Verbindungen durch XML-Ressourcen erstetzt werden.</EmbedAllDataToResources>
@@ -279,6 +297,8 @@
     <ExportFormatDataType>Datentyp:</ExportFormatDataType>
     <ExportFormatImage>Bild</ExportFormatImage>
     <ExportFormatImageType>Bildtyp:</ExportFormatImageType>
+    <FrameworkType>Framework-Typ</FrameworkType>
+    <FrameworkVersion>Framework-Version</FrameworkVersion>
     <FullScreenViewer>Den Viewer im vollen Browserfenster  anzeigen</FullScreenViewer>
     <FullScreenViewerToolTip>Der Viewer mit dem Bericht wird auf dem ganzen verfügbaren Bereich des Browser-Fensters angezeigt werden.</FullScreenViewerToolTip>
     <GetLibrariesFrom>Stimulsoft Sammlungen aus {0} erhalten</GetLibrariesFrom>
@@ -318,6 +338,7 @@
     <ParametersReplaceToolTip>Es wird angeboten werden, die Werte von Berichts-Parametern aus dem Code zu bearbeiten.</ParametersReplaceToolTip>
     <ParametersRequestFromUser>Anfrage vom Benutzer</ParametersRequestFromUser>
     <ParametersRequestFromUserToolTip>Die Berichts-Parameter wird vom Benutzer, wenn er den Bericht im Viewer-Fenster ansieht, angefragt werden.</ParametersRequestFromUserToolTip>
+    <ProjectType>Projekt-Typ:</ProjectType>
     <Publish>Veröffentlichen</Publish>
     <PublishType>Veroffentlichungstyp des Berichts:</PublishType>
     <PublishTypeProject>Projekt</PublishTypeProject>
@@ -349,6 +370,8 @@
     <UseCompressedScriptsToolTip>Verpackte Skripte werden statt gewönlicher Skripte verwendet werden. Es erlaubt ihre Größe zu verringern, aber fordert einige Zeit für Entpacken während des Ausführens.</UseCompressedScriptsToolTip>
     <UseLatestVersion>Die letzte Version der Bibliotheken verwenden</UseLatestVersion>
     <UseLatestVersionToolTip>Bei der Verbindung von Bibliotheken und Skripten wird die letzte verfügbare offizielle Version der Software anstatt der aktuell installierter Version verwendet werden.</UseLatestVersionToolTip>
+    <UseRenderedReport>Gerenderten Bericht verwenden</UseRenderedReport>
+    <UseRenderedReportToolTip>Der Bericht wird erstellt und ins Dokument-Format gespeichert werden. Sie brauchen mehr keine Daten-Verbindung, um den Bericht anzusehen, aber jede Interaktivität und Berichts-Parameter wird unverfügbar sein.</UseRenderedReportToolTip>
     <UseWpfDesignerV2>Designer V2 verwenden</UseWpfDesignerV2>
     <UseWpfDesignerV2ToolTip>Der aktualisierte WPF-Berichtsdesigner wird verwendet werden. Er hat neue Schnittstelle, erhöhte Geschwindigkeit und andere Optimierungen.</UseWpfDesignerV2ToolTip>
   </Publish>
@@ -710,6 +733,9 @@
     <Style>Art des Rahmenaufsatzes.</Style>
     <Width>Rahmenaufsatz.</Width>
   </StiCap>
+  <StiCardsStyle>
+    <LineColor>Die Eigenschaft legt die Farbe, die für die Zeichnung von Kacheln-Rändern verwendet wird, fest.</LineColor>
+  </StiCardsStyle>
   <StiChart>
     <Area>Diagrammbereich.</Area>
     <ChartType>Diagrammtyp.</ChartType>
@@ -727,21 +753,108 @@
     <Title>Einrichtung des Diagrammtitels.</Title>
     <VertSpacing>Vertikaler Zwischenraum zwischen dem Diagramm und seiner Umrahmung.</VertSpacing>
   </StiChart>
+  <StiChartArea>
+    <ColorEach>Wert, der anzeigt, dass jede Reihe in ihrer eigenen Farbe dargestellt wird.</ColorEach>
+    <GridLinesHor>Horizontale Gitterlinien auf der linken Achse.</GridLinesHor>
+    <GridLinesVert>Gitterlinien auf der vertikalen Achse.</GridLinesVert>
+    <InterlacingHor>Interlacing-Einrichtung auf der horizontalen Achse.</InterlacingHor>
+    <InterlacingVert>Interlacing-Einrichtung auf der vertikalen Achse.</InterlacingVert>
+    <ReverseHor>Wert, der angibt, dass alle Werte auf der horizontalen Achse umgedreht werden.</ReverseHor>
+    <ReverseVert>Wert, der angibt, dass alle Werte auf der vertikalen Achse umgedreht werden.</ReverseVert>
+    <XAxis>Einrichtung der X-Achse.</XAxis>
+    <XTopAxis>Einrichtung der oberen X-Achse.</XTopAxis>
+    <YAxis>Einrichtung der Y-Achse.</YAxis>
+    <YRightAxis>Einrichtung der rechten Y-Achse.</YRightAxis>
+  </StiChartArea>
+  <StiChartAxis>
+    <Visible>Sichtbarkeit der Achsen.</Visible>
+  </StiChartAxis>
+  <StiChartAxisLabels>
+    <Angle>Winkel für die Drehung der Bezeichnung.</Angle>
+    <Color>Farbe für die Bezeichnungs-Darstellung.</Color>
+    <Font>Zeichensatz, der für die Achsenbezeichnung benutzt wird.</Font>
+    <Placement>Modus für die Plazierung der Bezeichnung auf der Achse.</Placement>
+    <Step>Wert, der angibt, in welchen Schritten die Bezeichnungen auf der Achse angezeigt werden.</Step>
+    <TextAfter>Ein Zeichenfolge, der nach der Darstellung des Argumenten-Zeichensatzes abgefragt wird.</TextAfter>
+    <TextAlignment>Ausrichtung des Bezeichnungstextes.</TextAlignment>
+    <TextBefore>Ein Zeichenfolge, der vor der Darstellung des Argumenten-Zeichensatzes abgefragt wird.</TextBefore>
+  </StiChartAxisLabels>
+  <StiChartAxisRange>
+    <Auto>Wert, der anzeigt, dass Minimum und Maximum automatisch berechnet werden.</Auto>
+    <Maximum>Maximum des Achsenbereichs.</Maximum>
+    <Minimum>Minimum des Achsenbereichs.</Minimum>
+  </StiChartAxisRange>
+  <StiChartAxisTitle>
+    <Alignment>Ausrichtung des Titeltextes.</Alignment>
+    <Color>Farbe für die Titeldarstellung.</Color>
+    <Font>Zeichensatz, der für die Achsentitel-Darstellung benutzt wird.</Font>
+    <Position>Die Position des Texttitels.</Position>
+    <Text>Titeltext.</Text>
+    <Visible>Sichtbarkeit des Titels.</Visible>
+  </StiChartAxisTitle>
   <StiChartElement>
+    <Area>Diagrammbereich.</Area>
     <Arguments>Argumente des Diagramms.</Arguments>
     <CloseValues>Schlusswerte des Diagramms.</CloseValues>
     <ColorEach />
+    <ConstantLines>Einrichtung fester Linien des Diagramms.</ConstantLines>
     <EndValues>Endwerte des Diagramms.</EndValues>
     <Group />
     <HighValues>Höchstwerte des Diagramms.</HighValues>
+    <Labels>Reihenbezeichnung.</Labels>
+    <Legend>Einrichtung der Legende.</Legend>
     <LowValues>Tiefstwerte des Diagramms.</LowValues>
     <Series>Diagrammserien.</Series>
     <Style>Die Art des Diagramms.</Style>
     <TextFormat>Das Textformat.</TextFormat>
     <Title>Diagrammtitel.</Title>
+    <TrendLines>Die Einstellungen der Trendlinie.</TrendLines>
     <Values>Diagrammwerte.</Values>
     <Weights>Gewichtswerte des Diagramms.</Weights>
   </StiChartElement>
+  <StiChartGridLines>
+    <Color>Farbe für die Darstellung der großen Gitterlinien.</Color>
+  </StiChartGridLines>
+  <StiChartInterlacing>
+    <Color>Die Farbe, die für Zeichnung von wechselnden Balken verwendet wird.</Color>
+    <Visible>Sichtbarkeit der Interlacing-Bar.</Visible>
+  </StiChartInterlacing>
+  <StiChartLabels>
+    <AutoRotate>Wert, der automatische Drehung von Reihenbezeichnungen aktiviert oder deaktiviert.</AutoRotate>
+    <Font>Zeichensatz zur Ausgabe von Reihenbezeichnungen.</Font>
+    <ForeColor>Farbe für die Bezeichnungs-Darstellung.</ForeColor>
+    <Position>Die Position der Beschriftung.</Position>
+    <Style>Der Stil der Beschriftung.</Style>
+    <TextAfter>Text nach dem Bezeichnungstext.</TextAfter>
+    <TextBefore>Text vor dem Bezeichnungstext.</TextBefore>
+  </StiChartLabels>
+  <StiChartLegend>
+    <Columns>Spaltenanzahl.</Columns>
+    <Direction>Richtung, die für die Richtung der Reihen in der Legende benutzt wird.</Direction>
+    <HorAlignment>Horizonale Ausrichtung für die Legendenplazierung.</HorAlignment>
+    <VertAlignment>Vertikale Ausrichtung der Legendenplazierung.</VertAlignment>
+    <Visible>Sichtbarkeit der Diagramm-Legende.</Visible>
+  </StiChartLegend>
+  <StiChartLegendLabels>
+    <Color>Farbe der Bezeichnung.</Color>
+    <Font>Zeichensatz, der für die Reihentitel benutzt wird, die in die Diagramm-Legende einbezogen werden.</Font>
+  </StiChartLegendLabels>
+  <StiChartLegendTitle>
+    <Color>Titelfarbe für die Legende.</Color>
+    <Font>Titel-Zeichensatz für die Diagramm-Legende.</Font>
+    <Text>Der Text der Legende-Titel.</Text>
+  </StiChartLegendTitle>
+  <StiChartStyle>
+    <ChartAreaShowShadow>Die Eigenschaft legt, ob der Gebiet-Schatten angezeigt wird, fest.</ChartAreaShowShadow>
+    <MarkerVisible>Die Eigenschaft legt, ob der Marker angezeigt wird, fest.</MarkerVisible>
+    <SeriesBorderThickness>Die Eigenschaft legt die Breite der Reihenränder fest.</SeriesBorderThickness>
+    <SeriesLabelsLineColor>Die Eigenschaft legt die Linienfarbe der Reihenbeschriftungen fest.</SeriesLabelsLineColor>
+    <SeriesLighting>Die Eigenschaft legt, ob die Beleuchtung für Kreisdiagramm angezeigt wird, fest.</SeriesLighting>
+    <SeriesShowBorder>Die Eigenschaft legt, ob die Reihenränder angezeigt werden, fest.</SeriesShowBorder>
+    <SeriesShowShadow>Die Eigenschaft legt, ob der Reihenschatten angezeigt wird, fest.</SeriesShowShadow>
+    <TrendLineColor>Die Eigenschaft legt die Farbe der Trendlinie fest.</TrendLineColor>
+    <TrendLineShowShadow>Die Eigenschaft legt, ob der Trendlinie-Schatten angezeigt wird, fest.</TrendLineShowShadow>
+  </StiChartStyle>
   <StiChartTable>
     <Font>Die Farbe der Diagrammtabelle.</Font>
     <GridLineColor>Eine Farbe der Rasterlinien.</GridLineColor>
@@ -749,6 +862,8 @@
     <GridLinesVert>Die Sichtbarkeit der vertikalen Tabellenlinien.</GridLinesVert>
     <GridOutline>Die Sichtbarkeit des Rasterumrisses</GridOutline>
     <MarkerVisible>Die Sichtbarkeit des Markers.</MarkerVisible>
+    <NegativeSeriesColors>Die Liste von Farben, die für Zeichnung von Serien mit negativen Werten verwendet wird.</NegativeSeriesColors>
+    <SeriesColors>Die Liste von Farben, die für Zeichnung von Serien verwendet wird.</SeriesColors>
     <Visible>Die Sichtbarkeit der Diagrammtabelle.</Visible>
   </StiChartTable>
   <StiChartTitle>
@@ -877,6 +992,7 @@
     <AfterPrintEvent>Tritt auf nach der Ausgabe der Komponente.</AfterPrintEvent>
     <Alias>Ein Text wird an Stelle eines Komponenten-Namens angezeigt. Wenn der Text nicht angegeben wird, wird der Name angezeigt.</Alias>
     <Anchor>Liest oder setzt den Wert, der den Modus der Verknüpfung der Komponentenposition zur übergeordneten Komponentengröße anzeigt.</Anchor>
+    <BackColor>Die Hintergrundfarbe der Komponente.</BackColor>
     <BeforePrintEvent>Tritt auf vor der Ausgabe der Komponente.</BeforePrintEvent>
     <Bookmark>Ausdruck, um eine Bookmark-Komponente zu füllen.</Bookmark>
     <Border>Rahmen einer Komponente.</Border>
@@ -887,21 +1003,31 @@
     <CanShrink>Wert, der anzeigt, dass das Objekt schrumpfen kann.</CanShrink>
     <CellDockStyle>Andock-Stil einer Zelle.</CellDockStyle>
     <CellType>Typ des Zelleninhalts.</CellType>
+    <CheckAlignment>Bestimmt die Lage des Kontrollkästchens  der Komponente innerhalb der Komponente.</CheckAlignment>
+    <CheckBrush>Der Kontrollkästchen-Pinsel der Komponente.</CheckBrush>
+    <Checked>Gibt an, ob die Komponente im aktivierten Zustand ist.</Checked>
+    <CheckedChangedEvent>Erfolgt, wenn der Checked-Zustand verändert wird.</CheckedChangedEvent>
+    <CheckSize>Die Kontrollkästchen-Größe der Komponente.</CheckSize>
     <ClickEvent>Tritt auf, wenn ein Benutzer die Komponente im Viewer-Fenster anklickt.</ClickEvent>
     <ComponentStyle>Komponentenart.</ComponentStyle>
     <Conditions>Eine Liste von Bedingungen.</Conditions>
+    <CornerRadius>Stellt den Wert dar, bis dem die Ecken abgerundet sind.</CornerRadius>
     <CountData>Zeilenzähler für virtuelle Daten.</CountData>
     <CrossFiltering>Gets or sets a value which controls applying cross-filters from the current page to that element.</CrossFiltering>
     <DataRelation>Eine Verbindung zur Ausführung von Master-Detail Reports.</DataRelation>
     <DataSource>Datenquelle, die benutzt wird, um Daten zu erhalten.</DataSource>
+    <Disabled>Der nicht-interaktiver Zustand der Komponente.</Disabled>
     <DockStyle>Arten des Komponenten-Andockens.</DockStyle>
     <DoubleClickEvent>Tritt auf, beim Doppelklick des Benutzers im Report-Viewer einer Komponente.</DoubleClickEvent>
     <Editable>Wert, der anzeigt, dass eine Komponente im Fenster des Viewers geändert werden kann.</Editable>
     <Enabled>Wert, der angibt, ob die Komponente aktiviert ist.</Enabled>
+    <ExceedMargins>Liest oder setzt einen Wert für Ränder-Überschreiten vom Komponente-Hintergrund.</ExceedMargins>
     <FilterMode>Filter Modus.</FilterMode>
     <FilterOn>Wert, der anzeigt, dass der Filter aktiviert ist.</FilterOn>
     <Filters>Liste von Datenfiltern.</Filters>
     <FixedWidth>Wert, der die feste Breite einer Komponente festlegt.</FixedWidth>
+    <Font>Die Schriftart, die für die Anzeige vom Text im Steuerlement verwendet wird.</Font>
+    <ForeColor>Die Fordergrundfarbe dieser Komponente, die für Anzeige vom Text verwendet ist.</ForeColor>
     <GetBookmarkEvent>Tritt auf bei Verfügbarkeit einesBookmarks einer Komponente.</GetBookmarkEvent>
     <GetDrillDownReportEvent>Tritt auf, bei der Berichtsanforderung für eine Drill-Down Operation.</GetDrillDownReportEvent>
     <GetHyperlinkEvent>Tritt auf, bei Verfügbarkeit eines Hyperlinks einer Komponente.</GetHyperlinkEvent>
@@ -910,30 +1036,47 @@
     <GrowToHeight>Wert, der angibt, dass die Höhe dieser Komponente zunimmt/abnimmt bezogen auf den unteren Rand des Containers.</GrowToHeight>
     <Height>Höhe der Komponenten.</Height>
     <HorAlignment>Horizontale Ausrichtung.</HorAlignment>
+    <Hover>Der Zustand, bei dem der Benutzer den Mauszeiger auf die Komponente platziert hat.</Hover>
     <Hyperlink>Ausdruck, um eine Hyperlink-Komponente zu füllen.</Hyperlink>
+    <Icon>Das für die Komponente verwendende Symbol.</Icon>
+    <IconAlignment>Ausrichtung vom Symbol, das auf der Komponente angezeigt wird.</IconAlignment>
+    <IconBrush>Der Symbol-Pinsel der Komponente.</IconBrush>
+    <IconSet>Das für die Komponente verwendende Symbol.</IconSet>
     <Interaction>Behandlung dieser Komponente.</Interaction>
     <Left>Linke Stelle der Komponenten.</Left>
     <Linked>Wert, der angibt, ob die Komponente fix mit dem übergeordneten Container verknüpft wird.</Linked>
     <Locked>Wert, der anzeigt, dass das Verschieben nicht möglich ist.</Locked>
+    <Margin>Legt den Raum zwischen dieser Komponente und den Rändern der anderen Komponente fest.</Margin>
     <MasterComponent>Master-Komponente.</MasterComponent>
     <MaxSize>Maximale Größe.</MaxSize>
     <MinSize>Minimale Größe.</MinSize>
     <MouseEnterEvent>Tritt auf, wenn der Benutzer mit der Maus in der Komponente des Report-Viewers arbeitet.</MouseEnterEvent>
     <MouseLeaveEvent>Tritt auf, wenn der Benutzer mit der Maus den Bereich der Komponente im Report-Viewer verlässt.</MouseLeaveEvent>
     <Name>Name der Komponente.</Name>
+    <Padding>Legt den inneren Abstand der Komponente fest.</Padding>
+    <Pressed>Der Zustand, bei dem der Benutzer auf Komponente gedrückt hat.</Pressed>
     <Printable>Wert, der anzeigt, ob eine Komponente ausgegeben werden kann.</Printable>
     <PrintOn>Wert, der anzeigt, auf welchen Seiten die Komponente angezeigt wird.</PrintOn>
     <Restrictions>Wert, der die Begrenzung einer Komponente angibt.</Restrictions>
+    <Shadow>Schatten-Einstellungen der Komponente.</Shadow>
+    <ShapeType>Gibt an, welche geometrische Form für Zeichnen von Form der Komponente verwendet wird.</ShapeType>
     <ShiftMode>Wert, der den Shift-Modus einer Komponenten anzeigt.</ShiftMode>
     <Sort>Eine String-Tabelle zur Beschreibung von Sortierregeln.</Sort>
+    <Stretch>Beschreibt, wie die Größe der Komponente ändert, um vorgesehenen Raum auszufüllen.</Stretch>
     <Tag>Ausdruck, um eine Tag-Komponente zu füllen.</Tag>
+    <Text>Der mit der Komponente verbundene Text.</Text>
     <TextBrush>Pinsel, um einen Text zu zeichnen.</TextBrush>
+    <ThreeStates>Gibt an, das das Steuerelement 2 oder 3 Zustände unterstützt.</ThreeStates>
     <ToolTip>Ausdruck, um eine ToolTip-Komponente zu füllen.</ToolTip>
     <Top>Obere Position der Komponenten.</Top>
     <TotalLabel>Gets or sets a value that is displayed as a label for a total.</TotalLabel>
+    <Type>Beschreibt die Benehmen-Typen dieser Komponente.</Type>
     <UseParentStyles>Wert, der anzeigt, dass diese Komponente Grundstrukturen einer übergeordneten Komponente benutzen muss.</UseParentStyles>
     <VertAlignment>Vertikale Ausrichtung eines Objektes.</VertAlignment>
+    <VisualStates>Steuert verschiedene visuelle Zustände der Komponente.</VisualStates>
+    <Watermark>Das für diese Komponente verwendende Wasserzeichen.</Watermark>
     <Width>Breite der Komponenten.</Width>
+    <WordWrap>Gibt an, ob die Worten im mehrzeiligen Text umgebrochen werden.</WordWrap>
   </StiComponent>
   <StiConstantLines>
     <Antialiasing>Wert, der die Glättung des Darstellungsmodus steuert.</Antialiasing>
@@ -950,6 +1093,12 @@
     <TitleVisible>Sichtbarkeit des Titels einer festen Linie.</TitleVisible>
     <Visible>Sichtbarkeit einer der festen Linie.</Visible>
   </StiConstantLines>
+  <StiCornerRadius>
+    <BottomLeft>Der Wert, der den Radius der unteren linken Ecke bestimmt.</BottomLeft>
+    <BottomRight>Der Wert, der den Radius der unteren rechten Ecke bestimmt.</BottomRight>
+    <TopLeft>Der Wert, der den Radius der oberen linken Ecke bestimmt.</TopLeft>
+    <TopRight>Der Wert, der den Radius der oberen rechten Ecke bestimmt.</TopRight>
+  </StiCornerRadius>
   <StiCrossDataBand>
     <MaxWidth>Maximale Breite eines Bandes.</MaxWidth>
     <MinWidth>Minimale Breite eines Bandes.</MinWidth>
@@ -999,6 +1148,25 @@
     <Wrap>Wert, der anzeigt, dass die Kreuztabelle in einer Spalte auszugeben ist. Sollte eine Ausgabe nicht hineinpassen, wird sie unterhalb ausgegeben. Um diese Eigenschaft zu benutzen, ist es notwendig, die Eigenschaft 'Kann unterbrochen werden' desjenigen Bandes zu aktivieren, auf dem die Kreuztabelle enthalten ist (soweit sie auf dem Band vorhanden ist).</Wrap>
     <WrapGap>Zweischenraum zwischen beiden Teilen einer umgebrochenen Kreuztabelle. Die Eigenschaft wird gemeinsam mit der Umbruchs-Eigenschaft benutzt.</WrapGap>
   </StiCrossTab>
+  <StiCrossTabStyle>
+    <AlternatingCellBackColor>Die Eigenschaft legt die Farbe für Füllung vom Hintergrund der geraden Reihen fest.</AlternatingCellBackColor>
+    <AlternatingCellForeColor>Die Eigenschaft legt die Farbe, die für Zeichnung von Werten in geraden Reihen verwendet wird, fest.</AlternatingCellForeColor>
+    <CellBackColor>Die Eigenschaft legt die Farbe, die für Füllung vom Hintergrund der Zelle verwendet wird, fest.</CellBackColor>
+    <CellForeColor>Die Eigenschaft legt die Farbe, die für Zeichnung von Werten in den Zellen verwendet wird, fest.</CellForeColor>
+    <ColumnHeaderBackColor>Die Eigenschaft legt die Farbe, die für Füllung vom Hintergrund in den Zellen der Spaltenköpfe verwendet wird, fest.</ColumnHeaderBackColor>
+    <ColumnHeaderForeColor>Die Eigenschaft legt die Farbe, die für Zeichnung des Textes in den Zellen der Spaltenköpfe verwendet wird, fest.</ColumnHeaderForeColor>
+    <HotColumnHeaderBackColor>Die Eigenschaft legt die Farbe, die für Füllung vom Hintergrund in den Zellen der Spaltenköpfe verwendet wird, wenn der Mauszeiger sich darüber befindet, fest.</HotColumnHeaderBackColor>
+    <HotRowHeaderBackColor>Die Eigenschaft legt die Farbe, die für Füllung vom Hintergrund in den Zellen der Reihenköpfe verwendet wird, wenn der Mauszeiger sich darüber befindet, fest.</HotRowHeaderBackColor>
+    <LineColor>Die Eigenschaft legt die Farbe, die für Zeichnung von Zellenrändern verwendet wird, fest.</LineColor>
+    <RowHeaderBackColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund in den Zellen der Reihenköpfe verwendet wird, fest.</RowHeaderBackColor>
+    <RowHeaderForeColor>Die Eigenschaft legt die Farbe, die für die Zeichnung vom Text in den Zellen der Reihenköpfe verwendet wird, fest.</RowHeaderForeColor>
+    <SelectedCellBackColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund in den ausgewählten Zellen verwendet wird, fest.</SelectedCellBackColor>
+    <SelectedCellForeColor>Die Eigenschaft legt die Farbe, die für die Zeichnung von Werten in den ausgewählten Zellen verwendet wird, fest.</SelectedCellForeColor>
+    <TotalCellColumnBackColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund in den Gesamtzellen der Spalte verwendet wird, fest.</TotalCellColumnBackColor>
+    <TotalCellColumnForeColor>Die Eigenschaft legt die Farbe, die für die Zeichnung von Werten in den Gesamtzellen der Spalte verwendet wird, fest.</TotalCellColumnForeColor>
+    <TotalCellRowBackColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund in den Gesamtzellen der Reihe verwendet wird, fest.</TotalCellRowBackColor>
+    <TotalCellRowForeColor>Die Eigenschaft legt die Farbe, die für die Zeichnung von Werten in den Gesamtzellen der Reihe verwendet wird, fest.</TotalCellRowForeColor>
+  </StiCrossTabStyle>
   <StiDataBand>
     <BeginRenderEvent>Tritt auf, wenn das Aufbereiten des Bandes beginnt.</BeginRenderEvent>
     <CalcInvisible>Wert, der anzeigt, dass, wenn Aggregationen bei der Berechnung erfolgen, es notwenig ist, die nicht sichtbaren Datenbänder in die Betrachtung mit zu berücksichtigen.</CalcInvisible>
@@ -1017,6 +1185,7 @@
     <KeepGroupTogether>Wert, der anzeigt, dass die Gruppe zusammenzuhalten ist.</KeepGroupTogether>
     <KeepHeaderTogether>Wert, der anzeigt, dass der Kopf zusammenzuhalten ist.</KeepHeaderTogether>
     <MinRowsInColumn>Minimale Anzahl Zeilen in einer Spalte.</MinRowsInColumn>
+    <MultipleInitialization>Die Datenquelle für jeden Behälter und Detailabschnitt initialisieren. Zum Beispiel, die Filter werden auf jeden Detailabschnitt übernehmen, sogar wenn der Zusammenhang nicht zugewiesen ist.</MultipleInitialization>
     <OddStyle>Wert, der die Art der geraden Linien anzeigt.</OddStyle>
     <PrintIfDetailEmpty>Wert, der anzeigt, dass die Daten des Hauptbandes ausgegeben werden, obwohl keine Detaildaten vorhanden sind.</PrintIfDetailEmpty>
     <PrintOnAllPages>Wert, der anzeigt, dass die Komponente auf allen Seiten ausgegeben wird.</PrintOnAllPages>
@@ -1215,6 +1384,38 @@
     <Style>Messgerät-Stil.</Style>
     <Title>Messgerät-Titel.</Title>
   </StiGaugeElement>
+  <StiGaugeStyle>
+    <BorderColor>Liest oder setzt die Randfarbe.</BorderColor>
+    <BorderWidth>Randgröße.</BorderWidth>
+    <Brush>Liest oder setzt einen Pinsel für Füllung vom Stil.</Brush>
+    <ForeColor>Liest oder setzt einen Pinsel für Zeichnung vom Text.</ForeColor>
+    <LinearBarBorderBrush>Liest oder setzt einen Rand für LinearBar.</LinearBarBorderBrush>
+    <LinearBarBrush>Liest oder setzt einen Pinsel für LinearBar.</LinearBarBrush>
+    <LinearBarEmptyBorderBrush>Liest oder setzt einen leeren Rand für LinearBar.</LinearBarEmptyBorderBrush>
+    <LinearBarEmptyBrush>Liest oder setzt einen leeren Pinsel LinearBar.</LinearBarEmptyBrush>
+    <LinearScaleBrush>Liest oder setzt einen Pinsel LinearScale.</LinearScaleBrush>
+    <MarkerBrush>Liest oder setzt eine Pinsel für Marker.</MarkerBrush>
+    <NeedleBorderBrush>Liest oder setzt einen Rand für Nadel.</NeedleBorderBrush>
+    <NeedleBorderWidth>Die Randgröße.</NeedleBorderWidth>
+    <NeedleBrush>Liest oder setzt einen Pinsel für Nadel.</NeedleBrush>
+    <NeedleCapBorderBrush>Liest oder setzt einen Rand für Kappe.</NeedleCapBorderBrush>
+    <NeedleCapBrush>Liest oder setzt einen Pinsel für Füllung von Kappe.</NeedleCapBrush>
+    <RadialBarBorderBrush>Liest oder setzt einen Rand für RadialBar.</RadialBarBorderBrush>
+    <RadialBarBrush>Liest oder setzt einen Pinsel für RadialBar.</RadialBarBrush>
+    <RadialBarEmptyBorderBrush>Liest oder setzt einen leeren Rand für RadialBar.</RadialBarEmptyBorderBrush>
+    <RadialBarEmptyBrush>Liest oder setzt einen leeren Pinsel für RadialBar.</RadialBarEmptyBrush>
+    <TargetColor>Liest oder setzt Zielfarbe.</TargetColor>
+    <TickLabelMajorFont>Liest oder setzt die Farbe für Zeichnung von TickLabelMajor.</TickLabelMajorFont>
+    <TickLabelMajorTextBrush>Liest oder setzt einen Pinsel für Zeichnung vom Text.</TickLabelMajorTextBrush>
+    <TickLabelMinorFont>Liest oder setzt die Farbe für Zeichnung von TickLabelMinor.</TickLabelMinorFont>
+    <TickLabelMinorTextBrush>Liest oder setzt einen Pinsel für Zeichnung vom Text.</TickLabelMinorTextBrush>
+    <TickMarkMajorBorder>Liest oder setzt einen Rand von TickMarkMajor.</TickMarkMajorBorder>
+    <TickMarkMajorBorderWidth>Die Randgröße.</TickMarkMajorBorderWidth>
+    <TickMarkMajorBrush>Liest oder setzt einen Pinsel für Füllung von TickMarkMajor.</TickMarkMajorBrush>
+    <TickMarkMinorBorder>Liest oder setzt einen Rand von TickMarkMinor.</TickMarkMinorBorder>
+    <TickMarkMinorBorderWidth>Die Randgröße.</TickMarkMinorBorderWidth>
+    <TickMarkMinorBrush>Liest oder setzt einen Pinsel für Füllung von TickMarkMinor.</TickMarkMinorBrush>
+  </StiGaugeStyle>
   <StiGlareBrush>
     <Angle>Der Winkel für den Gradientenverlauf, gemessen im Uhrzeigerzeigersinn von der X-Achse aus.</Angle>
     <EndColor>Endfarbe eines Gradienten.</EndColor>
@@ -1303,6 +1504,16 @@
     <PrintIfEmpty>Wert, der anzeigt, dass der Kopf ausgegeben wird, wenn keine Daten vorhanden sind.</PrintIfEmpty>
     <PrintOnAllPages>Wert, derzeigt, dass die Komponente auf allen Seiten ausgegeben wird.</PrintOnAllPages>
   </StiHeaderBand>
+  <StiHeatmapStyleData>
+    <Color>Die Eigenschaft legt die Farbe, die für die Füllung vom geographischen Objekt der Karte mit dem maximalen Wert verwendet wird, fest.</Color>
+    <Mode>Die Eigenschaft legt den Modus, der für die Formierung von Farbkollektion des Heatmaps verwendet wird, fest.</Mode>
+    <ZeroColor>Diese Eigenschaft legt die Farbe, die für die Füllung vom geographischen Objekt der Karte mit dem Nullwert verwendet wird, fest.</ZeroColor>
+  </StiHeatmapStyleData>
+  <StiHeatmapWithGroupStyleData>
+    <Colors>Die Eigenschaft erlaubt die Farbkollektion zu erstellen. Jede Farbe der Kollektion wird als Primärfarbe bestimmter Gruppe verwendet werden.</Colors>
+    <Mode>Die Eigenschaft legt den Modus, der für die Formierung von Farbkollektion des Heatmaps verwendet wird, fest.</Mode>
+    <ZeroColor>Diese Eigenschaft legt die Farbe, die für die Füllung vom geographischen Objekt der Karte mit dem Nullwert verwendet wird, fest.</ZeroColor>
+  </StiHeatmapWithGroupStyleData>
   <StiHierarchicalBand>
     <Footers>Auflistung von Fußzeilen für das hierarchische Band.</Footers>
     <Headers>Auflistung von Kopfzeilen für das hierarchische Band.</Headers>
@@ -1311,6 +1522,9 @@
     <MasterKeyDataColumn>Spalte die den Hauptschlüssel enthält.</MasterKeyDataColumn>
     <ParentValue>Spalte, die den übergeordneten Wert enthält, der die zugehörige Reihe bestimmt.</ParentValue>
   </StiHierarchicalBand>
+  <StiHorChartGridLines>
+    <Visible>Sichtbarkeit der großen Gitterlinien.</Visible>
+  </StiHorChartGridLines>
   <StiImage>
     <DataColumn>Datenspalte, die das Bild enthält.</DataColumn>
     <File>Dateipfad zum Bild.</File>
@@ -1323,6 +1537,12 @@
     <ImageURL>Ausdruck, um ein Bild-Komponente in einer URL zu füllen.</ImageURL>
     <ProcessingDuplicates>Wert, der angibt, wie sich der Reportgenerator bei doppelten Bildern verhält.</ProcessingDuplicates>
   </StiImage>
+  <StiIndicatorStyle>
+    <GlyphColor>Die Eigenschaft legt die Farbe, die für die Zeichnung von Symbolen verwendet wird, fest.</GlyphColor>
+    <HotBackColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Indikator-Hintergrund, wenn der Mauszeiger sich darüber befindet, verwendet wird, fest.</HotBackColor>
+    <NegativeColor>Die Eigenschaft legt die Farbe, die für den Variation-Wert, der kleiner als Null ist, verwendet wird, fest.</NegativeColor>
+    <PositiveColor>Die Eigenschaft legt die Farbe, die für den Variation-Wert, der größer als Null ist, verwendet wird, fest.</PositiveColor>
+  </StiIndicatorStyle>
   <StiInteraction>
     <AllowSeries>Wert, der angibt, ob die Drill-Down Operation für Reihen ausgeführt werden kann.</AllowSeries>
     <AllowSeriesElements>Wert, der angibt, ob die Drill-Down Operation für Reihenelemente ausgeführt werden kann.</AllowSeriesElements>
@@ -1439,6 +1659,20 @@
     <KeysBinding>Datenbindungen für die Schlüssel.</KeysBinding>
     <SelectedKeyBinding>Datenbindungen für die ausgewählten Schlüssel.</SelectedKeyBinding>
   </StiLookUpBoxControl>
+  <StiMapStyle>
+    <BackColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Karte-Hintergrund verwendet wird, fest.</BackColor>
+    <BorderColor>Die Eigenschaft legt die Farbe, die für die Zeichnung von Rändern der geographischen Objekte der Karte verwendet wird, fest.</BorderColor>
+    <BorderSize>Die Eigenschaft legt die Ränder-Breite der geographischen Objekte der Karte fest.</BorderSize>
+    <BubbleBackColor>Die Eigenschaft legt die Farbe, die für die Füllung von Karte-Blasen verwendet wird, fest.</BubbleBackColor>
+    <BubbleBorderColor>Die Eigenschaft legt die Farbe, die für die Zeichnung von Rändern der Karte-Blasen verwendet wird, fest.</BubbleBorderColor>
+    <Colors>Die Eigenschaft erlaubt einen Farbsatz zu erstellen, der für die Füllung vom geographischen Objekt der Karte, wenn der Modus Jede färben aktiviert ist, verwendet wird, fest.</Colors>
+    <DefaultColor>Die Eigenschaft legt, welche standardmäßige Farbe für die Füllung von geographischen Objekten der Karte, wenn der Kartetyp als jeden Typen, außer individuellen, einstellt ist, verwendet wird, fest.</DefaultColor>
+    <Heatmap>Die Eigenschaften legen die Einstellungen, die für Heatmap verwendet werden, fest.</Heatmap>
+    <HeatmapWithGroup>Die Eigenschaften legen die Einstellungen, die für Heatmap mit der Gruppe verwendet werden, fest.</HeatmapWithGroup>
+    <IndividualColor>Die Eigenschaft legt die Farbe, die für die Füllung von geographischen Objekten der Karte verwendet wird, fest.</IndividualColor>
+    <LabelForeground>Die Eigenschaft legt die Farbe, die für die Zeichnung von Beschriftungen für geographische Objekte der Karte verwendet wird, fest.</LabelForeground>
+    <LabelShadowForeground>Die Eigenschaft legt die Farbe, die für die Zeichnung von Schatten der Beschriftungen für geographische Objekte der Karte verwendet wird, fest.</LabelShadowForeground>
+  </StiMapStyle>
   <StiMargin>
     <Bottom>Der Wert stellt einen Innenabstand von der Unterkante des Elementes ein.</Bottom>
     <Left>Der Wert stellt einen Innenabstand von der linken Kante des Elementes ein.</Left>
@@ -1487,6 +1721,7 @@
     <EndRenderEvent>Auftreten bei der Ausführung am Ende einer Seite.</EndRenderEvent>
     <ExcelSheet>Ausdruck, der den Namen einere Excel-Tabelle festlegt.</ExcelSheet>
     <GetExcelSheetEvent>Tritt auf, wenn das Excel-Datenblatt berechnet wird.</GetExcelSheetEvent>
+    <Icon>Seite-Symbol.</Icon>
     <LargeHeight>Wert, der die Überlänge im Designer anzeigt.</LargeHeight>
     <LargeHeightFactor>Überlängenfaktor für die Eigenschaft 'Überlänge' dieser Seite.</LargeHeightFactor>
     <Margins>Seitenbegrenzung.</Margins>
@@ -1570,6 +1805,11 @@
     <PrinterName>Name der Ausgabeeinheit, der für den Bericht benutzt wird.</PrinterName>
     <ShowDialog>Wert, der angibt, ob der Ausgabedialog angezeigt wird.</ShowDialog>
   </StiPrinterSettings>
+  <StiProgressStyle>
+    <BandColor>Die Eigenschaft legt die Farbe, die für die Füllung von geographischen Objekten des Fortschritt-Wertes verwendet wird, fest.</BandColor>
+    <SeriesColors>Die Eigenschaft erlaubt einen Farbsatz, der für die Reihen des Elementes verwendet wird, zu erstellen.</SeriesColors>
+    <TrackColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Fortschritt-Indikator verwendet wird, fest.</TrackColor>
+  </StiProgressStyle>
   <StiQRCodeBarCodeType>
     <ErrorCorrectionLevel>Liest oder setzt die Fehlerkorrektur-Stufe.</ErrorCorrectionLevel>
     <Height>Liest oder setzt den Höhenfaktor des Barcodes.</Height>
@@ -1615,18 +1855,25 @@
     <ConvertNulls>Wert, der anzeigt, ob es notwendig, Null oder DBNull zu konvertieren.</ConvertNulls>
     <EndRenderEvent>Tritt auf, wenn die Reportausführung beendet ist.</EndRenderEvent>
     <EngineVersion>Aktuelle Report-Engine.</EngineVersion>
+    <ExportedEvent>Erfolgt bei der Beendung vom Bericht-Export.</ExportedEvent>
+    <ExportingEvent>Erfolgt bei dem Anfang vom Bericht-Export.</ExportingEvent>
     <GlobalizationStrings>Eine Sammlung von globalen Zeichenfolgen.</GlobalizationStrings>
     <NumberOfPass>Anzahl der der Durchläufe des Reportgenerators während der Reportaufbereitung.</NumberOfPass>
     <ParametersOrientation>Wert, der angibt, wie das Panel mit den Parameter-Eingabefeldern ausgerichtet wird.</ParametersOrientation>
+    <ParameterWidth>Liest oder setzt die Breite in Pixeln des Parameters im Viewer. Der standardmäßiger Wert wird verwendet, wenn der Nullwert angegeben ist.</ParameterWidth>
     <PreviewMode>Vorschaumodus eines Bereichts.</PreviewMode>
     <PreviewSettings>Steuerelemente, die im Vorschaufenster gezeigt werden.</PreviewSettings>
+    <PrintedEvent>Erfolgt bei der Beendung vom Bericht-Drucken.</PrintedEvent>
     <PrinterSettings>Ausgabe-Einrichtung.</PrinterSettings>
+    <PrintingEvent>Erfolgt bei dem Anfang vom Bericht-Drucken.</PrintingEvent>
     <ReferencedAssemblies>Array für untereinander verbundene Assemblies.</ReferencedAssemblies>
     <RenderingEvent>Tritt auf, wenn die Seite ausgeführt wird.</RenderingEvent>
     <ReportAlias>Report-Alias.</ReportAlias>
     <ReportAuthor>Report-Autor.</ReportAuthor>
     <ReportCacheMode>Wert, der anzeigt, ob es notwendig ist, die gesamten Daten für einen Report in einem Dataset zwischenzuspeichen.</ReportCacheMode>
     <ReportDescription>Reportbeschreibung.</ReportDescription>
+    <ReportIcon>Bericht-Symbol.</ReportIcon>
+    <ReportImage>Bericht-Bild.</ReportImage>
     <ReportName>Reportname.</ReportName>
     <ReportUnit>Akueller Report.</ReportUnit>
     <RequestParameters>Lesen oder setzen eines Wertes, der anzeigt, ob vor der Ausführung des Reports Parameter vom Benutzer anzuforderen sind oder ob die Reportausführung mit Standardwerten erfolgt.</RequestParameters>
@@ -1900,6 +2147,20 @@
   <StiTableOfContents>
     <RightToLeft>Gets or sets horizontal output direction.</RightToLeft>
   </StiTableOfContents>
+  <StiTableStyle>
+    <AlternatingDataColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund der abwechselnden Zeilen verwendet wird, fest.</AlternatingDataColor>
+    <AlternatingDataForeground>Die Eigenschaft legt die Farbe, die für die Zeichnung von Werten in den abwechselnden Zeilen verwendet wird, fest.</AlternatingDataForeground>
+    <DataColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund der Zeilen verwendet wird, fest.</DataColor>
+    <DataForeground>Die Eigenschaft legt die Farbe, die für die Zeichnung von Werten in den abwechselnden Zeilen verwendet wird, fest.</DataForeground>
+    <FooterColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund der Fußzeile verwendet wird, fest.</FooterColor>
+    <FooterForeground>Die Eigenschaft legt die Farbe, die für die Zeichnung von Werten in den Fußzeilen verwendet wird, fest.</FooterForeground>
+    <GridColor>Die Eigenschaft legt die Farbe, die für die Zeichnung von Zellen-Ränder verwendet wird, fest.</GridColor>
+    <HeaderColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund der Kopfzeile verwendet wird, fest.</HeaderColor>
+    <HeaderForeground>Die Eigenschaft legt die Farbe, die für die Zeichnung von Werten in den Fußzeilen verwendet wird, fest.</HeaderForeground>
+    <HotHeaderColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund der Kopfzeile, wenn der Mauszeiger sich darüber befindet, verwendet wird, fest.</HotHeaderColor>
+    <SelectedDataColor>Die Eigenschaft legt die Farbe, die für die Füllung vom Hintergrund der ausgewählte Zelle verwendet wird, fest.</SelectedDataColor>
+    <SelectedDataForeground>TDie Eigenschaft legt die Farbe, die für die Zeichnung von Werten in der ausgewählte Zelle verwendet wird, fest.</SelectedDataForeground>
+  </StiTableStyle>
   <StiText>
     <AllowHtmlTags>Wert, der anzeigt, ob die Komponente HTM-Tags zulässt.</AllowHtmlTags>
     <Angle>Winkel der Textrotation.</Angle>
@@ -1928,6 +2189,9 @@
     <TextBinding>Datenbindungen für den Text.</TextBinding>
     <WordWrap>Wert, der anzeigt, ob des Mehrzeilentextbox-Steuerelement einen Wortumbruch automatisch zu Beginn einer neuen Zeile durchführt.</WordWrap>
   </StiTextBoxControl>
+  <StiTextElement>
+    <SizeMode>Gibt an, wie die Ausgabe vom Text im Komponente-Bereich von der Textgröße abhängt.</SizeMode>
+  </StiTextElement>
   <StiTextInCells>
     <CellHeight>Zellenhöhe.</CellHeight>
     <CellWidth>Zellenbreite.</CellWidth>
@@ -1993,6 +2257,9 @@
     <Description>Die Beschreibung der Variable.</Description>
     <Name>Der Name der Varible.</Name>
   </StiVariable>
+  <StiVertChartGridLines>
+    <Visible>Sichtbarkeit der großen Gitterlinien.</Visible>
+  </StiVertChartGridLines>
   <StiView>
     <AspectRatio>Wert, der angibt, ob das Bild sein Seitenverhältnis sichert.</AspectRatio>
     <MultipleFactor>Multplikationsfaktor für die Bildgröße.</MultipleFactor>
@@ -2026,6 +2293,20 @@
   <StiXAxis>
     <DateTimeStep>Die Einstellungen des Zeitschrittes.</DateTimeStep>
   </StiXAxis>
+  <StiXChartAxis>
+    <ShowEdgeValues>Wert, der angibt, dass das erste und letzte Argument in jedem Fall angezeigt werden.</ShowEdgeValues>
+    <StartFromZero>Wert, der anzeigt, dass alle Werte vom Nullpunkt aus angezeigt werden.</StartFromZero>
+    <Title>Einrichtung des Achsentitels.</Title>
+  </StiXChartAxis>
+  <StiXChartAxisTitle>
+    <Direction>Wert, der die Richtung angibt, in welche der Achsentitel geschrieben werden.</Direction>
+  </StiXChartAxisTitle>
+  <StiYChartAxis>
+    <StartFromZero>Wert, der anzeigt, dass alle Werte vom Nullpunkt aus angezeigt werden.</StartFromZero>
+  </StiYChartAxis>
+  <StiYChartAxisTitle>
+    <Direction>Wert, der die Richtung angibt, in welche der Achsentitel geschrieben werden.</Direction>
+  </StiYChartAxisTitle>
   <StiZipCode>
     <Code>Ausdruck zur Vergabe eines Kennzeichens einer PLZ.</Code>
     <ForeColor>Vordergrundfarbe.</ForeColor>

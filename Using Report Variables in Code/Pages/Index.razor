@@ -30,14 +30,11 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
         //Create empty report object
-        var report = new StiReport();
+        this.Report = new StiReport();
 
         //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/ReportWithVariable.mrt");
-        report.Load(reportBytes);
-
-        //Assing a report to the Viewer
-        this.Report = report;
+        this.Report.Load(reportBytes);
     }
 
     private void SetVariable()

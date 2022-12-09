@@ -11,7 +11,9 @@
     <button class="alert" @onclick="RenderReport">Render report</button>
     <br /><br />
     <button class="alert" @onclick="SaveDocument">Save MDC document to JSON</button>
-    <br /><br /><br />
+    <br /><br />
+    <strong style="display: @(processing ? "" : "none");">Processing...<br /></strong>
+    <br />
 </div>
 
 <div align="center">
@@ -23,7 +25,7 @@
 <br />
 <br />
 
-<!--Show report template JSON string here.-->
+<!--Show report template JSON string here-->
 <div align="left">
     <p>@(reportJSON.Length > 0 ? "Here's your report:" : "")</p>
     <p>@reportJSON</p>
@@ -31,10 +33,13 @@
 
 @code
 {
-    private StiReport report = new StiReport();
+    //Report for processing
+    private StiReport Report;
+
     private int pagesTemplateCount;
     private int pagesDocumentCount;
     private string reportJSON = "";
+    private bool processing;
 
     protected override async Task OnInitializedAsync()
     {
@@ -45,22 +50,27 @@
         //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
+        //Create empty report object
+        this.Report = new StiReport();
     }
 
     private async void LoadReport()
     {
-        //Create empty report object
-        report = new StiReport();
+        //Show processing
+        processing = true;
 
         //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
-        report.Load(reportBytes);
+        this.Report.Load(reportBytes);
 
         //Render report
-        report.Render(false);
+        this.Report.Render(false);
 
         //Show number of pages as proof that it works
-        pagesTemplateCount = report.Pages.Count;
+        pagesTemplateCount = this.Report.Pages.Count;
+
+        //Hide processing
+        processing = false;
 
         //Refresh view
         StateHasChanged();
@@ -69,21 +79,30 @@
     private void SaveReport()
     {
         //Save report template to JSON string
-        reportJSON = report.SaveToJsonString();
+        reportJSON = this.Report.SaveToJsonString();
     }
 
-    private void RenderReport()
+    private async void RenderReport()
     {
+        //Show processing
+        processing = true;
+
         //Render report
-        report.Render(false);
+        await this.Report.RenderAsync();
 
         //Show number of pages as proof that it works
-        pagesDocumentCount = report.RenderedPages.Count;
+        pagesDocumentCount = this.Report.RenderedPages.Count;
+
+        //Hide processing
+        processing = false;
+
+        //Refresh view
+        StateHasChanged();
     }
 
     private void SaveDocument()
     {
         //Save rendered report to JSON string
-        reportJSON = report.SaveDocumentJsonToString();
+        reportJSON = this.Report.SaveDocumentJsonToString();
     }
 }

@@ -330,8 +330,8 @@
     <ButtonResendEmail>Wyślij ponownie e-mail</ButtonResendEmail>
     <ButtonResetPassword>Resetuj hasło</ButtonResetPassword>
     <ButtonRun>Uruchom</ButtonRun>
-    <ButtonShare>Udostępnij</ButtonShare>
-    <ButtonSignUp>Zaloguj sie</ButtonSignUp>
+    <ButtonShare>Udostępnic</ButtonShare>
+    <ButtonSignUp>Zarejestruj się</ButtonSignUp>
     <ButtonSkip>Pomiń</ButtonSkip>
     <ButtonView>Widok</ButtonView>
     <ButtonWhereUsed>Gdzie to jest używane?</ButtonWhereUsed>
@@ -416,7 +416,7 @@
     <Save>Zapisz</Save>
     <SaveAccountSettings>Zapisz ustawienia konta</SaveAccountSettings>
     <SaveFile>Zapisz plik</SaveFile>
-    <ShareWindowTitleNew>Share</ShareWindowTitleNew>
+    <ShareWindowTitleNew>Udostępnic</ShareWindowTitleNew>
     <ShowAllFiles>Pokaż wszystkie pliki</ShowAllFiles>
     <Subscriptions>subskrybcje</Subscriptions>
     <TabItemEmbedCode>Embed Code</TabItemEmbedCode>
@@ -1175,7 +1175,7 @@
     <GroupSeparator>Separator grupy:</GroupSeparator>
     <GroupSize>Rozmiar grupy:</GroupSize>
     <nameFalse>Fałsz</nameFalse>
-    <nameNo>Nr</nameNo>
+    <nameNo>Nie</nameNo>
     <nameOff>Wyłączone</nameOff>
     <nameOn>Włączone</nameOn>
     <nameTrue>Prawda</nameTrue>
@@ -3967,7 +3967,7 @@ It contains a link to confirm your registration. To complete the registration pl
     <RangeInfo>Wstaw numer strony i/lub zakresy stron rozdzielone przecinkiem, np. 1, 3, 5-12</RangeInfo>
     <RangePage>Zakres stron</RangePage>
     <RangePages>Strony:</RangePages>
-    <ReportChecker>Weryfikant poprawności raportu</ReportChecker>
+    <ReportChecker>Weryfikant poprawności</ReportChecker>
     <ReportRenderingMessages>Wiadomości z raportu</ReportRenderingMessages>
     <RestartDesigner>Należy uruchomić ponownie projektanta raportów</RestartDesigner>
     <SaveReportPagesOrFormsFromReport>Zapisz raport, strony lub formularze</SaveReportPagesOrFormsFromReport>
@@ -4177,7 +4177,7 @@ It contains a link to confirm your registration. To complete the registration pl
     <title>Pasek narzędzi</title>
   </Toolbox>
   <Wizards>
-    <BlankDashboard>Pusty Dashboard</BlankDashboard>
+    <BlankDashboard>Pusty dashboard</BlankDashboard>
     <BlankReport>Pusty raport</BlankReport>
     <ButtonBack>&lt; &amp;Wróć</ButtonBack>
     <ButtonCancel>Anuluj</ButtonCancel>

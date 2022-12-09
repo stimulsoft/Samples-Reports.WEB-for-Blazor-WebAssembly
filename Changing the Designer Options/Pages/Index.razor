@@ -5,16 +5,16 @@
 @using Stimulsoft.Report.Web
 @inject HttpClient Http
 
-<!--Report designer-->
-<StiBlazorDesigner Report="@report" Options="@options" Theme="StiDesignerTheme.Office2013LightGrayCarmine"></StiBlazorDesigner>
+<!--Report Designer-->
+<StiBlazorDesigner Report="@Report" Options="@Options" Theme="StiDesignerTheme.Office2013LightGrayCarmine" />
 
 @code
 {
-    //Options object
-    private StiBlazorDesignerOptions options;
+    //Designer options object
+    private StiBlazorDesignerOptions Options;
 
-    //Report object to use in designer
-    private StiReport report;
+    //Report object to use in Designer
+    private StiReport Report;
 
     protected override async Task OnInitializedAsync()
     {
@@ -26,20 +26,20 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
 
         //Init options object
-        options = new StiBlazorDesignerOptions();
+        this.Options = new StiBlazorDesignerOptions();
 
         //Set some options
-        options.Toolbar.ShowPageButton = false;
-        options.Toolbar.ShowInsertButton = false;
-        options.Toolbar.ShowLayoutButton = false;
-        options.Appearance.ShowTooltips = false;
-        options.Appearance.ShowDialogsHelp = false;
+        this.Options.Toolbar.ShowPageButton = false;
+        this.Options.Toolbar.ShowInsertButton = false;
+        this.Options.Toolbar.ShowLayoutButton = false;
+        this.Options.Appearance.ShowTooltips = false;
+        this.Options.Appearance.ShowDialogsHelp = false;
 
         //Create empty report object
-        report = new StiReport();
+        this.Report = new StiReport();
 
         //Load report template
         var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
-        report.Load(reportBytes);
+        this.Report.Load(reportBytes);
     }
 }
