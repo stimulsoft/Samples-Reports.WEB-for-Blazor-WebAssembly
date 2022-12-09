@@ -4,7 +4,7 @@
     "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:50611",
-      "sslPort": 0
+      "sslPort": 44311
     }
   },
   "profiles": {
@@ -18,7 +18,6 @@
     },
     "Showing_a_Viewer_without_Toolbar": {
       "commandName": "Project",
-      "dotnetRunMessages": "true",
       "launchBrowser": true,
       "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
       "applicationUrl": "http://localhost:5000",
