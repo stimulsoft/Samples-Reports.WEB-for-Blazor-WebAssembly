@@ -1,6 +1,6 @@
 # Blazor WebAssembly samples for Stimulsoft Reports.BLAZOR
 
-#### This repository contains the source code of the examples of usage Stimulsoft Reports.BLAZOR reporting tool in the Blazor WebAssembly applications, using C# code and Razor components. This product and examples are compatible with .NET 5.0 and higher.
+#### This repository contains the source code of the examples of usage Stimulsoft Reports.BLAZOR reporting tool in the Blazor WebAssembly applications, using C# code and Razor components. This product and examples are compatible with .NET 5.0 / 6.0 / 7.0 frameworks.
 
 # Overview
 This repository has some examples (Visual Studio Projects) each in different folders:
