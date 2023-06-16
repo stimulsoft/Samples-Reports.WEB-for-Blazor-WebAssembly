@@ -3,7 +3,7 @@
 #### This repository contains the source code of the examples of usage Stimulsoft Reports.BLAZOR reporting tool in the Blazor WebAssembly applications, using C# code and Razor Pages components. Stimulsoft Reports.BLAZOR report builder and examples are compatible with .NET 5.0, 6.0, and 7.0 frameworks.
 
 ## Overview
-This repository contains a set of examples (Visual Studio projects), each in different folders:
+This repository has a set of examples (Visual Studio projects), each in different folders:
 * [Adding Custom Function from Referenced Assembly](https://github.com/stimulsoft/Samples-Reports.WEB-for-Blazor-WebAssembly/tree/main/Adding%20a%20Custom%20Function%20to%20the%20Designer)
 * [Creating a Custom Button on the Viewer Toolbar](https://github.com/stimulsoft/Samples-Reports.WEB-for-Blazor-WebAssembly/tree/main/Creating%20a%20Custom%20Button%20on%20the%20Viewer%20Toolbar)
 * [Changing the Designer Options](https://github.com/stimulsoft/Samples-Reports.WEB-for-Blazor-WebAssembly/tree/main/Changing%20the%20Designer%20Options)
@@ -40,5 +40,5 @@ Stimulsoft Reports.BLAZOR is a cross-platform reporting tool created for integra
 * [Product Page](https://www.stimulsoft.com/en/products/reports-blazor)
 * [Free Download](https://www.stimulsoft.com/en/downloads)
 * [NuGet](https://www.nuget.org/packages/Stimulsoft.Reports.Blazor)
-* [Documentation](https://www.stimulsoft.com/en/documentation/online/programming-manual/index.html?reports_web_blazor.htm)
+* [Documentation](https://www.stimulsoft.com/en/documentation/online/programming-manual/reports_web_blazor.htm)
 * [License](LICENSE.md)
