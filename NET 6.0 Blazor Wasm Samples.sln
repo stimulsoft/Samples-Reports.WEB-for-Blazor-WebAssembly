@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exporting a Report from Cod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adding a Custom Function to the Designer", "Adding a Custom Function to the Designer\Adding a Custom Function to the Designer.csproj", "{6EA7360D-F19D-4294-9040-8B8488F25C60}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using SQL Data Sources.Client", "Using SQL Data Sources\Client\Using SQL Data Sources.Client.csproj", "{7F326F00-229E-466D-B68A-1681AAB694B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using SQL Data Sources.Server", "Using SQL Data Sources\Server\Using SQL Data Sources.Server.csproj", "{F64BFB41-0B19-4681-9D85-7CE346CEDD89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EA7360D-F19D-4294-9040-8B8488F25C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F326F00-229E-466D-B68A-1681AAB694B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F326F00-229E-466D-B68A-1681AAB694B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F326F00-229E-466D-B68A-1681AAB694B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F326F00-229E-466D-B68A-1681AAB694B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64BFB41-0B19-4681-9D85-7CE346CEDD89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64BFB41-0B19-4681-9D85-7CE346CEDD89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64BFB41-0B19-4681-9D85-7CE346CEDD89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64BFB41-0B19-4681-9D85-7CE346CEDD89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

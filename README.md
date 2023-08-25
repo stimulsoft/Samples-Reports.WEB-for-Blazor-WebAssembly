@@ -17,6 +17,7 @@ This repository has a set of examples (Visual Studio projects), each in differen
 * [Showing a Viewer without Toolbar](https://github.com/stimulsoft/Samples-Reports.WEB-for-Blazor-WebAssembly/tree/main/Showing%20a%20Viewer%20without%20Toolbar)
 * [Using Business Objects in the Report](https://github.com/stimulsoft/Samples-Reports.WEB-for-Blazor-WebAssembly/tree/main/Using%20business%20objects%20in%20the%20report)
 * [Using Report Variables in Code](https://github.com/stimulsoft/Samples-Reports.WEB-for-Blazor-WebAssembly/tree/main/Using%20Report%20Variables%20in%20Code)
+* [Using SQL Data Sources](https://github.com/stimulsoft/Samples-Reports.WEB-for-Blazor-WebAssembly/tree/main/Using%20SQL%20Data%20Sources)
 * [Using User Data in Reports](https://github.com/stimulsoft/Samples-Reports.WEB-for-Blazor-WebAssembly/tree/main/Using%20User%20Data%20in%20Reports)
 
 All examples are combined into Visual Studio solutions (.sln files). They are prepared only for LTS frameworks, any compatible ones can be selected in the project settings.
