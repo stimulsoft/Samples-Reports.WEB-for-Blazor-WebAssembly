@@ -5,6 +5,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.16" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.16" PrivateAssets="all" />
-    <PackageReference Include="Stimulsoft.Reports.Blazor" Version="2024.2.1" />
+    <PackageReference Include="Stimulsoft.Reports.Blazor" Version="2024.2.2" />
   </ItemGroup>
 </Project>
