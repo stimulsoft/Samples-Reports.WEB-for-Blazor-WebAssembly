@@ -7,7 +7,7 @@
 @inject IJSRuntime JSRuntime
 
 <!--Report Viewer-->
-<StiBlazorViewer ID="WebViewer1" Report="@Report" OnAfterRenderEvent="@OnAfterRenderEvent" />
+<StiBlazorViewer ID="WebViewer1" Report="@Report" OnViewerAfterRender="@OnViewerAfterRender" />
 
 @code
 {
@@ -31,7 +31,7 @@
         this.Report.Load(reportBytes);
     }
 
-    private void OnAfterRenderEvent()
+    private void OnViewerAfterRender()
     {
         //Calling a JavaScript function from wwwroot/index.php file
         JSRuntime.InvokeVoidAsync("createButton");
