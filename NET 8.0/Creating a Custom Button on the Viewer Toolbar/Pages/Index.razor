@@ -1,0 +1,39 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@using Stimulsoft.Report.Web
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
+
+<!--Report Viewer-->
+<StiBlazorViewer ID="WebViewer1" Report="@Report" OnViewerAfterRender="@OnViewerAfterRender" />
+
+@code
+{
+    //Report object to use in viewer
+    private StiReport Report;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        //How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
+
+        //Create empty report object
+        this.Report = new StiReport();
+
+        //Load report template
+        var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
+        this.Report.Load(reportBytes);
+    }
+
+    private void OnViewerAfterRender()
+    {
+        //Calling a JavaScript function from wwwroot/index.php file
+        JSRuntime.InvokeVoidAsync("createButton");
+    }
+}

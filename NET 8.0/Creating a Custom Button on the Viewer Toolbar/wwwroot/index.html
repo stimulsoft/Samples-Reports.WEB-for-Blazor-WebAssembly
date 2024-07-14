@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Creating a Custom Button on the Viewer Toolbar</title>
+    <base href="/" />
+
+    <script>
+        var createButton = function () {
+            // 'jsWebViewer1' is a 'js' prefix plus the component ID
+            var customButton = this.jsWebViewer1.SmallButton("customButton", "Custom Button", "emptyImage");
+            customButton.image.src = "icon.png";
+            customButton.action = function () {
+                alert("Custom Button Event");
+            }
+            var toolbarTable = this.jsWebViewer1.controls.toolbar.firstChild.firstChild;
+            var buttonsTable = toolbarTable.rows[0].firstChild.firstChild;
+            var customButtonCell = buttonsTable.rows[0].insertCell(0);
+            customButtonCell.appendChild(customButton);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="app">Loading...</div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+
+</html>

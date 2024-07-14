@@ -1,0 +1,108 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@inject HttpClient Http
+
+<div align="center">
+    <button class="alert" @onclick="LoadReport">Load MRT template</button>
+    <br /><br />
+    <button class="alert" @onclick="SaveReport">Save MRT template to JSON</button>
+    <br /><br />
+    <button class="alert" @onclick="RenderReport">Render report</button>
+    <br /><br />
+    <button class="alert" @onclick="SaveDocument">Save MDC document to JSON</button>
+    <br /><br />
+    <strong style="display: @(processing ? "" : "none");">Processing...<br /></strong>
+    <br />
+</div>
+
+<div align="center">
+    @($"Report template has {pagesTemplateCount} page(s)")
+    <br />
+    @($"Rendered report has {pagesDocumentCount} page(s)")
+</div>
+
+<br />
+<br />
+
+<!--Show report template JSON string here-->
+<div align="left">
+    <p>@(reportJSON.Length > 0 ? "Here's your report:" : "")</p>
+    <p>@reportJSON</p>
+</div>
+
+@code
+{
+    //Report for processing
+    private StiReport Report;
+
+    private int pagesTemplateCount;
+    private int pagesDocumentCount;
+    private string reportJSON = "";
+    private bool processing;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        //How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
+
+        //Create empty report object
+        this.Report = new StiReport();
+    }
+
+    private async void LoadReport()
+    {
+        //Show processing
+        processing = true;
+
+        //Load report template
+        var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
+        this.Report.Load(reportBytes);
+
+        //Render report
+        this.Report.Render(false);
+
+        //Show number of pages as proof that it works
+        pagesTemplateCount = this.Report.Pages.Count;
+
+        //Hide processing
+        processing = false;
+
+        //Refresh view
+        StateHasChanged();
+    }
+
+    private void SaveReport()
+    {
+        //Save report template to JSON string
+        reportJSON = this.Report.SaveToJsonString();
+    }
+
+    private async void RenderReport()
+    {
+        //Show processing
+        processing = true;
+
+        //Render report
+        await this.Report.RenderAsync();
+
+        //Show number of pages as proof that it works
+        pagesDocumentCount = this.Report.RenderedPages.Count;
+
+        //Hide processing
+        processing = false;
+
+        //Refresh view
+        StateHasChanged();
+    }
+
+    private void SaveDocument()
+    {
+        //Save rendered report to JSON string
+        reportJSON = this.Report.SaveDocumentJsonToString();
+    }
+}

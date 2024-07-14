@@ -1,0 +1,45 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@using Stimulsoft.Report.Web
+@inject HttpClient Http
+
+<!--Report Designer-->
+<StiBlazorDesigner Report="@Report" Options="@Options" Theme="StiDesignerTheme.Office2022BlackCarmine" />
+
+@code
+{
+    //Designer options object
+    private StiBlazorDesignerOptions Options;
+
+    //Report object to use in Designer
+    private StiReport Report;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        //How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
+
+        //Init options object
+        this.Options = new StiBlazorDesignerOptions();
+
+        //Set some options
+        this.Options.Toolbar.ShowPageButton = false;
+        this.Options.Toolbar.ShowInsertButton = false;
+        this.Options.Toolbar.ShowLayoutButton = false;
+        this.Options.Appearance.ShowTooltips = false;
+        this.Options.Appearance.ShowDialogsHelp = false;
+
+        //Create empty report object
+        this.Report = new StiReport();
+
+        //Load report template
+        var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
+        this.Report.Load(reportBytes);
+    }
+}

@@ -1,0 +1,31 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@inject HttpClient Http
+
+<!--Report Viewer-->
+<StiBlazorViewer Report="@Report" Localization="Localization/pl.xml" />
+
+@code
+{
+    //Report object to use in Viewer
+    private StiReport Report;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        //How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
+
+        //Create empty report object
+        this.Report = new StiReport();
+
+        //Load report template
+        var reportBytes = await Http.GetByteArrayAsync("Reports/TwoSimpleLists.mrt");
+        this.Report.Load(reportBytes);
+    }
+}

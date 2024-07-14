@@ -1,0 +1,42 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@using Stimulsoft.Report.Web
+@using Stimulsoft.Report.Dictionary
+@using Functions
+@inject HttpClient Http
+
+<!--Report Designer-->
+<StiBlazorDesigner Report="@Report"></StiBlazorDesigner>
+
+@code
+{
+    //Report object to use in Designer
+    private StiReport Report;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        //How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
+
+        // Create empty report object
+        this.Report = new StiReport();
+
+        // Register function
+        StiFunctions.AddFunction("MyCategory", "MySum",
+            "description", typeof(CustomFunction),
+            typeof(decimal), "Calculates a sum of the specified set of values.",
+            new[] { typeof(object) },
+            new[] { "values" },
+            new[] { "A set of values" }).UseFullPath = false;
+
+        //Load report template
+        var reportBytes = await Http.GetByteArrayAsync("Reports/CustomFunction.mrt");
+        this.Report.Load(reportBytes);
+    }
+}

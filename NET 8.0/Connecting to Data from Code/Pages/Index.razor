@@ -1,0 +1,95 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@inject HttpClient Http
+
+<div align="center">
+    <button class="alert" @onclick="@SetFirstDataSet">First dataset</button>
+    <button class="alert" @onclick="@SetSecondDataSet">Second dataset</button>
+</div>
+<br />
+
+<StiBlazorViewer Report="@Report" />
+
+@code
+{
+    private StiReport Report;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        //How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
+
+        //Create empty report object
+        this.Report = new StiReport();
+
+        //Load report template
+        var reportBytes = await Http.GetByteArrayAsync("Reports/Report.mrt");
+        this.Report.Load(reportBytes);
+    }
+
+    private async void SetFirstDataSet()
+    {
+        //Get a copy of the report into a new report object
+        var report = this.Report.Clone() as StiReport;
+
+        //Delete connections in the report template
+        report.Dictionary.Databases.Clear();
+
+        //Load new data from XML file
+        var data = new System.Data.DataSet();
+        var dataStream = await Http.GetStreamAsync("Data/Demo1.xml");
+        data.ReadXml(dataStream);
+
+        //Register new data in the report template
+        report.RegData(data);
+
+        //Synchronize the dictionary with registered data
+        //Not necessary if the structure of the loaded data is the same as in the template
+        report.Dictionary.Synchronize();
+
+        //Re-render report
+        report.Render();
+
+        //Assign new report to the Viewer
+        this.Report = report;
+
+        //Refresh razor page view
+        StateHasChanged();
+    }
+
+    private async void SetSecondDataSet()
+    {
+        //Get a copy of the report into a new report object
+        var report = this.Report.Clone() as StiReport;
+
+        //Delete connections in the report template
+        report.Dictionary.Databases.Clear();
+
+        //Load new data from XML file
+        var data = new System.Data.DataSet();
+        var dataStream = await Http.GetStreamAsync("Data/Demo2.xml");
+        data.ReadXml(dataStream);
+
+        //Register new data in the report
+        report.RegData(data);
+
+        //Synchronize the dictionary with registered data
+        //Not necessary if the structure of the loaded data is the same as in the template
+        report.Dictionary.Synchronize();
+
+        //Re-render report
+        report.Render();
+
+        //Assign new report to the Viewer
+        this.Report = report;
+
+        //Refresh razor page view
+        StateHasChanged();
+    }
+}

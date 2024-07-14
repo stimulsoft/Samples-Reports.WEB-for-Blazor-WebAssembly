@@ -1,0 +1,39 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@using Stimulsoft.Report.Dictionary;
+@inject HttpClient Http
+
+<!--Report Viewer-->
+<StiBlazorViewer Report="@Report" OnViewerAfterRender="@OnViewerAfterRender" />
+
+@code
+{
+    //Report object to use in Viewer
+    private StiReport? Report;
+
+    protected async Task OnViewerAfterRender()
+    {
+        //await base.OnInitializedAsync();
+
+        //How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //var licenseStream = await Http.GetStreamAsync("Secret/license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(licenseStream);
+
+        //Create empty report object
+        this.Report = new StiReport();
+
+        //Load report template
+        var reportBytes = await Http.GetByteArrayAsync("api/report/?name=TwoSimpleLists");
+        this.Report.Load(reportBytes);
+
+        //Prepare report data
+        var jsonData = await Http.GetStringAsync("api/data/?name=Demo");
+        var dataSet = StiJsonToDataSetConverterV2.GetDataSet(jsonData);
+
+        this.Report.Dictionary.Databases.Clear();
+        this.Report.RegData("Demo", dataSet);
+    }
+}
