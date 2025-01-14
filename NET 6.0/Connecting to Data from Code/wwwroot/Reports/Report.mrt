@@ -28,6 +28,7 @@
     <Relations isList="true" count="0" />
     <Report isRef="0" />
     <Resources isList="true" count="0" />
+    <UserFunctions isList="true" count="0" />
     <Variables isList="true" count="0" />
   </Dictionary>
   <EngineVersion>EngineV2</EngineVersion>
@@ -49,9 +50,9 @@
               <ClientRectangle>6.8,0,12.2,0.4</ClientRectangle>
               <ComponentStyle>Footer1</ComponentStyle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,9</Font>
               <HorAlignment>Right</HorAlignment>
-              <Margins>0,0,0,0</Margins>
               <Name>Text6</Name>
               <Page isRef="4" />
               <Parent isRef="5" />
@@ -61,6 +62,7 @@
             </Text6>
           </Components>
           <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
           <Name>PageFooterBand1</Name>
           <Page isRef="4" />
           <Parent isRef="4" />
@@ -73,8 +75,8 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>0,0,4.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
-              <Margins>0,0,0,0</Margins>
               <Name>HeaderCategories_CategoryID</Name>
               <Page isRef="4" />
               <Parent isRef="7" />
@@ -87,8 +89,8 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>4.8,0,4.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
-              <Margins>0,0,0,0</Margins>
               <Name>HeaderCategories_CategoryName</Name>
               <Page isRef="4" />
               <Parent isRef="7" />
@@ -101,8 +103,8 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>9.6,0,4.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
-              <Margins>0,0,0,0</Margins>
               <Name>HeaderCategories_Description</Name>
               <Page isRef="4" />
               <Parent isRef="7" />
@@ -115,8 +117,8 @@
               <Brush>Transparent</Brush>
               <ClientRectangle>14.4,0,4.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,10,Bold</Font>
-              <Margins>0,0,0,0</Margins>
               <Name>HeaderCategories_Picture</Name>
               <Page isRef="4" />
               <Parent isRef="7" />
@@ -127,12 +129,14 @@
             </HeaderCategories_Picture>
           </Components>
           <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
           <Name>HeaderCategories</Name>
           <Page isRef="4" />
           <Parent isRef="4" />
         </HeaderCategories>
         <DataCategories Ref="12" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,2,19,0.8</ClientRectangle>
           <Components isList="true" count="4">
             <DataCategories_CategoryID Ref="13" type="Text" isKey="true">
@@ -140,8 +144,8 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>0,0,4.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
-              <Margins>0,0,0,0</Margins>
               <Name>DataCategories_CategoryID</Name>
               <Page isRef="4" />
               <Parent isRef="12" />
@@ -155,8 +159,8 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>4.8,0,4.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
-              <Margins>0,0,0,0</Margins>
               <Name>DataCategories_CategoryName</Name>
               <Page isRef="4" />
               <Parent isRef="12" />
@@ -170,8 +174,8 @@
               <CanGrow>True</CanGrow>
               <ClientRectangle>9.6,0,4.8,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
               <Font>Arial,8</Font>
-              <Margins>0,0,0,0</Margins>
               <Name>DataCategories_Description</Name>
               <Page isRef="4" />
               <Parent isRef="12" />
@@ -185,7 +189,8 @@
               <ClientRectangle>14.4,0,4.6,0.8</ClientRectangle>
               <Conditions isList="true" count="0" />
               <DataColumn>Categories.Picture</DataColumn>
-              <Margins>0,0,0,0</Margins>
+              <Expressions isList="true" count="0" />
+              <IconColor>68, 114, 196</IconColor>
               <Name>Image1</Name>
               <Page isRef="4" />
               <Parent isRef="12" />
@@ -193,6 +198,7 @@
           </Components>
           <Conditions isList="true" count="0" />
           <DataSourceName>Categories</DataSourceName>
+          <Expressions isList="true" count="0" />
           <Filters isList="true" count="0" />
           <Name>DataCategories</Name>
           <Page isRef="4" />
@@ -201,6 +207,7 @@
         </DataCategories>
       </Components>
       <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
       <Guid>366bfdc35bcf48f3aeb38f2b5f58db21</Guid>
       <Margins>1,1,1,1</Margins>
       <Name>Page1</Name>
@@ -214,7 +221,7 @@
     </Page1>
   </Pages>
   <PreviewMode>StandardAndDotMatrix</PreviewMode>
-  <PreviewSettings>33538047</PreviewSettings>
+  <PreviewSettings>100614143</PreviewSettings>
   <ReferencedAssemblies isList="true" count="8">
     <value>System.Dll</value>
     <value>System.Drawing.Dll</value>
@@ -227,14 +234,14 @@
   </ReferencedAssemblies>
   <ReportAlias>Simple List</ReportAlias>
   <ReportAuthor>Stimulsoft</ReportAuthor>
-  <ReportChanged>7/27/2015 5:49:12 AM</ReportChanged>
+  <ReportChanged>1/14/2025 6:43:45 PM</ReportChanged>
   <ReportCreated>5/29/2004 7:59:00 AM</ReportCreated>
   <ReportDescription>This sample demonstrates how to create a simple list report.</ReportDescription>
-  <ReportFile>SimpleList.mrt</ReportFile>
-  <ReportGuid>230cd0ffa459445da7312a056b691fc5</ReportGuid>
+  <ReportFile>D:\stimulsoft\Samples\Samples-Reports.WEB-for-Blazor-WebAssembly\NET 6.0\Connecting to Data from Code\wwwroot\Reports\Report.mrt</ReportFile>
+  <ReportGuid>8020deebe2ef4d4f93927f9bf7aa9528</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
-  <ReportVersion>2020.4.2.0</ReportVersion>
+  <ReportVersion>2025.1.3.0</ReportVersion>
   <Script>using System;
 using System.Drawing;
 using System.Windows.Forms;
