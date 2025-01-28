@@ -8,6 +8,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.32" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.32" PrivateAssets="all" />
-    <PackageReference Include="Stimulsoft.Reports.Blazor" Version="2025.1.3" />
+    <PackageReference Include="Stimulsoft.Reports.Blazor" Version="2025.1.4" />
   </ItemGroup>
 </Project>
